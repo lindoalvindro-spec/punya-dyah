@@ -149,7 +149,7 @@ function LetterTypewriter() {
           }}
         >
           <span>🌸</span>
-          <span>June 10</span>
+          <span>7 Agustus</span>
           <span>🌸</span>
         </div>
       </div>
@@ -478,7 +478,7 @@ export default function MainBirthdayPage() {
     { 
       id: 1, 
       title: 'Sweetest Memories Together 💖', 
-      date: 'June 10', 
+      date: '7 Agustus', 
       location: 'Special Moments',
       img: '/aga 1.jpeg',
       rotation: '-3deg'
@@ -955,7 +955,7 @@ export default function MainBirthdayPage() {
             marginBottom: '28px',
           }}
         >
-          JUNE 10 &nbsp; THE MOST SPECIAL DAY
+          7 AGUSTUS &nbsp; THE MOST SPECIAL DAY
         </div>
 
         {/* Scroll Down Bounce Arrow */}
