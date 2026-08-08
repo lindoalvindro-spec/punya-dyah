@@ -301,6 +301,17 @@ export default function PasscodeScreen({ onUnlock }) {
           >
             Enter our secret code
           </p>
+          <p
+            style={{
+              fontSize: '0.72rem',
+              color: '#38bdf8',
+              opacity: 0.75,
+              fontStyle: 'italic',
+              marginTop: '4px',
+            }}
+          >
+            Clue: tanggal jadian 💗
+          </p>
         </div>
 
         {/* Upgraded 6-PIN Dots Container */}

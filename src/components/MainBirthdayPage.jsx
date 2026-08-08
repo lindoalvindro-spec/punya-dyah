@@ -149,7 +149,7 @@ function LetterTypewriter() {
           }}
         >
           <span>💙</span>
-          <span>7 Agustus</span>
+          <span>8 Agustus</span>
           <span>💙</span>
         </div>
       </div>
