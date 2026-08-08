@@ -16,21 +16,21 @@ function LetterTypewriter() {
   const [displayedLines, setDisplayedLines] = useState([]);
 
   const letterLines = [
-    { text: "My dearest Agaa,", style: "greeting" },
+    { text: "HAPPY ANNIVERSARY TO ONE YEAR SAYANGGG 🫶🏻🫶🏻🤍🤍🤍🤍🤍", style: "greeting" },
     { text: "", style: "spacer" },
-    { text: "Selamat ulang tahun, sayangku yang paling aku rindukan 🎂", style: "body" },
+    { text: "aku beruntung banget bisa kenal kamu sejauh ini, yang tadinya aku cuma bisa liat dan suka kamu dengan diam waktu masa SD tapi ternyata kita saling suka tanpa mengungkapkan, dan kita di pisahkan waktu masa SMP karna beda sekolah.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Aku tahu jarak memisahkan kita hari ini, tapi percayalah — hatiku selalu ada di sisimu, setiap detik, setiap napas, setiap hari. 🌸", style: "body" },
+    { text: "Awal aku jatuh cinta lagi ke dedee waktu kita lagi reuni SD untuk bukber puasa, aku jatuh suka karna aku masi sama memandang kamu dengan cara pakaian kamu yang sederhana tapi cantikk, cara berperilaku kamu, senyum kamu, cara berbicara kamu. Selesai kita makan bersama, aku mencoba buat ngajak kamu foto bareng yang awalnya aku mikir bakal ditolak karna kiranya kamu uda punya cowo, tapi ternyata kamu mau menerima tapi dengan 1syarat jangan dipost.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Aku ingin kamu tahu bahwa kamu adalah alasan aku tersenyum di pagi hari, dan alasan aku bertahan di malam-malam yang sepi tanpamu. ✨", style: "body" },
+    { text: "Singkat cerita, kita bertemu lagi waktu pendaftaran SMA saat pembuatan akun. Lalu masuk ke masa dimana kita ternyata satu SMA dan sudah mulai pra MPLS, awal mpls dedee chat aku buat nanyain apa yang perlu dibikin karna mungkin belum ada teman. dedee chat aku dengan kata kata \"revan, sorry ganggu mau tanya itu maksudnya gimana yaa?\", disitu kita coba saling chat dan ternyata sama sama diterima dengan baik, dan aku berusaha buat ungkap perasaan dan diterima juga masih bareng sampai sekarang.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Meskipun kita dipisahkan oleh ribuan kilometer, cintaku padamu tidak pernah berkurang sedikit pun. Justru semakin hari, semakin dalam. 💕", style: "body" },
+    { text: "kita juga bisa menjadi orang yang takut kehilangan satu sama lain, kamu yg selalu sabar dengan sikap aku, kamu selalu ngertiin aku gimanapun keadaan nya, TIMAACIII DEDEEEE uda memberikan rasa nyaman buat kita🫂🫂, dedee pemenang dari semua hal yang datang dan dedee mampu bertahan sampe sejauh ini🫰🏻🤍🤍🤍💗💗💗", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Suatu hari nanti, kita tidak perlu lagi menghitung hari untuk bertemu. Suatu hari nanti, aku akan memelukmu dan tidak akan pernah melepaskanmu lagi. 🫂", style: "body" },
+    { text: "kita berhasil menjaga hubungan ini sampe sejauh ini, itu karna rasa kepercayaan dan kesetiaan satu sama lain, walaupun ego kita tinggi tapi aku usahain aku bakal nurunin, dan aku harap kita terus bareng sampe selamanya, dedee kalo ada apa apa tolong bilang ke aku yahh jangan di sembunyiin, aku ndamau dedee pendem sendiri, aku ada disini dan akan selalu ada, aku selalu jadi rumah kedua yang nyaman setelah keluarga dedee, jangan takut ya kita hadapin semua bareng\"..", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Sampai hari itu tiba, aku akan terus mencintaimu dari sini — dengan sepenuh hati, tanpa syarat, dan tanpa batas. 💗", style: "body" },
+    { text: "dede jangan pergi yah, jangan berpindah hati, aku bangga bisa kenal dedee sampe detik ini juga, aku bangga punya dede. timmaacci dedeee buat waktu, tenaga, effort dede yang uda banyak dedee kasi untuk aku, kalo suatu saat dedee ngerasa bosen sama aku dedee bilang baik baik ya kita perbaikin pelan pelan oakii sayanggg? maaf yah dedee kalo aku masih sering marah ke dedee, aku marah karna aku pengin dedee ngga ngelakuin kesalahan lagi.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Selamat ulang tahun, cintaku. Semoga semua mimpimu menjadi kenyataan. 🌙✨", style: "ps" },
+    { text: "sekali lagi HAPPY ANNIVERSARY SAYYYAANNGGGGGG🥳🥳🫶🏻🫶🏻🤍🤍🤍🤍🤍🤍🤍", style: "ps" },
   ];
 
   // Trigger typewriter when scrolled into view
@@ -98,9 +98,9 @@ function LetterTypewriter() {
   const getLineStyle = (style) => {
     switch (style) {
       case 'greeting':
-        return { fontWeight: '600', marginBottom: '4px', fontSize: '1.08rem', color: '#ff77bc', fontFamily: 'var(--font-display)' };
+        return { fontWeight: '600', marginBottom: '4px', fontSize: '1.08rem', color: '#38bdf8', fontFamily: 'var(--font-display)' };
       case 'ps':
-        return { marginBottom: '0', fontStyle: 'italic', color: '#ffd700', fontWeight: '500' };
+        return { marginBottom: '0', fontStyle: 'italic', color: '#38bdf8', fontWeight: '500' };
       case 'spacer':
         return { height: '10px' };
       default:
@@ -112,23 +112,23 @@ function LetterTypewriter() {
     <div
       ref={letterRef}
       style={{
-        background: 'linear-gradient(165deg, rgba(48, 14, 44, 0.85) 0%, rgba(20, 5, 20, 0.92) 100%)',
+        background: 'linear-gradient(165deg, rgba(10, 30, 63, 0.85) 0%, rgba(4, 16, 38, 0.92) 100%)',
         borderRadius: '28px',
-        border: '1.5px solid rgba(255, 105, 180, 0.35)',
+        border: '1.5px solid rgba(96, 165, 250, 0.35)',
         padding: '28px 20px 24px',
         position: 'relative',
-        boxShadow: '0 18px 40px rgba(0,0,0,0.7), inset 0 0 20px rgba(255, 105, 180, 0.1)',
+        boxShadow: '0 18px 40px rgba(0,0,0,0.7), inset 0 0 20px rgba(0, 210, 255, 0.1)',
         marginBottom: '36px',
       }}
     >
       {/* Floating Decorative Flowers */}
-      <div style={{ position: 'absolute', top: '12px', left: '16px', fontSize: '1.4rem', filter: 'drop-shadow(0 0 6px #ff2a8d)' }}>🌸</div>
-      <div style={{ position: 'absolute', top: '12px', right: '16px', fontSize: '1.4rem', filter: 'drop-shadow(0 0 6px #ff77bc)' }}>🌺</div>
-      <div style={{ position: 'absolute', bottom: '16px', left: '16px', fontSize: '1.3rem', filter: 'drop-shadow(0 0 6px #ffd700)' }}>🌼</div>
+      <div style={{ position: 'absolute', top: '12px', left: '16px', fontSize: '1.4rem', filter: 'drop-shadow(0 0 6px #00d2ff)' }}>💙</div>
+      <div style={{ position: 'absolute', top: '12px', right: '16px', fontSize: '1.4rem', filter: 'drop-shadow(0 0 6px #38bdf8)' }}>✨</div>
+      <div style={{ position: 'absolute', bottom: '16px', left: '16px', fontSize: '1.3rem', filter: 'drop-shadow(0 0 6px #60a5fa)' }}>🔹</div>
 
       {/* Section Header */}
       <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#ff77bc', fontWeight: '600', marginBottom: '4px' }}>
+        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#38bdf8', fontWeight: '600', marginBottom: '4px' }}>
           — FROM MY HEART —
         </p>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.55rem', marginBottom: '4px' }}>
@@ -140,22 +140,22 @@ function LetterTypewriter() {
             alignItems: 'center',
             gap: '6px',
             padding: '4px 14px',
-            background: 'rgba(255, 42, 141, 0.15)',
-            border: '1px solid rgba(255, 105, 180, 0.3)',
+            background: 'rgba(0, 210, 255, 0.15)',
+            border: '1px solid rgba(96, 165, 250, 0.3)',
             borderRadius: '16px',
             fontSize: '0.78rem',
-            color: '#ffe0f0',
+            color: '#e0f2fe',
             marginTop: '4px',
           }}
         >
-          <span>🌸</span>
+          <span>💙</span>
           <span>7 Agustus</span>
-          <span>🌸</span>
+          <span>💙</span>
         </div>
       </div>
 
       {/* Typewriter Letter Content */}
-      <div style={{ fontSize: '0.92rem', lineHeight: '1.65', color: '#ffe6f2', position: 'relative', zIndex: 2, minHeight: '200px' }}>
+      <div style={{ fontSize: '0.92rem', lineHeight: '1.65', color: '#e0f2fe', position: 'relative', zIndex: 2, minHeight: '200px' }}>
         {displayedLines.map((line, i) => (
           <div key={i} style={getLineStyle(line.style)}>
             {line.text}
@@ -166,10 +166,10 @@ function LetterTypewriter() {
                   display: 'inline-block',
                   width: '2px',
                   height: '14px',
-                  backgroundColor: '#ff2a8d',
+                  backgroundColor: '#00d2ff',
                   marginLeft: '3px',
                   verticalAlign: 'middle',
-                  boxShadow: '0 0 8px #ff2a8d',
+                  boxShadow: '0 0 8px #00d2ff',
                   animation: 'pulseGlow 0.6s infinite alternate',
                 }}
               />
@@ -184,14 +184,14 @@ function LetterTypewriter() {
               marginTop: '20px',
               textAlign: 'right',
               fontWeight: '600',
-              color: '#ffd700',
+              color: '#38bdf8',
               fontSize: '0.95rem',
               opacity: 0,
               animation: 'fadeInUp 0.8s forwards 0.3s',
             }}
           >
-            <span style={{ color: '#ff77bc', fontSize: '0.85rem' }}>With all my love,</span><br />
-            <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', color: '#ffd700', textShadow: '0 0 10px rgba(255,215,0,0.5)' }}>Rara 🌺</span>
+            <span style={{ color: '#60a5fa', fontSize: '0.85rem' }}>With all my love,</span><br />
+            <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', color: '#38bdf8', textShadow: '0 0 10px rgba(56,189,248,0.5)' }}>Revan 🤍</span>
           </div>
         )}
       </div>
@@ -261,22 +261,22 @@ function FarewellSection({ onOpenCake }) {
       }}
     >
       {/* Ambient floating petals */}
-      <div style={{ position: 'absolute', top: '8%', left: '10%', fontSize: '1rem', opacity: 0.5, filter: 'drop-shadow(0 0 6px #ff2a8d)' }}>🌸</div>
-      <div style={{ position: 'absolute', top: '5%', right: '12%', fontSize: '0.9rem', opacity: 0.4, filter: 'drop-shadow(0 0 6px #ff77bc)' }}>✿</div>
-      <div style={{ position: 'absolute', bottom: '20%', left: '6%', fontSize: '0.8rem', opacity: 0.35, filter: 'drop-shadow(0 0 6px #ff2a8d)' }}>❀</div>
-      <div style={{ position: 'absolute', bottom: '15%', right: '8%', fontSize: '0.85rem', opacity: 0.4, filter: 'drop-shadow(0 0 6px #ff77bc)' }}>🌸</div>
+      <div style={{ position: 'absolute', top: '8%', left: '10%', fontSize: '1rem', opacity: 0.5, filter: 'drop-shadow(0 0 6px #00d2ff)' }}>💙</div>
+      <div style={{ position: 'absolute', top: '5%', right: '12%', fontSize: '0.9rem', opacity: 0.4, filter: 'drop-shadow(0 0 6px #38bdf8)' }}>✨</div>
+      <div style={{ position: 'absolute', bottom: '20%', left: '6%', fontSize: '0.8rem', opacity: 0.35, filter: 'drop-shadow(0 0 6px #00d2ff)' }}>🔹</div>
+      <div style={{ position: 'absolute', bottom: '15%', right: '8%', fontSize: '0.85rem', opacity: 0.4, filter: 'drop-shadow(0 0 6px #38bdf8)' }}>💙</div>
 
       {/* Eyebrow */}
       <p
         className="farewell-eyebrow"
         style={{
           fontSize: '0.85rem',
-          color: '#ff77bc',
+          color: '#38bdf8',
           marginBottom: '18px',
           letterSpacing: '0.5px',
         }}
       >
-        🌸 With all my heart 🌸
+        💙 With all my heart 💙
       </p>
 
       {/* Main Title — elegant serif with italic accent */}
@@ -287,7 +287,7 @@ function FarewellSection({ onOpenCake }) {
           fontSize: '2rem',
           lineHeight: '1.25',
           color: '#fff',
-          textShadow: '0 0 15px rgba(255, 42, 141, 0.5), 0 0 30px rgba(255, 42, 141, 0.3)',
+          textShadow: '0 0 15px rgba(0, 210, 255, 0.5), 0 0 30px rgba(0, 210, 255, 0.3)',
           marginBottom: '24px',
           fontWeight: '600',
         }}
@@ -296,8 +296,8 @@ function FarewellSection({ onOpenCake }) {
         <span
           style={{
             fontStyle: 'italic',
-            color: '#ff77bc',
-            textShadow: '0 0 20px rgba(255, 119, 188, 0.6), 0 0 40px rgba(255, 42, 141, 0.4)',
+            color: '#38bdf8',
+            textShadow: '0 0 20px rgba(56, 189, 248, 0.6), 0 0 40px rgba(0, 210, 255, 0.4)',
           }}
         >
           always be filled
@@ -312,13 +312,13 @@ function FarewellSection({ onOpenCake }) {
         style={{
           fontSize: '0.88rem',
           lineHeight: '1.7',
-          color: 'rgba(255, 224, 240, 0.85)',
+          color: 'rgba(224, 242, 254, 0.85)',
           maxWidth: '320px',
           margin: '0 auto 24px',
           fontWeight: '400',
         }}
       >
-        Happy birthday, Agaa. May your days always be filled with love, happiness, and all the beautiful things you deserve. I am grateful every single day to know you.
+        Happy 1st Anniversary, Dedee. May our days always be filled with love, happiness, and all the beautiful things we deserve. I am grateful every single day to have you in my life.💗
       </p>
 
       {/* Center Flower Bucket PNG Ornament */}
@@ -336,7 +336,7 @@ function FarewellSection({ onOpenCake }) {
           style={{
             width: '85px',
             height: 'auto',
-            filter: 'drop-shadow(0 0 16px #ff2a8d) drop-shadow(0 0 30px #ffd700)',
+            filter: 'drop-shadow(0 0 16px #00d2ff) drop-shadow(0 0 30px #38bdf8)',
           }}
         />
       </div>
@@ -348,12 +348,12 @@ function FarewellSection({ onOpenCake }) {
           fontFamily: "'Playfair Display', 'Cinzel', serif",
           fontStyle: 'italic',
           fontSize: '0.92rem',
-          color: 'rgba(255, 224, 240, 0.7)',
+          color: 'rgba(224, 242, 254, 0.7)',
           letterSpacing: '0.3px',
           marginBottom: '28px',
         }}
       >
-        — With love that never runs out 💕 —
+        — With love that never runs out 💙 —
       </p>
 
       {/* Happy Birthday Wish Button */}
@@ -361,7 +361,7 @@ function FarewellSection({ onOpenCake }) {
         className="farewell-btn"
         onClick={onOpenCake}
         style={{
-          background: 'linear-gradient(135deg, #ff2a8d 0%, #ffd700 100%)',
+          background: 'linear-gradient(135deg, #00d2ff 0%, #38bdf8 100%)',
           color: '#fff',
           border: 'none',
           padding: '13px 30px',
@@ -369,7 +369,7 @@ function FarewellSection({ onOpenCake }) {
           fontSize: '0.95rem',
           fontWeight: '700',
           cursor: 'pointer',
-          boxShadow: '0 0 25px var(--neon-pink), 0 0 50px rgba(255, 42, 141, 0.3)',
+          boxShadow: '0 0 25px var(--neon-pink), 0 0 50px rgba(0, 210, 255, 0.3)',
           display: 'inline-flex',
           alignItems: 'center',
           gap: '8px',
@@ -381,10 +381,10 @@ function FarewellSection({ onOpenCake }) {
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.transform = 'scale(1)';
-          e.currentTarget.style.boxShadow = '0 0 25px var(--neon-pink), 0 0 50px rgba(255, 42, 141, 0.3)';
+          e.currentTarget.style.boxShadow = '0 0 25px var(--neon-pink), 0 0 50px rgba(0, 210, 255, 0.3)';
         }}
       >
-        <Cake size={18} /> Happy Birthday Wish!
+        <Sparkles size={18} /> Happy Anniversary Wishes! 💕
       </button>
     </div>
   );
@@ -421,7 +421,19 @@ export default function MainBirthdayPage() {
       }
     }, 70);
 
-    return () => clearInterval(timer);
+    // Auto-play music automatically when unlocked after opening gift box
+    const autoPlayTimer = setTimeout(() => {
+      if (audioRef.current) {
+        audioRef.current.play()
+          .then(() => setIsPlaying(true))
+          .catch((err) => console.log('Autoplay deferred:', err));
+      }
+    }, 300);
+
+    return () => {
+      clearInterval(timer);
+      clearTimeout(autoPlayTimer);
+    };
   }, []);
 
   // 1. Audio Player State
@@ -432,7 +444,7 @@ export default function MainBirthdayPage() {
   const vinylRef = useRef(null);
 
   const playlist = [
-    { id: 1, title: 'Shape Of My Heart', artist: 'Backstreet Boys', duration: '3:50', src: '/Shape of My Heart_spotdown.org.mp3' },
+    { id: 1, title: 'Risk It All', artist: 'The Vamps', duration: '3:38', src: '/Risk It All_spotdown.org.mp3' },
     { id: 2, title: 'Suara Hati Seorang Kekasih', artist: 'Melly Goeslaw', duration: '4:20', src: '/Suara Hati Seorang Kekasih_spotdown.org.mp3' },
     { id: 3, title: 'Untukku', artist: 'Chrisye', duration: '4:18', src: '/Untukku_spotdown.org.mp3' },
   ];
@@ -443,31 +455,31 @@ export default function MainBirthdayPage() {
     rose: {
       name: "Mawar",
       icon: "🌹",
-      color: "#ff2a8d",
+      color: "#ff69b4",
       text: "You are the finest rose that ever bloomed — full of love, grace, and unmatched beauty. 🌹"
     },
     tulip: {
       name: "Tulip",
       icon: "🌷",
-      color: "#ff5ca0",
+      color: "#ff85c8",
       text: "Like a blooming tulip in spring, your gentleness brings fresh happiness and peace to my heart. 🌷"
     },
     sakura: {
       name: "Sakura",
       icon: "🌸",
-      color: "#ff77bc",
+      color: "#ff9ed8",
       text: "You are as beautiful as cherry blossoms — lovely and bringing joy wherever you go. 🌸"
     },
     sunflower: {
       name: "Sunflower",
       icon: "🌻",
-      color: "#ffd700",
+      color: "#ffb3e0",
       text: "Like a sunflower, you always turn toward the light and share your warmth with everyone around you. 🌻"
     },
     daisy: {
       name: "Daisy",
       icon: "🌼",
-      color: "#ffffff",
+      color: "#ffc0eb",
       text: "Your innocence, purity, and bright smile light up even the darkest of my days. 🌼"
     }
   };
@@ -477,19 +489,75 @@ export default function MainBirthdayPage() {
   const photoGallery = [
     { 
       id: 1, 
-      title: 'Sweetest Memories Together 💖', 
-      date: '7 Agustus', 
-      location: 'Special Moments',
-      img: '/aga 1.jpeg',
+      title: 'My Prettiest Girl 💖', 
+      date: 'Special Moment', 
+      location: 'Our Journey',
+      img: '/kanza 1.jpeg',
       rotation: '-3deg'
     },
     { 
       id: 2, 
-      title: 'Always Smiling With You ✨', 
-      date: 'July 15', 
-      location: 'Precious Memories',
-      img: '/aga 2.jpeg',
+      title: 'Sweetest Smile ✨', 
+      date: 'Special Moment', 
+      location: 'Our Journey',
+      img: '/kanza 2.jpeg',
       rotation: '2.5deg'
+    },
+    { 
+      id: 3, 
+      title: 'Precious Memories 🌸', 
+      date: 'Special Moment', 
+      location: 'Our Journey',
+      img: '/kanza 3.jpeg',
+      rotation: '-2deg'
+    },
+    { 
+      id: 4, 
+      title: 'Favorite Moments 💕', 
+      date: 'Special Moment', 
+      location: 'Our Journey',
+      img: '/kanza 4.jpeg',
+      rotation: '3deg'
+    },
+    { 
+      id: 5, 
+      title: 'Forever & Always 💫', 
+      date: 'Special Moment', 
+      location: 'Our Journey',
+      img: '/kanza 5.jpeg',
+      rotation: '-1.5deg'
+    },
+    { 
+      id: 6, 
+      title: 'Cute Dedee 🌺', 
+      date: 'Special Moment', 
+      location: 'Our Journey',
+      img: '/kanza 6.jpeg',
+      rotation: '2deg'
+    },
+    { 
+      id: 7, 
+      title: 'Beautiful Story 💗', 
+      date: 'Special Moment', 
+      location: 'Our Journey',
+      img: '/kanza 7.jpeg',
+      rotation: '-3deg'
+    },
+    { 
+      id: 8, 
+      title: 'My Happiness 🌷', 
+      date: 'Special Moment', 
+      location: 'Our Journey',
+      img: '/kanza 8.jpeg',
+      rotation: '1.5deg'
+    },
+    { 
+      id: 9, 
+      title: 'One Year Together 🤍', 
+      date: 'Anniversary Special', 
+      location: 'Our Journey',
+      img: '/kanza 9.jpeg',
+      rotation: '-2.5deg'
     },
   ];
 
@@ -554,7 +622,7 @@ export default function MainBirthdayPage() {
     });
 
     gsap.to(birthdayRef.current, {
-      filter: 'drop-shadow(0 0 25px #ff2a8d) drop-shadow(0 0 45px #ff77bc)',
+      filter: 'drop-shadow(0 0 25px #00d2ff) drop-shadow(0 0 45px #38bdf8)',
       duration: 2,
       repeat: -1,
       yoyo: true,
@@ -746,13 +814,13 @@ export default function MainBirthdayPage() {
           width: '46px',
           height: '46px',
           borderRadius: '50%',
-          background: 'linear-gradient(135deg, #ff2a8d 0%, #e0115f 100%)',
+          background: 'linear-gradient(135deg, #00d2ff 0%, #0066ff 100%)',
           border: '1.5px solid rgba(255,255,255,0.7)',
           color: '#fff',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          boxShadow: '0 0 20px #ff2a8d, 0 4px 12px rgba(0,0,0,0.4)',
+          boxShadow: '0 0 20px #00d2ff, 0 4px 12px rgba(0,0,0,0.4)',
           cursor: 'pointer',
         }}
       >
@@ -784,7 +852,7 @@ export default function MainBirthdayPage() {
             right: '4%',
             width: '65px',
             height: 'auto',
-            filter: 'drop-shadow(0 0 12px #ff77bc)',
+            filter: 'drop-shadow(0 0 12px #38bdf8)',
             animation: 'pulseGlow 2.5s infinite ease-in-out',
             pointerEvents: 'none',
           }}
@@ -800,16 +868,16 @@ export default function MainBirthdayPage() {
             left: '2%',
             width: '45px',
             height: 'auto',
-            filter: 'drop-shadow(0 0 10px #ff2a8d)',
+            filter: 'drop-shadow(0 0 10px #00d2ff)',
             opacity: 0.85,
             pointerEvents: 'none',
           }}
         />
         {/* Animated Floating Flowers around Hero */}
-        <div className="floating-hero-flower" style={{ position: 'absolute', top: '4%', left: '8%', fontSize: '1.6rem', filter: 'drop-shadow(0 0 8px #ff2a8d)' }}>🌸</div>
-        <div className="floating-hero-flower" style={{ position: 'absolute', top: '12%', right: '8%', fontSize: '1.8rem', filter: 'drop-shadow(0 0 8px #ff77bc)' }}>🌺</div>
-        <div className="floating-hero-flower" style={{ position: 'absolute', top: '45%', left: '4%', fontSize: '1.5rem', filter: 'drop-shadow(0 0 8px #ff2a8d)' }}>🌷</div>
-        <div className="floating-hero-flower" style={{ position: 'absolute', top: '48%', right: '6%', fontSize: '1.7rem', filter: 'drop-shadow(0 0 8px #ff77bc)' }}>🌸</div>
+        <div className="floating-hero-flower" style={{ position: 'absolute', top: '4%', left: '8%', fontSize: '1.6rem', filter: 'drop-shadow(0 0 8px #00d2ff)' }}>💙</div>
+        <div className="floating-hero-flower" style={{ position: 'absolute', top: '12%', right: '8%', fontSize: '1.8rem', filter: 'drop-shadow(0 0 8px #38bdf8)' }}>✨</div>
+        <div className="floating-hero-flower" style={{ position: 'absolute', top: '45%', left: '4%', fontSize: '1.5rem', filter: 'drop-shadow(0 0 8px #00d2ff)' }}>🔹</div>
+        <div className="floating-hero-flower" style={{ position: 'absolute', top: '48%', right: '6%', fontSize: '1.7rem', filter: 'drop-shadow(0 0 8px #38bdf8)' }}>💙</div>
 
         {/* Ambient Glowing Aura */}
         <div
@@ -818,7 +886,7 @@ export default function MainBirthdayPage() {
             width: '260px',
             height: '260px',
             borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(255, 42, 141, 0.4) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(0, 210, 255, 0.4) 0%, transparent 70%)',
             filter: 'blur(35px)',
             pointerEvents: 'none',
           }}
@@ -832,15 +900,15 @@ export default function MainBirthdayPage() {
             alignItems: 'center',
             gap: '8px',
             fontSize: '0.88rem',
-            color: '#ffb3d9',
+            color: '#7dd3fc',
             marginBottom: '24px',
             letterSpacing: '1.5px',
-            textShadow: '0 0 8px rgba(255, 42, 141, 0.6)',
+            textShadow: '0 0 8px rgba(0, 210, 255, 0.6)',
           }}
         >
-          <span>🌸</span>
+          <span>💙</span>
           <span style={{ fontFamily: 'var(--font-body)', fontWeight: '500' }}>Your Special Day</span>
-          <span>🌸</span>
+          <span>💙</span>
         </div>
 
         {/* Title: Happy Birthday Agaa */}
@@ -868,20 +936,20 @@ export default function MainBirthdayPage() {
           <div
             ref={birthdayRef}
             style={{
-              fontSize: '3.8rem',
+              fontSize: '3.4rem',
               fontStyle: 'italic',
               fontWeight: '600',
-              background: 'linear-gradient(135deg, #ff94cc 0%, #ff2a8d 50%, #e0115f 100%)',
+              background: 'linear-gradient(135deg, #ff9ed8 0%, #ff69b4 50%, #cc1a6e 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-              filter: 'drop-shadow(0 0 15px rgba(255, 42, 141, 0.8))',
+              filter: 'drop-shadow(0 0 15px rgba(255, 105, 180, 0.8))',
               margin: '6px 0',
               letterSpacing: '0.5px',
             }}
           >
-            Birthday
+            Anniversary
           </div>
-          {/* Title: Happy Birthday Agaa */}
+          {/* Title: Happy Anniversary Dedee */}
           <div
             ref={agaaRef}
             style={{
@@ -892,7 +960,7 @@ export default function MainBirthdayPage() {
               textShadow: '0 0 20px rgba(255, 255, 255, 0.6)',
             }}
           >
-            Agaa
+            Dedee 💗
           </div>
         </div>
 
@@ -908,10 +976,10 @@ export default function MainBirthdayPage() {
             style={{
               fontSize: '0.92rem',
               fontStyle: 'italic',
-              color: '#ffe0f0',
+              color: '#e0f2fe',
               fontFamily: 'var(--font-display)',
               letterSpacing: '0.5px',
-              textShadow: '0 0 10px rgba(255, 105, 180, 0.8)',
+              textShadow: '0 0 10px rgba(0, 210, 255, 0.8)',
             }}
           >
             {typedText}
@@ -920,10 +988,10 @@ export default function MainBirthdayPage() {
                 display: 'inline-block',
                 width: '2px',
                 height: '14px',
-                backgroundColor: '#ff2a8d',
+                backgroundColor: '#00d2ff',
                 marginLeft: '3px',
                 verticalAlign: 'middle',
-                boxShadow: '0 0 8px #ff2a8d',
+                boxShadow: '0 0 8px #00d2ff',
                 opacity: isTypingDone ? 0.3 : 1,
                 animation: 'pulseGlow 0.8s infinite alternate',
               }}
@@ -936,9 +1004,9 @@ export default function MainBirthdayPage() {
           style={{
             width: '140px',
             height: '1.5px',
-            background: 'linear-gradient(90deg, transparent, rgba(255, 119, 188, 0.8), transparent)',
+            background: 'linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.8), transparent)',
             marginBottom: '22px',
-            boxShadow: '0 0 10px rgba(255, 42, 141, 0.5)',
+            boxShadow: '0 0 10px rgba(0, 210, 255, 0.5)',
           }}
         />
 
@@ -948,43 +1016,43 @@ export default function MainBirthdayPage() {
           style={{
             fontSize: '0.78rem',
             letterSpacing: '3.5px',
-            color: 'rgba(255, 240, 246, 0.85)',
+            color: 'rgba(224, 242, 254, 0.85)',
             fontWeight: '600',
             textTransform: 'uppercase',
-            textShadow: '0 0 8px rgba(255, 42, 141, 0.4)',
+            textShadow: '0 0 8px rgba(0, 210, 255, 0.4)',
             marginBottom: '28px',
           }}
         >
-          7 AGUSTUS &nbsp; THE MOST SPECIAL DAY
+          OUR 1ST ANNIVERSARY &nbsp; SPECIAL DAY 🤍
         </div>
 
         {/* Scroll Down Bounce Arrow */}
         <div className="hero-scroll-indicator" style={{ opacity: 0.8 }}>
-          <ChevronDown size={22} color="#ff77bc" style={{ filter: 'drop-shadow(0 0 8px #ff2a8d)' }} />
+          <ChevronDown size={22} color="#38bdf8" style={{ filter: 'drop-shadow(0 0 8px #00d2ff)' }} />
         </div>
       </div>
 
       {/* SECTION 2: A DIGITAL BOUQUET WITH PERFECTLY SPACED FLOWERS & STEMS */}
       <div
         style={{
-          background: 'rgba(35, 10, 32, 0.7)',
+          background: 'rgba(40, 10, 30, 0.7)',
           backdropFilter: 'blur(18px)',
           borderRadius: '28px',
-          border: '1.5px solid rgba(255, 105, 180, 0.35)',
+          border: '1.5px solid rgba(255, 105, 180, 0.4)',
           padding: '24px 12px',
           textAlign: 'center',
-          boxShadow: '0 12px 35px rgba(0,0,0,0.6)',
+          boxShadow: '0 12px 35px rgba(0,0,0,0.6), 0 0 20px rgba(255,105,180,0.1)',
           marginBottom: '36px',
         }}
       >
-        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#ff77bc', fontWeight: '600', marginBottom: '4px' }}>
+        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#ff69b4', fontWeight: '600', marginBottom: '4px' }}>
           — MY FIRST GIFT —
         </p>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '4px' }}>
           A Digital Bouquet
         </h3>
         <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '14px' }}>
-          Touch each flower to reveal its compliment 💕
+          Touch each flower to reveal its compliment 💗
         </p>
 
         {/* Bouquet PNG Banner */}
@@ -995,7 +1063,7 @@ export default function MainBirthdayPage() {
             style={{
               width: '80px',
               height: 'auto',
-              filter: 'drop-shadow(0 0 14px #ff2a8d) drop-shadow(0 0 25px #ffd700)',
+              filter: 'drop-shadow(0 0 14px #ff69b4) drop-shadow(0 0 25px #ff85c8)',
             }}
           />
         </div>
@@ -1013,9 +1081,9 @@ export default function MainBirthdayPage() {
           <svg viewBox="0 0 350 240" width="100%" height="100%">
             <defs>
               <linearGradient id="potGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ff5ca0" />
-                <stop offset="60%" stopColor="#ff2a8d" />
-                <stop offset="100%" stopColor="#99003d" />
+                <stop offset="0%" stopColor="#ff85c8" />
+                <stop offset="60%" stopColor="#ff69b4" />
+                <stop offset="100%" stopColor="#cc1a6e" />
               </linearGradient>
             </defs>
 
@@ -1038,7 +1106,7 @@ export default function MainBirthdayPage() {
             {/* Bouquet Vase / Pot Base */}
             <path d="M 115 160 C 115 160, 95 215, 120 225 C 145 235, 205 235, 230 225 C 255 215, 235 160, 235 160 Z" fill="url(#potGrad)" stroke="#ffffff" strokeWidth="1.5" filter="drop-shadow(0 8px 15px rgba(0,0,0,0.6))" />
             <circle cx="175" cy="190" r="11" fill="#ffffff" />
-            <circle cx="175" cy="190" r="7" fill="#ffd700" />
+            <circle cx="175" cy="190" r="7" fill="#ff69b4" />
             <path d="M 175 190 C 150 175, 140 200, 175 190 Z" fill="#ffffff" />
             <path d="M 175 190 C 200 175, 210 200, 175 190 Z" fill="#ffffff" />
           </svg>
@@ -1053,7 +1121,7 @@ export default function MainBirthdayPage() {
               top: '32px',
               fontSize: '2.4rem',
               cursor: 'pointer',
-              filter: activeFlower === 'rose' ? 'drop-shadow(0 0 16px #ff2a8d)' : 'drop-shadow(0 0 4px rgba(0,0,0,0.5))',
+              filter: activeFlower === 'rose' ? 'drop-shadow(0 0 16px #ff69b4)' : 'drop-shadow(0 0 4px rgba(0,0,0,0.5))',
               transform: activeFlower === 'rose' ? 'scale(1.25)' : 'scale(1)',
               transition: 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease',
             }}
@@ -1070,7 +1138,7 @@ export default function MainBirthdayPage() {
               top: '8px',
               fontSize: '2.4rem',
               cursor: 'pointer',
-              filter: activeFlower === 'tulip' ? 'drop-shadow(0 0 16px #ff5ca0)' : 'drop-shadow(0 0 4px rgba(0,0,0,0.5))',
+              filter: activeFlower === 'tulip' ? 'drop-shadow(0 0 16px #ff85c8)' : 'drop-shadow(0 0 4px rgba(0,0,0,0.5))',
               transform: activeFlower === 'tulip' ? 'scale(1.25)' : 'scale(1)',
               transition: 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease',
             }}
@@ -1088,7 +1156,7 @@ export default function MainBirthdayPage() {
               top: '-14px',
               fontSize: '2.8rem',
               cursor: 'pointer',
-              filter: activeFlower === 'sakura' ? 'drop-shadow(0 0 18px #ff77bc)' : 'drop-shadow(0 0 4px rgba(0,0,0,0.5))',
+              filter: activeFlower === 'sakura' ? 'drop-shadow(0 0 18px #ff9ed8)' : 'drop-shadow(0 0 4px rgba(0,0,0,0.5))',
               transition: 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease',
             }}
           >
@@ -1104,7 +1172,7 @@ export default function MainBirthdayPage() {
               top: '8px',
               fontSize: '2.4rem',
               cursor: 'pointer',
-              filter: activeFlower === 'sunflower' ? 'drop-shadow(0 0 16px #ffd700)' : 'drop-shadow(0 0 4px rgba(0,0,0,0.5))',
+              filter: activeFlower === 'sunflower' ? 'drop-shadow(0 0 16px #ffb3e0)' : 'drop-shadow(0 0 4px rgba(0,0,0,0.5))',
               transform: activeFlower === 'sunflower' ? 'scale(1.25)' : 'scale(1)',
               transition: 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease',
             }}
@@ -1121,7 +1189,7 @@ export default function MainBirthdayPage() {
               top: '32px',
               fontSize: '2.4rem',
               cursor: 'pointer',
-              filter: activeFlower === 'daisy' ? 'drop-shadow(0 0 16px #ffffff)' : 'drop-shadow(0 0 4px rgba(0,0,0,0.5))',
+              filter: activeFlower === 'daisy' ? 'drop-shadow(0 0 16px #ffc0eb)' : 'drop-shadow(0 0 4px rgba(0,0,0,0.5))',
               transform: activeFlower === 'daisy' ? 'scale(1.25)' : 'scale(1)',
               transition: 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease',
             }}
@@ -1151,7 +1219,7 @@ export default function MainBirthdayPage() {
                   background: isSelected
                     ? `linear-gradient(135deg, ${item.color}44 0%, ${item.color}22 100%)`
                     : 'rgba(255, 255, 255, 0.05)',
-                  border: isSelected ? `1.5px solid ${item.color}` : '1px solid rgba(255, 105, 180, 0.2)',
+                  border: isSelected ? `1.5px solid ${item.color}` : '1px solid rgba(255, 105, 180, 0.25)',
                   color: '#fff',
                   padding: '8px 14px',
                   borderRadius: '20px',
@@ -1177,7 +1245,7 @@ export default function MainBirthdayPage() {
           className="compliment-toast-box"
           style={{
             padding: '16px',
-            background: 'linear-gradient(135deg, rgba(255,42,141,0.2) 0%, rgba(35,10,32,0.85) 100%)',
+            background: 'linear-gradient(135deg, rgba(255,105,180,0.2) 0%, rgba(40,10,30,0.85) 100%)',
             border: `1.5px solid ${flowerCompliments[activeFlower].color}`,
             borderRadius: '20px',
             boxShadow: `0 0 20px ${flowerCompliments[activeFlower].color}44`,
@@ -1202,7 +1270,7 @@ export default function MainBirthdayPage() {
 
       {/* SECTION 4: POLAROID PHOTO GALLERY */}
       <div style={{ textAlign: 'center', marginBottom: '36px' }}>
-        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#ff77bc', fontWeight: '600', marginBottom: '4px' }}>
+        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#38bdf8', fontWeight: '600', marginBottom: '4px' }}>
           — A COLLECTION OF MEMORIES —
         </p>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '4px' }}>
@@ -1231,7 +1299,7 @@ export default function MainBirthdayPage() {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'scale(1.04) rotate(0deg)';
-                e.currentTarget.style.boxShadow = '0 15px 35px rgba(255, 42, 141, 0.4)';
+                e.currentTarget.style.boxShadow = '0 15px 35px rgba(0, 210, 255, 0.4)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = `rotate(${item.rotation})`;
@@ -1260,17 +1328,17 @@ export default function MainBirthdayPage() {
       {/* SECTION 5: SPECIAL PLAYLIST (3 TRACKS SELECTOR) */}
       <div
         style={{
-          background: 'rgba(35, 10, 32, 0.75)',
+          background: 'rgba(10, 30, 63, 0.75)',
           backdropFilter: 'blur(16px)',
           borderRadius: '24px',
-          border: '1.5px solid rgba(255, 105, 180, 0.35)',
+          border: '1.5px solid rgba(96, 165, 250, 0.35)',
           padding: '22px 16px',
           textAlign: 'center',
           boxShadow: '0 12px 35px rgba(0,0,0,0.6)',
           marginBottom: '36px',
         }}
       >
-        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#ff77bc', fontWeight: '600', marginBottom: '4px' }}>
+        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#38bdf8', fontWeight: '600', marginBottom: '4px' }}>
           — OUR SONGS —
         </p>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.45rem', marginBottom: '16px' }}>
@@ -1293,11 +1361,11 @@ export default function MainBirthdayPage() {
               height: '100%',
               borderRadius: '50%',
               background: 'radial-gradient(circle, #333 15%, #111 20%, #222 35%, #050505 60%)',
-              border: '3px solid rgba(255, 105, 180, 0.5)',
+              border: '3px solid rgba(0, 210, 255, 0.5)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 0 25px rgba(255,42,141,0.4)',
+              boxShadow: '0 0 25px rgba(0,210,255,0.4)',
             }}
           >
             <div
@@ -1305,7 +1373,7 @@ export default function MainBirthdayPage() {
                 width: '44px',
                 height: '44px',
                 borderRadius: '50%',
-                background: 'linear-gradient(135deg, #ff2a8d 0%, #ffd700 100%)',
+                background: 'linear-gradient(135deg, #00d2ff 0%, #38bdf8 100%)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -1339,7 +1407,7 @@ export default function MainBirthdayPage() {
             style={{
               width: `${audioProgress}%`,
               height: '100%',
-              background: 'linear-gradient(90deg, #ff2a8d, #ffd700)',
+              background: 'linear-gradient(90deg, #00d2ff, #38bdf8)',
               transition: 'width 0.2s linear',
             }}
           />
@@ -1357,13 +1425,13 @@ export default function MainBirthdayPage() {
               width: '52px',
               height: '52px',
               borderRadius: '50%',
-              background: 'linear-gradient(135deg, #ff2a8d 0%, #e0115f 100%)',
+              background: 'linear-gradient(135deg, #00d2ff 0%, #0066ff 100%)',
               border: 'none',
               color: '#fff',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 0 20px #ff2a8d',
+              boxShadow: '0 0 20px #00d2ff',
               cursor: 'pointer',
             }}
           >
@@ -1377,7 +1445,7 @@ export default function MainBirthdayPage() {
 
         {/* 3 Interactive Playlist Song List Cards */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', textAlign: 'left' }}>
-          <p style={{ fontSize: '0.78rem', color: '#ff77bc', fontWeight: '600', marginBottom: '2px', textAlign: 'center' }}>
+          <p style={{ fontSize: '0.78rem', color: '#38bdf8', fontWeight: '600', marginBottom: '2px', textAlign: 'center' }}>
             📜 Select Song from Playlist (3 Songs):
           </p>
           {playlist.map((song, index) => {
@@ -1393,14 +1461,14 @@ export default function MainBirthdayPage() {
                   padding: '12px 14px',
                   borderRadius: '16px',
                   background: isSelected
-                    ? 'linear-gradient(135deg, rgba(255,42,141,0.3) 0%, rgba(224,17,95,0.15) 100%)'
+                    ? 'linear-gradient(135deg, rgba(0,210,255,0.3) 0%, rgba(0,102,255,0.15) 100%)'
                     : 'rgba(255, 255, 255, 0.04)',
                   border: isSelected
                     ? '1.5px solid var(--neon-pink)'
-                    : '1px solid rgba(255, 105, 180, 0.15)',
+                    : '1px solid rgba(96, 165, 250, 0.15)',
                   cursor: 'pointer',
                   transition: 'all 0.2s ease',
-                  boxShadow: isSelected ? '0 0 15px rgba(255,42,141,0.25)' : 'none',
+                  boxShadow: isSelected ? '0 0 15px rgba(0,210,255,0.25)' : 'none',
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -1409,7 +1477,7 @@ export default function MainBirthdayPage() {
                       width: '32px',
                       height: '32px',
                       borderRadius: '50%',
-                      background: isSelected ? '#ff2a8d' : 'rgba(255,255,255,0.1)',
+                      background: isSelected ? '#00d2ff' : 'rgba(255,255,255,0.1)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -1421,7 +1489,7 @@ export default function MainBirthdayPage() {
                     {isSelected && isPlaying ? <Music size={14} className="animate-spin" /> : index + 1}
                   </div>
                   <div>
-                    <p style={{ fontSize: '0.9rem', fontWeight: '600', color: isSelected ? '#ffffff' : '#ffe0f0' }}>
+                    <p style={{ fontSize: '0.9rem', fontWeight: '600', color: isSelected ? '#ffffff' : '#e0f2fe' }}>
                       {song.title}
                     </p>
                     <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
@@ -1441,10 +1509,10 @@ export default function MainBirthdayPage() {
       {/* SECTION 6: JAR OF NOTES */}
       <div
         style={{
-          background: 'rgba(35, 10, 32, 0.65)',
+          background: 'rgba(10, 30, 63, 0.65)',
           backdropFilter: 'blur(16px)',
           borderRadius: '24px',
-          border: '1px solid rgba(255, 105, 180, 0.3)',
+          border: '1px solid rgba(96, 165, 250, 0.3)',
           padding: '20px 16px',
           textAlign: 'center',
           boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
@@ -1462,11 +1530,11 @@ export default function MainBirthdayPage() {
             right: '12px',
             width: '58px',
             height: 'auto',
-            filter: 'drop-shadow(0 0 10px #ff2a8d)',
+            filter: 'drop-shadow(0 0 10px #00d2ff)',
             pointerEvents: 'none',
           }}
         />
-        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#ff77bc', fontWeight: '600', marginBottom: '4px' }}>
+        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#38bdf8', fontWeight: '600', marginBottom: '4px' }}>
           — FROM MY HEART TO YOURS —
         </p>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.35rem', marginBottom: '4px' }}>
@@ -1483,7 +1551,7 @@ export default function MainBirthdayPage() {
         <button
           onClick={handleShakeJar}
           style={{
-            background: 'linear-gradient(135deg, #ff2a8d 0%, #e0115f 100%)',
+            background: 'linear-gradient(135deg, #00d2ff 0%, #0066ff 100%)',
             color: '#fff',
             border: 'none',
             padding: '10px 22px',
@@ -1491,7 +1559,7 @@ export default function MainBirthdayPage() {
             fontSize: '0.88rem',
             fontWeight: '600',
             cursor: 'pointer',
-            boxShadow: '0 0 15px rgba(255,42,141,0.4)',
+            boxShadow: '0 0 15px rgba(0,210,255,0.4)',
           }}
         >
           Shake the Jar ✨
@@ -1503,13 +1571,13 @@ export default function MainBirthdayPage() {
             style={{
               marginTop: '22px',
               padding: '20px 18px 18px',
-              background: 'linear-gradient(145deg, #fffdfa 0%, #fff6ea 100%)',
-              color: '#2b1810',
+              background: 'linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%)',
+              color: '#0f172a',
               borderRadius: '20px',
-              border: '2.5px solid #ffd700',
+              border: '2.5px solid #38bdf8',
               fontSize: '0.92rem',
               fontWeight: '600',
-              boxShadow: '0 12px 30px rgba(0,0,0,0.6), 0 0 25px rgba(255, 215, 0, 0.35)',
+              boxShadow: '0 12px 30px rgba(0,0,0,0.6), 0 0 25px rgba(0, 210, 255, 0.35)',
               lineHeight: '1.55',
               position: 'relative',
               textAlign: 'center',
@@ -1522,7 +1590,7 @@ export default function MainBirthdayPage() {
                 top: '-11px',
                 left: '50%',
                 transform: 'translateX(-50%)',
-                background: 'linear-gradient(135deg, #ff2a8d 0%, #e0115f 100%)',
+                background: 'linear-gradient(135deg, #00d2ff 0%, #0066ff 100%)',
                 color: '#ffffff',
                 padding: '3px 16px',
                 borderRadius: '12px',
@@ -1532,7 +1600,7 @@ export default function MainBirthdayPage() {
                 boxShadow: '0 3px 8px rgba(0,0,0,0.35)',
               }}
             >
-              📜 SPECIAL NOTE FOR AGAA 💕
+              📜 SPECIAL NOTE FOR DEDEE 💗
             </div>
 
             <p style={{ marginTop: '6px', fontFamily: 'var(--font-body)' }}>
@@ -1553,7 +1621,7 @@ export default function MainBirthdayPage() {
             position: 'fixed',
             inset: 0,
             zIndex: 999,
-            background: 'rgba(10, 2, 12, 0.9)',
+            background: 'rgba(3, 12, 27, 0.9)',
             backdropFilter: 'blur(12px)',
             display: 'flex',
             alignItems: 'center',
@@ -1570,7 +1638,7 @@ export default function MainBirthdayPage() {
               maxWidth: '340px',
               width: '100%',
               textAlign: 'center',
-              boxShadow: '0 25px 60px rgba(0,0,0,0.9), 0 0 30px rgba(255, 42, 141, 0.4)',
+              boxShadow: '0 25px 60px rgba(0,0,0,0.9), 0 0 30px rgba(0, 210, 255, 0.4)',
               position: 'relative',
               animation: 'pulseGlow 3s infinite ease-in-out',
             }}
@@ -1584,14 +1652,14 @@ export default function MainBirthdayPage() {
                 width: '32px',
                 height: '32px',
                 borderRadius: '50%',
-                background: '#ff2a8d',
+                background: '#00d2ff',
                 color: '#fff',
                 border: '2px solid #fff',
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 0 10px #ff2a8d',
+                boxShadow: '0 0 10px #00d2ff',
               }}
             >
               <X size={18} />
@@ -1615,10 +1683,10 @@ export default function MainBirthdayPage() {
                 alignItems: 'center',
                 gap: '4px',
                 padding: '4px 12px',
-                background: 'rgba(255, 42, 141, 0.12)',
+                background: 'rgba(0, 210, 255, 0.12)',
                 borderRadius: '12px',
                 fontSize: '0.78rem',
-                color: '#ff2a8d',
+                color: '#00d2ff',
                 fontWeight: '600',
                 marginBottom: '8px',
               }}
@@ -1652,7 +1720,7 @@ export default function MainBirthdayPage() {
           <div
             onClick={(e) => e.stopPropagation()}
             style={{
-              background: 'linear-gradient(145deg, #3d0738 0%, #1c031b 100%)',
+              background: 'linear-gradient(145deg, #0a1e3f 0%, #041026 100%)',
               border: '1.5px solid var(--neon-pink)',
               padding: '24px',
               borderRadius: '24px',
@@ -1662,19 +1730,19 @@ export default function MainBirthdayPage() {
               boxShadow: '0 0 40px var(--neon-pink)',
             }}
           >
-            <div style={{ fontSize: '3rem', marginBottom: '10px' }}>🎂</div>
+            <div style={{ fontSize: '3rem', marginBottom: '10px' }}>💖</div>
             <h3 className="neon-text" style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '8px' }}>
-              Happy Birthday!
+              Happy 1st Anniversary!
             </h3>
-            <p style={{ fontSize: '0.9rem', color: '#ffe0f0', marginBottom: '20px' }}>
-              The most special Agaa 🌸
+            <p style={{ fontSize: '0.9rem', color: '#e0f2fe', marginBottom: '20px' }}>
+              The most special Dedee 💗
             </p>
 
             <button
               onClick={() => setShowCakeModal(false)}
               style={{
                 padding: '8px 24px',
-                background: 'rgba(255,42,141,0.2)',
+                background: 'rgba(0,210,255,0.2)',
                 border: '1px solid var(--neon-pink)',
                 color: '#fff',
                 borderRadius: '20px',

@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
 
 :root {
-  --bg-dark: #0f0514;
-  --bg-gradient: radial-gradient(circle at 50% 40%, #2e092b 0%, #15041a 60%, #09020b 100%);
-  --neon-pink: #ff2a8d;
-  --neon-pink-light: #ff69b4;
-  --neon-pink-glow: rgba(255, 42, 141, 0.6);
-  --neon-magenta: #e0115f;
-  --neon-purple: #b5179e;
-  --neon-gold: #ffd700;
-  --text-main: #fff0f6;
-  --text-muted: #d4a5c5;
+  --bg-dark: #030c1b;
+  --bg-gradient: radial-gradient(circle at 50% 40%, #0a1e3f 0%, #041026 60%, #010610 100%);
+  --neon-pink: #00d2ff;
+  --neon-pink-light: #60a5fa;
+  --neon-pink-glow: rgba(0, 210, 255, 0.6);
+  --neon-magenta: #0066ff;
+  --neon-purple: #2563eb;
+  --neon-gold: #38bdf8;
+  --text-main: #f0f9ff;
+  --text-muted: #93c5fd;
   
   --font-display: 'Playfair Display', 'Cinzel', serif;
   --font-body: 'Outfit', sans-serif;
@@ -25,7 +25,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  background-color: #050107;
+  background-color: #010610;
   color: var(--text-main);
   font-family: var(--font-body);
   overflow-x: hidden;
@@ -41,7 +41,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle at 50% 50%, #1a0518 0%, #050107 100%);
+  background: radial-gradient(circle at 50% 50%, #081935 0%, #010610 100%);
 }
 
 .mobile-app-shell {
@@ -55,7 +55,7 @@ html, body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 50px rgba(255, 42, 141, 0.25), 0 0 100px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 50px rgba(0, 210, 255, 0.25), 0 0 100px rgba(0, 0, 0, 0.9);
 }
 
 @media (min-width: 481px) {
@@ -63,8 +63,8 @@ html, body {
     height: 90vh;
     max-height: 880px;
     border-radius: 36px;
-    border: 3px solid rgba(255, 105, 180, 0.3);
-    outline: 1px solid rgba(255, 42, 141, 0.2);
+    border: 3px solid rgba(96, 165, 250, 0.35);
+    outline: 1px solid rgba(0, 210, 255, 0.25);
   }
 }
 
@@ -80,17 +80,17 @@ html, body {
 }
 
 .neon-text-subtle {
-  color: #ffe6f2;
+  color: #e0f2fe;
   text-shadow: 
     0 0 4px var(--neon-pink-glow),
     0 0 12px var(--neon-pink);
 }
 
 .neon-border {
-  border: 1px solid rgba(255, 105, 180, 0.4);
+  border: 1px solid rgba(96, 165, 250, 0.4);
   box-shadow: 
-    0 0 10px rgba(255, 42, 141, 0.3),
-    inset 0 0 15px rgba(255, 42, 141, 0.2);
+    0 0 10px rgba(0, 210, 255, 0.3),
+    inset 0 0 15px rgba(0, 210, 255, 0.2);
 }
 
 /* Floating Animations */

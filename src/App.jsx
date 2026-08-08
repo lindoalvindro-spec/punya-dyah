@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import LoadingScreen from './components/LoadingScreen';
 import PasscodeScreen from './components/PasscodeScreen';
+import FlowerLoadingScreen from './components/FlowerLoadingScreen';
 import GiftUnboxing from './components/GiftUnboxing';
 import MainBirthdayPage from './components/MainBirthdayPage';
 
 export default function App() {
-  const [currentStep, setCurrentStep] = useState('loading'); // 'loading' | 'passcode' | 'unboxing' | 'unlocked'
+  const [currentStep, setCurrentStep] = useState('loading'); // 'loading' | 'passcode' | 'flower-loading' | 'unboxing' | 'unlocked'
 
   return (
     <div className="mobile-app-shell">
@@ -14,7 +15,11 @@ export default function App() {
       )}
 
       {currentStep === 'passcode' && (
-        <PasscodeScreen onUnlock={() => setCurrentStep('unboxing')} />
+        <PasscodeScreen onUnlock={() => setCurrentStep('flower-loading')} />
+      )}
+
+      {currentStep === 'flower-loading' && (
+        <FlowerLoadingScreen onComplete={() => setCurrentStep('unboxing')} />
       )}
 
       {currentStep === 'unboxing' && (

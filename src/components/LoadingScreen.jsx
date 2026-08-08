@@ -125,7 +125,7 @@ export default function LoadingScreen({ onComplete }) {
         position: 'absolute',
         inset: 0,
         zIndex: 9999,
-        background: 'radial-gradient(circle at 50% 45%, #3d0738 0%, #1c031b 55%, #0d010e 100%)',
+        background: 'radial-gradient(circle at 50% 45%, #0a1e3f 0%, #041026 55%, #010610 100%)',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -136,7 +136,7 @@ export default function LoadingScreen({ onComplete }) {
         height: '100%',
       }}
     >
-      {/* Floating Background Neon Petals / Stars */}
+      {/* Floating Background Neon Particles */}
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden' }}>
         {particles.map((p) => (
           <div
@@ -153,7 +153,7 @@ export default function LoadingScreen({ onComplete }) {
               animationDelay: `${p.delay}s`,
             }}
           >
-            🌸
+            {p.id % 3 === 0 ? '💙' : p.id % 3 === 1 ? '✨' : '🔹'}
           </div>
         ))}
       </div>
@@ -177,7 +177,7 @@ export default function LoadingScreen({ onComplete }) {
             width: '140px',
             height: '140px',
             borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(255,42,141,0.55) 0%, rgba(224,17,95,0) 70%)',
+            background: 'radial-gradient(circle, rgba(0,210,255,0.55) 0%, rgba(0,102,255,0) 70%)',
             filter: 'blur(16px)',
             animation: 'pulseGlow 2.5s infinite ease-in-out',
           }}
@@ -191,8 +191,8 @@ export default function LoadingScreen({ onComplete }) {
             width: '170px',
             height: '170px',
             borderRadius: '50%',
-            border: '2px dashed rgba(255, 105, 180, 0.45)',
-            boxShadow: '0 0 16px rgba(255, 42, 141, 0.35)',
+            border: '2px dashed rgba(96, 165, 250, 0.45)',
+            boxShadow: '0 0 16px rgba(0, 210, 255, 0.35)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -207,7 +207,7 @@ export default function LoadingScreen({ onComplete }) {
                 transform: `rotate(${deg}deg) translate(85px) rotate(-${deg}deg)`,
               }}
             >
-              <Sparkles size={14} color="var(--neon-pink-light)" style={{ filter: 'drop-shadow(0 0 6px #ff2a8d)' }} />
+              <Sparkles size={14} color="var(--neon-pink-light)" style={{ filter: 'drop-shadow(0 0 6px #00d2ff)' }} />
             </div>
           ))}
         </div>
@@ -221,15 +221,15 @@ export default function LoadingScreen({ onComplete }) {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            filter: 'drop-shadow(0 0 12px #ff2a8d) drop-shadow(0 0 25px #e0115f)',
+            filter: 'drop-shadow(0 0 12px #00d2ff) drop-shadow(0 0 25px #0066ff)',
           }}
         >
           <svg viewBox="0 0 200 200" width="100%" height="100%">
             <defs>
               <linearGradient id="neonPetalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ff77bc" />
-                <stop offset="50%" stopColor="#ff2a8d" />
-                <stop offset="100%" stopColor="#c20058" />
+                <stop offset="0%" stopColor="#38bdf8" />
+                <stop offset="50%" stopColor="#00d2ff" />
+                <stop offset="100%" stopColor="#0052cc" />
               </linearGradient>
               <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
                 <feGaussianBlur stdDeviation="4" result="blur" />
@@ -255,9 +255,9 @@ export default function LoadingScreen({ onComplete }) {
             })}
 
             {/* Center Stamen */}
-            <circle cx="100" cy="100" r="22" fill="#ffffff" filter="drop-shadow(0 0 8px #ff2a8d)" />
-            <circle cx="100" cy="100" r="16" fill="#ff2a8d" />
-            <circle cx="100" cy="100" r="7" fill="#ffd700" />
+            <circle cx="100" cy="100" r="22" fill="#ffffff" filter="drop-shadow(0 0 8px #00d2ff)" />
+            <circle cx="100" cy="100" r="16" fill="#00d2ff" />
+            <circle cx="100" cy="100" r="7" fill="#38bdf8" />
           </svg>
         </div>
 
@@ -269,7 +269,7 @@ export default function LoadingScreen({ onComplete }) {
             fontWeight: '700',
             fontFamily: 'var(--font-body)',
             color: '#fff',
-            textShadow: '0 0 8px #ff2a8d, 0 0 16px #ff2a8d',
+            textShadow: '0 0 8px #00d2ff, 0 0 16px #0066ff',
             pointerEvents: 'none',
           }}
         >
@@ -309,7 +309,7 @@ export default function LoadingScreen({ onComplete }) {
             marginBottom: '20px',
           }}
         >
-          {isFinished ? 'Click the button below to start ✨' : 'Made with love & special memories 🌸'}
+          {isFinished ? 'Click the button below to start ✨' : 'Made with love & special memories 💙'}
         </p>
 
         {/* Neon Progress Bar Line */}
@@ -317,12 +317,12 @@ export default function LoadingScreen({ onComplete }) {
           style={{
             width: '220px',
             height: '5px',
-            background: 'rgba(255, 105, 180, 0.15)',
+            background: 'rgba(96, 165, 250, 0.15)',
             borderRadius: '10px',
             overflow: 'hidden',
             margin: '0 auto 24px',
-            boxShadow: '0 0 10px rgba(255, 42, 141, 0.2)',
-            border: '1px solid rgba(255, 105, 180, 0.3)',
+            boxShadow: '0 0 10px rgba(0, 210, 255, 0.2)',
+            border: '1px solid rgba(96, 165, 250, 0.3)',
           }}
         >
           <div
@@ -330,9 +330,9 @@ export default function LoadingScreen({ onComplete }) {
             style={{
               width: '0%',
               height: '100%',
-              background: 'linear-gradient(90deg, #ff2a8d, #ff77bc, #ffd700)',
+              background: 'linear-gradient(90deg, #00d2ff, #38bdf8, #0066ff)',
               borderRadius: '10px',
-              boxShadow: '0 0 10px #ff2a8d, 0 0 16px #ff77bc',
+              boxShadow: '0 0 10px #00d2ff, 0 0 16px #38bdf8',
               transition: 'width 0.1s linear',
             }}
           />
@@ -351,7 +351,7 @@ export default function LoadingScreen({ onComplete }) {
                 pointerEvents: 'none',
               }}
             >
-              <Sparkles size={20} color="#ffd700" style={{ filter: 'drop-shadow(0 0 8px #ffd700)' }} />
+              <Sparkles size={20} color="#38bdf8" style={{ filter: 'drop-shadow(0 0 8px #38bdf8)' }} />
             </div>
 
             <div
@@ -364,7 +364,7 @@ export default function LoadingScreen({ onComplete }) {
                 pointerEvents: 'none',
               }}
             >
-              <Sparkles size={18} color="#ff77bc" style={{ filter: 'drop-shadow(0 0 8px #ff2a8d)' }} />
+              <Sparkles size={18} color="#60a5fa" style={{ filter: 'drop-shadow(0 0 8px #00d2ff)' }} />
             </div>
 
             <div
@@ -386,7 +386,7 @@ export default function LoadingScreen({ onComplete }) {
               onClick={handleStart}
               style={{
                 position: 'relative',
-                background: 'linear-gradient(135deg, #ff2a8d 0%, #ff5ca0 40%, #e0115f 80%, #ffd700 100%)',
+                background: 'linear-gradient(135deg, #00d2ff 0%, #38bdf8 40%, #0066ff 80%, #00d2ff 100%)',
                 backgroundSize: '250% 100%',
                 color: '#fff',
                 border: '1.5px solid rgba(255, 255, 255, 0.7)',
@@ -399,7 +399,7 @@ export default function LoadingScreen({ onComplete }) {
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: '10px',
-                boxShadow: '0 0 25px var(--neon-pink), 0 0 50px rgba(255, 42, 141, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.4)',
+                boxShadow: '0 0 25px var(--neon-pink), 0 0 50px rgba(0, 210, 255, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.4)',
                 animation: 'shimmer 4s infinite linear',
                 transition: 'transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), boxShadow 0.25s ease',
                 width: '100%',
@@ -411,7 +411,7 @@ export default function LoadingScreen({ onComplete }) {
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'scale(1)';
-                e.currentTarget.style.boxShadow = '0 0 25px var(--neon-pink), 0 0 50px rgba(255, 42, 141, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.4)';
+                e.currentTarget.style.boxShadow = '0 0 25px var(--neon-pink), 0 0 50px rgba(0, 210, 255, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.4)';
               }}
             >
               {/* Shimmer Light Reflection Overlay */}
@@ -425,7 +425,7 @@ export default function LoadingScreen({ onComplete }) {
                 }}
               />
 
-              <Sparkles size={16} color="#ffd700" style={{ filter: 'drop-shadow(0 0 4px #ffd700)' }} />
+              <Sparkles size={16} color="#38bdf8" style={{ filter: 'drop-shadow(0 0 4px #38bdf8)' }} />
               <span style={{ textShadow: '0 0 8px rgba(0,0,0,0.5)', letterSpacing: '0.5px' }}>Open Surprise</span>
               <Heart size={16} fill="#fff" style={{ filter: 'drop-shadow(0 0 6px #fff)' }} />
             </button>
