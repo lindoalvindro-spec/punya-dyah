@@ -11,6 +11,17 @@ export default function GiftUnboxing({ onOpen }) {
   const textRef = useRef(null);
   const auraRef = useRef(null);
   const [isOpening, setIsOpening] = useState(false);
+  const [burstFlowers, setBurstFlowers] = useState([]);
+  const flowerRefs = useRef([]);
+
+  const FLOWER_ASSETS = [
+    '/bunga 1 no bg.png',
+    '/bunga 2 no bg.png',
+    '/bunga 3 no bg.png',
+    '/bunga no bg 2.png',
+    '/bunga bucket no bg.png',
+    '/bucket bunga 2 no bg.png',
+  ];
 
   // Background floating ambient sparkles
   const bgParticles = Array.from({ length: 16 }).map((_, i) => ({
@@ -52,12 +63,27 @@ export default function GiftUnboxing({ onOpen }) {
     if (isOpening) return;
     setIsOpening(true);
 
+    // Generate 28 Burst Flowers from Box Center
+    const flowers = Array.from({ length: 28 }).map((_, i) => {
+      const angle = (i / 28) * Math.PI * 2 + (Math.random() * 0.4 - 0.2);
+      const distance = 120 + Math.random() * 180;
+      return {
+        id: i,
+        src: FLOWER_ASSETS[i % FLOWER_ASSETS.length],
+        tx: Math.cos(angle) * distance,
+        ty: Math.sin(angle) * distance - 50,
+        rot: Math.random() * 360 - 180,
+        size: 55 + Math.random() * 50,
+      };
+    });
+    setBurstFlowers(flowers);
+
     // Launch Confetti Burst
     confetti({
       particleCount: 80,
       spread: 70,
       origin: { y: 0.55 },
-      colors: ['#00d2ff', '#38bdf8', '#0066ff', '#ffffff', '#60a5fa'],
+      colors: ['#00d2ff', '#38bdf8', '#0066ff', '#ffffff', '#60a5fa', '#ff69b4'],
     });
 
     // GSAP Unboxing Sequence
@@ -88,29 +114,41 @@ export default function GiftUnboxing({ onOpen }) {
     })
     // Pop Lid upward
     .to(giftLidRef.current, {
-      y: -60,
-      rotation: -25,
+      y: -70,
+      rotation: -30,
       opacity: 0,
       duration: 0.4,
       ease: 'power2.out',
     }, '-=0.1')
+    // Burst Flowers Outward Animation
+    .to('.burst-flower-img', {
+      scale: 1,
+      opacity: 1,
+      x: (i) => flowers[i]?.tx || 0,
+      y: (i) => flowers[i]?.ty || 0,
+      rotation: (i) => flowers[i]?.rot || 0,
+      duration: 0.8,
+      ease: 'back.out(1.5)',
+      stagger: 0.02,
+    }, '-=0.3')
     // Expand Glowing Light Aura Burst
     .to(auraRef.current, {
       scale: 6,
       opacity: 1,
       duration: 0.6,
       ease: 'power2.out',
-    }, '-=0.3')
+    }, '-=0.5')
     // Fade out whole container smoothly into main page
     .to(containerRef.current, {
       opacity: 0,
       scale: 1.1,
-      duration: 0.6,
+      duration: 0.7,
       ease: 'power2.inOut',
+      delay: 0.3,
       onComplete: () => {
         if (onOpen) onOpen();
       },
-    }, '+=0.1');
+    });
   };
 
   return (
@@ -236,6 +274,32 @@ export default function GiftUnboxing({ onOpen }) {
             animation: 'pulseGlow 2.2s infinite ease-in-out',
           }}
         />
+
+        {/* Bursting Flower Images on Click */}
+        {burstFlowers.map((f) => (
+          <img
+            key={f.id}
+            src={f.src}
+            className="burst-flower-img"
+            alt=""
+            draggable={false}
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              width: `${f.size}px`,
+              height: `${f.size}px`,
+              marginLeft: `-${f.size / 2}px`,
+              marginTop: `-${f.size / 2}px`,
+              objectFit: 'contain',
+              pointerEvents: 'none',
+              zIndex: 15,
+              opacity: 0,
+              transform: 'scale(0)',
+              filter: 'drop-shadow(0 0 12px rgba(0,210,255,0.6)) drop-shadow(0 0 20px rgba(255,105,180,0.4))',
+            }}
+          />
+        ))}
 
         {/* Floating Cute Sticker Ornament */}
         <img
