@@ -16,7 +16,7 @@ export default function PasscodeScreen({ onUnlock }) {
   const [errorMsg, setErrorMsg] = useState('');
   const [sparks, setSparks] = useState([]);
   
-  const CORRECT_PIN = '260626';
+  const CORRECT_PIN = '080825';
 
   const bgParticles = Array.from({ length: 14 }).map((_, i) => ({
     id: i,
@@ -47,11 +47,6 @@ export default function PasscodeScreen({ onUnlock }) {
       { opacity: 0, scale: 0.5, y: 15 },
       { opacity: 1, scale: 1, y: 0, stagger: 0.03, duration: 0.4 },
       '-=0.2'
-    )
-    .fromTo(hintRef.current,
-      { opacity: 0, y: 8 },
-      { opacity: 1, y: 0, duration: 0.4 },
-      '-=0.1'
     );
 
     gsap.to(iconRingRef.current, {
@@ -141,7 +136,7 @@ export default function PasscodeScreen({ onUnlock }) {
         }
       });
     } else {
-      setErrorMsg('Kode rahasia salah! Petunjuk: 260626 💙');
+      setErrorMsg('Kode rahasia salah! Silakan coba lagi 🤍');
       
       gsap.to(dotsRef.current, {
         x: [-12, 12, -8, 8, -4, 4, 0],
@@ -483,25 +478,7 @@ export default function PasscodeScreen({ onUnlock }) {
           </button>
         </div>
 
-        {/* Bottom Hint Note */}
-        <div
-          ref={hintRef}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '6px',
-            padding: '5px 12px',
-            background: 'rgba(0, 210, 255, 0.1)',
-            borderRadius: '16px',
-            border: '1px dashed rgba(96, 165, 250, 0.3)',
-            fontSize: '0.75rem',
-            color: '#e0f2fe',
-          }}
-        >
-          <Sparkles size={12} color="#38bdf8" />
-          <span>Hint: tanggal spesial (260626)</span>
-          <Heart size={11} fill="var(--neon-pink)" color="var(--neon-pink)" />
-        </div>
+
       </div>
     </div>
   );
