@@ -18,9 +18,6 @@ export default function GiftUnboxing({ onOpen }) {
     '/bunga 1 no bg.png',
     '/bunga 2 no bg.png',
     '/bunga 3 no bg.png',
-    '/bunga no bg 2.png',
-    '/bunga bucket no bg.png',
-    '/bucket bunga 2 no bg.png',
   ];
 
   // Background floating ambient sparkles
@@ -86,68 +83,71 @@ export default function GiftUnboxing({ onOpen }) {
       colors: ['#00d2ff', '#38bdf8', '#0066ff', '#ffffff', '#60a5fa', '#ff69b4'],
     });
 
-    // GSAP Unboxing Sequence
-    const tl = gsap.timeline();
+    // Wait one frame for React to render the burst flower elements
+    requestAnimationFrame(() => {
+      // GSAP Unboxing Sequence
+      const tl = gsap.timeline();
 
-    // Shake & pulse lid
-    tl.to(giftBoxRef.current, {
-      rotation: -10,
-      duration: 0.1,
-    })
-    .to(giftBoxRef.current, {
-      rotation: 10,
-      duration: 0.1,
-    })
-    .to(giftBoxRef.current, {
-      rotation: -8,
-      duration: 0.1,
-    })
-    .to(giftBoxRef.current, {
-      rotation: 8,
-      duration: 0.1,
-    })
-    .to(giftBoxRef.current, {
-      rotation: 0,
-      scale: 1.2,
-      duration: 0.25,
-      ease: 'back.out(2)',
-    })
-    // Pop Lid upward
-    .to(giftLidRef.current, {
-      y: -70,
-      rotation: -30,
-      opacity: 0,
-      duration: 0.4,
-      ease: 'power2.out',
-    }, '-=0.1')
-    // Burst Flowers Outward Animation
-    .to('.burst-flower-img', {
-      scale: 1,
-      opacity: 1,
-      x: (i) => flowers[i]?.tx || 0,
-      y: (i) => flowers[i]?.ty || 0,
-      rotation: (i) => flowers[i]?.rot || 0,
-      duration: 0.8,
-      ease: 'back.out(1.5)',
-      stagger: 0.02,
-    }, '-=0.3')
-    // Expand Glowing Light Aura Burst
-    .to(auraRef.current, {
-      scale: 6,
-      opacity: 1,
-      duration: 0.6,
-      ease: 'power2.out',
-    }, '-=0.5')
-    // Fade out whole container smoothly into main page
-    .to(containerRef.current, {
-      opacity: 0,
-      scale: 1.1,
-      duration: 0.7,
-      ease: 'power2.inOut',
-      delay: 0.3,
-      onComplete: () => {
-        if (onOpen) onOpen();
-      },
+      // Shake & pulse lid
+      tl.to(giftBoxRef.current, {
+        rotation: -10,
+        duration: 0.1,
+      })
+      .to(giftBoxRef.current, {
+        rotation: 10,
+        duration: 0.1,
+      })
+      .to(giftBoxRef.current, {
+        rotation: -8,
+        duration: 0.1,
+      })
+      .to(giftBoxRef.current, {
+        rotation: 8,
+        duration: 0.1,
+      })
+      .to(giftBoxRef.current, {
+        rotation: 0,
+        scale: 1.2,
+        duration: 0.25,
+        ease: 'back.out(2)',
+      })
+      // Pop Lid upward
+      .to(giftLidRef.current, {
+        y: -70,
+        rotation: -30,
+        opacity: 0,
+        duration: 0.4,
+        ease: 'power2.out',
+      }, '-=0.1')
+      // Burst Flowers Outward Animation
+      .to('.burst-flower-img', {
+        scale: 1,
+        opacity: 1,
+        x: (i) => flowers[i]?.tx || 0,
+        y: (i) => flowers[i]?.ty || 0,
+        rotation: (i) => flowers[i]?.rot || 0,
+        duration: 0.8,
+        ease: 'back.out(1.5)',
+        stagger: 0.02,
+      }, '-=0.3')
+      // Expand Glowing Light Aura Burst
+      .to(auraRef.current, {
+        scale: 6,
+        opacity: 1,
+        duration: 0.6,
+        ease: 'power2.out',
+      }, '-=0.5')
+      // Fade out whole container smoothly into main page
+      .to(containerRef.current, {
+        opacity: 0,
+        scale: 1.1,
+        duration: 0.7,
+        ease: 'power2.inOut',
+        delay: 0.4,
+        onComplete: () => {
+          if (onOpen) onOpen();
+        },
+      });
     });
   };
 

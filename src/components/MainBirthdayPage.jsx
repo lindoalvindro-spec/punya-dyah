@@ -445,8 +445,6 @@ export default function MainBirthdayPage() {
 
   const playlist = [
     { id: 1, title: 'Risk It All', artist: 'The Vamps', duration: '3:38', src: '/Risk It All_spotdown.org.mp3' },
-    { id: 2, title: 'Suara Hati Seorang Kekasih', artist: 'Melly Goeslaw', duration: '4:20', src: '/Suara Hati Seorang Kekasih_spotdown.org.mp3' },
-    { id: 3, title: 'Untukku', artist: 'Chrisye', duration: '4:18', src: '/Untukku_spotdown.org.mp3' },
   ];
 
   // 2. Bouquet Flowers Compliment Messages State
