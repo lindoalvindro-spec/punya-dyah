@@ -385,6 +385,76 @@ function FarewellSection({ onOpenCake }) {
   );
 }
 
+/* ====== PERSONAL MESSAGE CARD SUB-COMPONENT ====== */
+function PersonalMessageCard() {
+  const cardRef = useRef(null);
+
+  return (
+    <div
+      ref={cardRef}
+      style={{
+        background: 'linear-gradient(165deg, rgba(10, 30, 63, 0.85) 0%, rgba(4, 16, 38, 0.92) 100%)',
+        borderRadius: '28px',
+        border: '1.5px solid rgba(96, 165, 250, 0.4)',
+        padding: '26px 20px',
+        textAlign: 'center',
+        position: 'relative',
+        boxShadow: '0 18px 40px rgba(0,0,0,0.7), inset 0 0 20px rgba(0, 210, 255, 0.1)',
+        marginBottom: '36px',
+        overflow: 'hidden',
+      }}
+    >
+      {/* Decorative Glow */}
+      <div
+        style={{
+          position: 'absolute',
+          top: '-30px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          width: '180px',
+          height: '180px',
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(0, 210, 255, 0.2) 0%, transparent 70%)',
+          filter: 'blur(20px)',
+          pointerEvents: 'none',
+        }}
+      />
+
+      <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#38bdf8', fontWeight: '600', marginBottom: '6px' }}>
+        — PERSONAL MESSAGE —
+      </p>
+      
+      <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.45rem', color: '#ffffff', marginBottom: '16px' }}>
+        A Heartfelt Note For You 🤍
+      </h3>
+
+      <div
+        style={{
+          padding: '20px 18px',
+          background: 'rgba(255, 255, 255, 0.05)',
+          borderRadius: '20px',
+          border: '1px solid rgba(96, 165, 250, 0.25)',
+          boxShadow: 'inset 0 0 15px rgba(0, 210, 255, 0.08)',
+        }}
+      >
+        <p
+          style={{
+            fontSize: '0.94rem',
+            lineHeight: '1.75',
+            color: '#e0f2fe',
+            fontStyle: 'italic',
+            fontWeight: '400',
+            margin: 0,
+            fontFamily: 'var(--font-body)',
+          }}
+        >
+          "Aku selalu menghargai setiap effort dan hal kecil yang kamu lakukan buat aku. Dan waktu kamu bilang kata-kataku pernah membuatmu mulai menjaga sholat lagi, jujur aku terharu banget. Semoga kehadiranku selalu membawa hal baik buat kamu. 🤍"
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default function MainBirthdayPage() {
   const containerRef = useRef(null);
   const heroRef = useRef(null);
@@ -395,7 +465,7 @@ export default function MainBirthdayPage() {
   const dateRef = useRef(null);
   
   // Typewriter effect state
-  const fullRomanticText = "The world is so much brighter with you in it 💕";
+  const fullRomanticText = "Scroll pelan-pelan yaa, aku punya sedikit sesuatu buat kamu 🥹🤍";
   const [typedText, setTypedText] = useState('');
   const [isTypingDone, setIsTypingDone] = useState(false);
 
@@ -861,19 +931,20 @@ export default function MainBirthdayPage() {
             display: 'inline-flex',
             alignItems: 'center',
             gap: '8px',
-            fontSize: '0.88rem',
+            fontSize: '0.82rem',
             color: '#7dd3fc',
-            marginBottom: '24px',
-            letterSpacing: '1.5px',
+            marginBottom: '20px',
+            letterSpacing: '0.5px',
             textShadow: '0 0 8px rgba(0, 210, 255, 0.6)',
+            padding: '0 8px',
           }}
         >
-          <span>💙</span>
-          <span style={{ fontFamily: 'var(--font-body)', fontWeight: '500' }}>13 AGUSTUS • 20TH BIRTHDAY</span>
-          <span>💙</span>
+          <span>🤍</span>
+          <span style={{ fontFamily: 'var(--font-body)', fontWeight: '500' }}>Untuk seseorang yang selalu punya tempat spesial di hatiku.</span>
+          <span>🤍</span>
         </div>
 
-        {/* Title: Happy 20th Birthday Joy */}
+        {/* Title: Happy Birthday, My Love 🤍 Joe Setioso */}
         <div
           style={{
             fontFamily: 'var(--font-display)',
@@ -886,19 +957,19 @@ export default function MainBirthdayPage() {
           <div
             ref={happyRef}
             style={{
-              fontSize: '3.4rem',
+              fontSize: '2.8rem',
               fontWeight: '600',
               color: '#ffffff',
               letterSpacing: '0.5px',
               textShadow: '0 0 20px rgba(255, 255, 255, 0.6)',
             }}
           >
-            Happy
+            Happy Birthday,
           </div>
           <div
             ref={birthdayRef}
             style={{
-              fontSize: '3.4rem',
+              fontSize: '3.1rem',
               fontStyle: 'italic',
               fontWeight: '600',
               background: 'linear-gradient(135deg, #ff9ed8 0%, #ff69b4 50%, #cc1a6e 100%)',
@@ -909,20 +980,19 @@ export default function MainBirthdayPage() {
               letterSpacing: '0.5px',
             }}
           >
-            20th Birthday
+            My Love 🤍
           </div>
-          {/* Title: Happy 20th Birthday Joy */}
           <div
             ref={agaaRef}
             style={{
-              fontSize: '3.6rem',
+              fontSize: '3.4rem',
               fontWeight: '600',
               color: '#ffffff',
               letterSpacing: '1px',
               textShadow: '0 0 20px rgba(255, 255, 255, 0.6)',
             }}
           >
-            Joe setioso 💗
+            Joe Setioso
           </div>
         </div>
 
@@ -1017,7 +1087,7 @@ export default function MainBirthdayPage() {
           A Digital Bouquet
         </h3>
         <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '14px' }}>
-          Touch each flower to reveal its compliment 💗
+          Pesan kecil dariku untukmu 🤍
         </p>
 
         {/* Bouquet PNG Banner */}
@@ -1232,6 +1302,9 @@ export default function MainBirthdayPage() {
 
       {/* SECTION 3: A LETTER FOR YOU — TYPEWRITER EFFECT */}
       <LetterTypewriter />
+
+      {/* SECTION 3.5: PERSONAL MESSAGE CARD */}
+      <PersonalMessageCard />
 
       {/* SECTION 4: POLAROID PHOTO GALLERY */}
       <div style={{ textAlign: 'center', marginBottom: '36px' }}>
