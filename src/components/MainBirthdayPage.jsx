@@ -313,7 +313,7 @@ function FarewellSection({ onOpenCake }) {
           fontWeight: '400',
         }}
       >
-        Happy 20th Birthday, Joy 🤍. Semoga di umur 20 ini kamu selalu diberi kesehatan, kebahagiaan, dan kemudahan dalam segala urusan. I am grateful every single day to have you in my life 💗
+        Happy 20th Birthday, Joe setioso 🤍. Semoga di umur 20 ini kamu selalu diberi kesehatan, kebahagiaan, dan kemudahan dalam segala urusan. I am grateful every single day to have you in my life 💗
       </p>
 
       {/* Center Flower Bucket PNG Ornament */}
@@ -922,7 +922,7 @@ export default function MainBirthdayPage() {
               textShadow: '0 0 20px rgba(255, 255, 255, 0.6)',
             }}
           >
-            Joy 💗
+            Joe setioso 💗
           </div>
         </div>
 
@@ -1567,7 +1567,7 @@ export default function MainBirthdayPage() {
                 zIndex: 5,
               }}
             >
-              📜 SPECIAL NOTE FOR JOY 💙
+              📜 SPECIAL NOTE FOR JOE SETIOSO 💙
             </div>
 
             <p style={{ marginTop: '4px', fontFamily: 'var(--font-body)' }}>
@@ -1702,7 +1702,7 @@ export default function MainBirthdayPage() {
               Happy 20th Birthday!
             </h3>
             <p style={{ fontSize: '0.9rem', color: '#e0f2fe', marginBottom: '20px' }}>
-              The most special Joy 💗
+              The most special Joe setioso 💗
             </p>
 
             <button

@@ -164,7 +164,7 @@ export default function GinghamBirthdayCard() {
           Interactive Gift Card 🎁
         </h3>
         <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-          Tap the card to open Joy's birthday surprise ✨
+          Tap the card to open Joe setioso's birthday surprise ✨
         </p>
       </div>
 
@@ -224,7 +224,7 @@ export default function GinghamBirthdayCard() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
                 <Sparkles size={18} color="#b4001e" />
                 <span style={{ fontSize: '0.82rem', fontWeight: '700', letterSpacing: '1px', color: '#b4001e' }}>
-                  A SPECIAL MESSAGE FOR JOY
+                  A SPECIAL MESSAGE FOR JOE SETIOSO
                 </span>
               </div>
 
