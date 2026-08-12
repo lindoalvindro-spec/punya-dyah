@@ -449,31 +449,31 @@ export default function MainBirthdayPage() {
       name: "Mawar",
       icon: "🌹",
       color: "#ff69b4",
-      text: "You are the finest rose that ever bloomed — full of love, grace, and unmatched beauty. 🌹"
+      text: "Kalau aku harus memilih satu bunga untuk menggambarkan perasaanku, mungkin mawar—karena kamu punya tempat yang begitu istimewa di hatiku."
     },
     tulip: {
       name: "Tulip",
       icon: "🌷",
       color: "#ff85c8",
-      text: "Like a blooming tulip in spring, your gentleness brings fresh happiness and peace to my heart. 🌷"
+      text: "Seperti tulip yang sederhana tapi indah, aku suka hal-hal kecil tentang kamu yang mungkin nggak kamu sadari."
     },
     sakura: {
       name: "Sakura",
       icon: "🌸",
       color: "#ff9ed8",
-      text: "You are as beautiful as cherry blossoms — lovely and bringing joy wherever you go. 🌸"
+      text: "Semoga setiap langkahmu selalu membawa kebahagiaan dan hal-hal baik yang kamu pantas dapatkan."
     },
     sunflower: {
       name: "Sunflower",
       icon: "🌻",
       color: "#ffb3e0",
-      text: "Like a sunflower, you always turn toward the light and share your warmth with everyone around you. 🌻"
+      text: "Semoga kamu selalu punya alasan untuk tersenyum dan tetap menjadi seseorang yang membawa kehangatan bagi orang-orang di sekitarmu."
     },
     daisy: {
       name: "Daisy",
       icon: "🌼",
       color: "#ffc0eb",
-      text: "Your innocence, purity, and bright smile light up even the darkest of my days. 🌼"
+      text: "Semoga kebahagiaan kecil selalu datang kepadamu, bahkan di hari-hari yang terasa berat."
     }
   };
 
@@ -534,14 +534,7 @@ export default function MainBirthdayPage() {
   const jarRef = useRef(null);
   const [selectedNote, setSelectedNote] = useState(null);
   const jarNotes = [
-    "You're like free Wi-Fi, I just never want to be away from you! 📶💖",
-    "You live in my mind 24/7 rent-free, even from miles away! 🏃💨💕",
-    "Did you know? Even sugar isn't as sweet as your smile when you say you miss me! 🍯✨",
-    "No matter how many miles apart, my love for you will never run out of battery! 🔋❤️",
-    "Every time I hear your voice, all my bad moods instantly vanish! 🎶🌸",
-    "If missing you was a competition, you'd win 1st place undisputed! 🏆🥰",
-    "Missing you is like needing to sneeze... completely impossible to hold back! 🤧💖",
-    "You're my best cure for stress; just hearing your 'hello' fixes everything! 💊😍"
+    "Entah kenapa, setiap kali dengar suara kamu atau ketemu kamu, rasanya capek dan bad mood aku bisa hilang begitu aja. Terima kasih sudah menjadi salah satu alasan aku banyak tersenyum. 💙"
   ];
 
   // 5. Final Birthday Cake Modal State
@@ -1574,7 +1567,7 @@ export default function MainBirthdayPage() {
                 zIndex: 5,
               }}
             >
-              📜 SPECIAL NOTE FOR JOY 💗
+              📜 SPECIAL NOTE FOR JOY 💙
             </div>
 
             <p style={{ marginTop: '4px', fontFamily: 'var(--font-body)' }}>
