@@ -6,6 +6,7 @@ import {
   Heart, Music, Sparkles, X, Play, Pause, SkipForward, SkipBack, 
   Calendar, MapPin, Smile, MessageCircle, Gift, Volume2, VolumeX, Cake, ChevronDown 
 } from 'lucide-react';
+import GinghamBirthdayCard from './GinghamBirthdayCard';
 
 /* ====== LETTER TYPEWRITER SUB-COMPONENT ====== */
 function LetterTypewriter() {
@@ -999,6 +1000,9 @@ export default function MainBirthdayPage() {
           <ChevronDown size={22} color="#38bdf8" style={{ filter: 'drop-shadow(0 0 8px #00d2ff)' }} />
         </div>
       </div>
+
+      {/* SECTION 1.5: 3D GSAP INTERACTIVE GINGHAM BIRTHDAY CARD */}
+      <GinghamBirthdayCard />
 
       {/* SECTION 2: A DIGITAL BOUQUET WITH PERFECTLY SPACED FLOWERS & STEMS */}
       <div
