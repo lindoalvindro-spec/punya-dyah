@@ -16,21 +16,15 @@ function LetterTypewriter() {
   const [displayedLines, setDisplayedLines] = useState([]);
 
   const letterLines = [
-    { text: "HAPPY ANNIVERSARY TO ONE YEAR SAYANGGG 🫶🏻🫶🏻🤍🤍🤍🤍🤍", style: "greeting" },
+    { text: "Happy birthday, sayang 🤍", style: "greeting" },
     { text: "", style: "spacer" },
-    { text: "aku beruntung banget bisa kenal kamu sejauh ini, yang tadinya aku cuma bisa liat dan suka kamu dengan diam waktu masa SD tapi ternyata kita saling suka tanpa mengungkapkan, dan kita di pisahkan waktu masa SMP karna beda sekolah.", style: "body" },
+    { text: "Semoga di umur kamu yang sekarang, kamu selalu diberi kesehatan, kebahagiaan, rezeki yang lancar, dan dimudahkan dalam segala urusan.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Awal aku jatuh cinta lagi ke dedee waktu kita lagi reuni SD untuk bukber puasa, aku jatuh suka karna aku masi sama memandang kamu dengan cara pakaian kamu yang sederhana tapi cantikk, cara berperilaku kamu, senyum kamu, cara berbicara kamu. Selesai kita makan bersama, aku mencoba buat ngajak kamu foto bareng yang awalnya aku mikir bakal ditolak karna kiranya kamu uda punya cowo, tapi ternyata kamu mau menerima tapi dengan 1syarat jangan dipost.", style: "body" },
+    { text: "Makasih ya sudah hadir di hidup aku, sudah selalu berusaha ada, nemenin aku, dan ngasih banyak hal kecil yang ternyata berarti banget buat aku. Aku mungkin belum bisa kasih kamu kado yang besar sekarang, tapi semoga ucapan kecil ini bisa jadi salah satu hal yang bikin kamu senyum hari ini. 🥹🤍", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Singkat cerita, kita bertemu lagi waktu pendaftaran SMA saat pembuatan akun. Lalu masuk ke masa dimana kita ternyata satu SMA dan sudah mulai pra MPLS, awal mpls dedee chat aku buat nanyain apa yang perlu dibikin karna mungkin belum ada teman. dedee chat aku dengan kata kata \"revan, sorry ganggu mau tanya itu maksudnya gimana yaa?\", disitu kita coba saling chat dan ternyata sama sama diterima dengan baik, dan aku berusaha buat ungkap perasaan dan diterima juga masih bareng sampai sekarang.", style: "body" },
+    { text: "Semoga kita bisa terus sama-sama, saling jaga, saling support, dan belajar jadi lebih baik satu sama lain.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "kita juga bisa menjadi orang yang takut kehilangan satu sama lain, kamu yg selalu sabar dengan sikap aku, kamu selalu ngertiin aku gimanapun keadaan nya, TIMAACIII DEDEEEE uda memberikan rasa nyaman buat kita🫂🫂, dedee pemenang dari semua hal yang datang dan dedee mampu bertahan sampe sejauh ini🫰🏻🤍🤍🤍💗💗💗", style: "body" },
-    { text: "", style: "spacer" },
-    { text: "kita berhasil menjaga hubungan ini sampe sejauh ini, itu karna rasa kepercayaan dan kesetiaan satu sama lain, walaupun ego kita tinggi tapi aku usahain aku bakal nurunin, dan aku harap kita terus bareng sampe selamanya, dedee kalo ada apa apa tolong bilang ke aku yahh jangan di sembunyiin, aku ndamau dedee pendem sendiri, aku ada disini dan akan selalu ada, aku selalu jadi rumah kedua yang nyaman setelah keluarga dedee, jangan takut ya kita hadapin semua bareng\"..", style: "body" },
-    { text: "", style: "spacer" },
-    { text: "dede jangan pergi yah, jangan berpindah hati, aku bangga bisa kenal dedee sampe detik ini juga, aku bangga punya dede. timmaacci dedeee buat waktu, tenaga, effort dede yang uda banyak dedee kasi untuk aku, kalo suatu saat dedee ngerasa bosen sama aku dedee bilang baik baik ya kita perbaikin pelan pelan oakii sayanggg? maaf yah dedee kalo aku masih sering marah ke dedee, aku marah karna aku pengin dedee ngga ngelakuin kesalahan lagi.", style: "body" },
-    { text: "", style: "spacer" },
-    { text: "sekali lagi HAPPY ANNIVERSARY SAYYYAANNGGGGGG🥳🥳🫶🏻🫶🏻🤍🤍🤍🤍🤍🤍🤍", style: "ps" },
+    { text: "Happy birthday, my love. I love you. 🤍", style: "ps" },
   ];
 
   // Trigger typewriter when scrolled into view
@@ -149,7 +143,7 @@ function LetterTypewriter() {
           }}
         >
           <span>💙</span>
-          <span>8 Agustus</span>
+          <span>13 Agustus</span>
           <span>💙</span>
         </div>
       </div>
@@ -318,7 +312,7 @@ function FarewellSection({ onOpenCake }) {
           fontWeight: '400',
         }}
       >
-        Happy 1st Anniversary, Dedee. May our days always be filled with love, happiness, and all the beautiful things we deserve. I am grateful every single day to have you in my life.💗
+        Happy 20th Birthday, Joy 🤍. Semoga di umur 20 ini kamu selalu diberi kesehatan, kebahagiaan, dan kemudahan dalam segala urusan. I am grateful every single day to have you in my life 💗
       </p>
 
       {/* Center Flower Bucket PNG Ornament */}
@@ -384,7 +378,7 @@ function FarewellSection({ onOpenCake }) {
           e.currentTarget.style.boxShadow = '0 0 25px var(--neon-pink), 0 0 50px rgba(0, 210, 255, 0.3)';
         }}
       >
-        <Sparkles size={18} /> Happy Anniversary Wishes! 💕
+        <Sparkles size={18} /> Happy Birthday Wishes! 💕
       </button>
     </div>
   );
@@ -444,7 +438,7 @@ export default function MainBirthdayPage() {
   const vinylRef = useRef(null);
 
   const playlist = [
-    { id: 1, title: 'Risk It All', artist: 'The Vamps', duration: '3:38', src: '/Risk It All_spotdown.org.mp3' },
+    { id: 1, title: 'Give Me Your Forever', artist: 'Zack Tabudlo', duration: '4:04', src: '/Give Me Your Forever_spotdown.org.mp3' },
   ];
 
   // 2. Bouquet Flowers Compliment Messages State
@@ -490,7 +484,7 @@ export default function MainBirthdayPage() {
       title: 'My Prettiest Girl 💖', 
       date: 'Special Moment', 
       location: 'Our Journey',
-      img: '/kanza 1.jpeg',
+      img: '/joy 1.jpeg',
       rotation: '-3deg'
     },
     { 
@@ -498,7 +492,7 @@ export default function MainBirthdayPage() {
       title: 'Sweetest Smile ✨', 
       date: 'Special Moment', 
       location: 'Our Journey',
-      img: '/kanza 2.jpeg',
+      img: '/joy 2.jpeg',
       rotation: '2.5deg'
     },
     { 
@@ -506,7 +500,7 @@ export default function MainBirthdayPage() {
       title: 'Precious Memories 🌸', 
       date: 'Special Moment', 
       location: 'Our Journey',
-      img: '/kanza 3.jpeg',
+      img: '/joy 3.jpeg',
       rotation: '-2deg'
     },
     { 
@@ -514,7 +508,7 @@ export default function MainBirthdayPage() {
       title: 'Favorite Moments 💕', 
       date: 'Special Moment', 
       location: 'Our Journey',
-      img: '/kanza 4.jpeg',
+      img: '/joy 4.jpeg',
       rotation: '3deg'
     },
     { 
@@ -522,40 +516,16 @@ export default function MainBirthdayPage() {
       title: 'Forever & Always 💫', 
       date: 'Special Moment', 
       location: 'Our Journey',
-      img: '/kanza 5.jpeg',
+      img: '/joy 5.jpeg',
       rotation: '-1.5deg'
     },
     { 
       id: 6, 
-      title: 'Cute Dedee 🌺', 
-      date: 'Special Moment', 
+      title: 'Happy 20th Birthday 🌷', 
+      date: '13 Agustus Special', 
       location: 'Our Journey',
-      img: '/kanza 6.jpeg',
+      img: '/joy 6.jpeg',
       rotation: '2deg'
-    },
-    { 
-      id: 7, 
-      title: 'Beautiful Story 💗', 
-      date: 'Special Moment', 
-      location: 'Our Journey',
-      img: '/kanza 7.jpeg',
-      rotation: '-3deg'
-    },
-    { 
-      id: 8, 
-      title: 'My Happiness 🌷', 
-      date: 'Special Moment', 
-      location: 'Our Journey',
-      img: '/kanza 8.jpeg',
-      rotation: '1.5deg'
-    },
-    { 
-      id: 9, 
-      title: 'One Year Together 🤍', 
-      date: 'Anniversary Special', 
-      location: 'Our Journey',
-      img: '/kanza 9.jpeg',
-      rotation: '-2.5deg'
     },
   ];
 
@@ -563,14 +533,14 @@ export default function MainBirthdayPage() {
   const jarRef = useRef(null);
   const [selectedNote, setSelectedNote] = useState(null);
   const jarNotes = [
-    "Kamu itu kayak Wi-Fi gratis, bikin aku gak mau jauh-jauh dari kamu! 📶💖",
-    "Walaupun LDR, bayangan kamu tiap hari bolak-balik di pikiran aku tanpa bayar sewa! 🏃💨💕",
-    "Kamu tau gak? Manisnya gula aja kalah sama senyuman kamu pas bilang kangen! 🍯✨",
-    "Biar jarak beribu kilo, rasa sayangku ke kamu gak bakal pernah lowbat! 🔋❤️",
-    "Tiap kali dengar suara kamu, semua badmood di dunia langsung hilang seketika! 🎶🌸",
-    "Kalau ada lomba bikin aku kangen, kamu juara 1 tanpa tandingan! 🏆🥰",
-    "Kangen kamu tuh kayak pengen bersin... gak bisa ditahan-tahan lagi! 🤧💖",
-    "Kamu itu obat pusing paling manjur, cuma dengar 'halo' aja langsung sembuh! 💊😍"
+    "You're like free Wi-Fi, I just never want to be away from you! 📶💖",
+    "You live in my mind 24/7 rent-free, even from miles away! 🏃💨💕",
+    "Did you know? Even sugar isn't as sweet as your smile when you say you miss me! 🍯✨",
+    "No matter how many miles apart, my love for you will never run out of battery! 🔋❤️",
+    "Every time I hear your voice, all my bad moods instantly vanish! 🎶🌸",
+    "If missing you was a competition, you'd win 1st place undisputed! 🏆🥰",
+    "Missing you is like needing to sneeze... completely impossible to hold back! 🤧💖",
+    "You're my best cure for stress; just hearing your 'hello' fixes everything! 💊😍"
   ];
 
   // 5. Final Birthday Cake Modal State
@@ -905,11 +875,11 @@ export default function MainBirthdayPage() {
           }}
         >
           <span>💙</span>
-          <span style={{ fontFamily: 'var(--font-body)', fontWeight: '500' }}>Your Special Day</span>
+          <span style={{ fontFamily: 'var(--font-body)', fontWeight: '500' }}>13 AGUSTUS • 20TH BIRTHDAY</span>
           <span>💙</span>
         </div>
 
-        {/* Title: Happy Birthday Agaa */}
+        {/* Title: Happy 20th Birthday Joy */}
         <div
           style={{
             fontFamily: 'var(--font-display)',
@@ -945,9 +915,9 @@ export default function MainBirthdayPage() {
               letterSpacing: '0.5px',
             }}
           >
-            Anniversary
+            20th Birthday
           </div>
-          {/* Title: Happy Anniversary Dedee */}
+          {/* Title: Happy 20th Birthday Joy */}
           <div
             ref={agaaRef}
             style={{
@@ -958,7 +928,7 @@ export default function MainBirthdayPage() {
               textShadow: '0 0 20px rgba(255, 255, 255, 0.6)',
             }}
           >
-            Dedee 💗
+            Joy 💗
           </div>
         </div>
 
@@ -1021,7 +991,7 @@ export default function MainBirthdayPage() {
             marginBottom: '28px',
           }}
         >
-          OUR 1ST ANNIVERSARY &nbsp; SPECIAL DAY 🤍
+          HAPPY 20TH BIRTHDAY &nbsp; 13 AGUSTUS 🤍
         </div>
 
         {/* Scroll Down Bounce Arrow */}
@@ -1444,7 +1414,7 @@ export default function MainBirthdayPage() {
         {/* 3 Interactive Playlist Song List Cards */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', textAlign: 'left' }}>
           <p style={{ fontSize: '0.78rem', color: '#38bdf8', fontWeight: '600', marginBottom: '2px', textAlign: 'center' }}>
-            📜 Select Song from Playlist (3 Songs):
+            📜 Select Song from Playlist:
           </p>
           {playlist.map((song, index) => {
             const isSelected = index === currentTrack;
@@ -1567,8 +1537,8 @@ export default function MainBirthdayPage() {
           <div
             className="note-popup"
             style={{
-              marginTop: '22px',
-              padding: '20px 18px 18px',
+              marginTop: '26px',
+              padding: '26px 16px 18px',
               background: 'linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%)',
               color: '#0f172a',
               borderRadius: '20px',
@@ -1585,23 +1555,25 @@ export default function MainBirthdayPage() {
             <div
               style={{
                 position: 'absolute',
-                top: '-11px',
+                top: '-14px',
                 left: '50%',
                 transform: 'translateX(-50%)',
                 background: 'linear-gradient(135deg, #00d2ff 0%, #0066ff 100%)',
                 color: '#ffffff',
-                padding: '3px 16px',
+                padding: '4px 14px',
                 borderRadius: '12px',
                 fontSize: '0.72rem',
-                letterSpacing: '1px',
+                letterSpacing: '0.8px',
                 fontWeight: '700',
-                boxShadow: '0 3px 8px rgba(0,0,0,0.35)',
+                boxShadow: '0 4px 10px rgba(0,0,0,0.35)',
+                whiteSpace: 'nowrap',
+                zIndex: 5,
               }}
             >
-              📜 SPECIAL NOTE FOR DEDEE 💗
+              📜 SPECIAL NOTE FOR JOY 💗
             </div>
 
-            <p style={{ marginTop: '6px', fontFamily: 'var(--font-body)' }}>
+            <p style={{ marginTop: '4px', fontFamily: 'var(--font-body)' }}>
               "{selectedNote}"
             </p>
           </div>
@@ -1730,10 +1702,10 @@ export default function MainBirthdayPage() {
           >
             <div style={{ fontSize: '3rem', marginBottom: '10px' }}>💖</div>
             <h3 className="neon-text" style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '8px' }}>
-              Happy 1st Anniversary!
+              Happy 20th Birthday!
             </h3>
             <p style={{ fontSize: '0.9rem', color: '#e0f2fe', marginBottom: '20px' }}>
-              The most special Dedee 💗
+              The most special Joy 💗
             </p>
 
             <button

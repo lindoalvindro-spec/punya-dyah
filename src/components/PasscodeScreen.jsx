@@ -16,7 +16,7 @@ export default function PasscodeScreen({ onUnlock }) {
   const [errorMsg, setErrorMsg] = useState('');
   const [sparks, setSparks] = useState([]);
   
-  const CORRECT_PIN = '080825';
+  const CORRECT_PIN = '1308';
 
   const bgParticles = Array.from({ length: 14 }).map((_, i) => ({
     id: i,
@@ -74,7 +74,7 @@ export default function PasscodeScreen({ onUnlock }) {
   const handleKeyPress = (e, num) => {
     spawnSparkleEffect(e);
 
-    if (pin.length < 6) {
+    if (pin.length < 4) {
       const newPin = pin + num;
       setPin(newPin);
       setErrorMsg('');
@@ -92,7 +92,7 @@ export default function PasscodeScreen({ onUnlock }) {
         );
       }
 
-      if (newPin.length === 6) {
+      if (newPin.length === 4) {
         verifyPin(newPin);
       }
     }
@@ -113,7 +113,7 @@ export default function PasscodeScreen({ onUnlock }) {
   };
 
   const verifyPin = (enteredPin) => {
-    if (enteredPin === CORRECT_PIN || enteredPin === '100600' || enteredPin === '123456') {
+    if (enteredPin === CORRECT_PIN || enteredPin === '1308' || enteredPin === '130826' || enteredPin === '1234') {
       const tl = gsap.timeline();
       
       tl.to(dotsRef.current, {
@@ -310,11 +310,11 @@ export default function PasscodeScreen({ onUnlock }) {
               marginTop: '4px',
             }}
           >
-            Clue: tanggal jadian 💗
+            Clue: tanggal & bulan ultah 💗
           </p>
         </div>
 
-        {/* Upgraded 6-PIN Dots Container */}
+        {/* Upgraded 4-PIN Dots Container */}
         <div
           ref={dotsRef}
           style={{
@@ -328,7 +328,7 @@ export default function PasscodeScreen({ onUnlock }) {
             boxShadow: 'inset 0 0 8px rgba(0,0,0,0.5), 0 0 12px rgba(0,210,255,0.15)',
           }}
         >
-          {Array.from({ length: 6 }).map((_, idx) => {
+          {Array.from({ length: 4 }).map((_, idx) => {
             const isFilled = idx < pin.length;
             return (
               <div
