@@ -136,7 +136,7 @@ export default function PasscodeScreen({ onUnlock }) {
         }
       });
     } else {
-      setErrorMsg('Kode rahasia salah! Silakan coba lagi 🤍');
+      setErrorMsg('Incorrect passcode. Please try again 🤍');
       
       gsap.to(dotsRef.current, {
         x: [-12, 12, -8, 8, -4, 4, 0],
@@ -289,7 +289,7 @@ export default function PasscodeScreen({ onUnlock }) {
               letterSpacing: '0.5px',
             }}
           >
-            For You, My Love
+            For You, Lucyna
           </h2>
           <p
             className="neon-text-subtle"
@@ -299,18 +299,18 @@ export default function PasscodeScreen({ onUnlock }) {
               opacity: 0.9,
             }}
           >
-            Enter our secret code
+            Enter our secret passcode
           </p>
           <p
             style={{
               fontSize: '0.72rem',
               color: '#38bdf8',
-              opacity: 0.75,
+              opacity: 0.8,
               fontStyle: 'italic',
               marginTop: '4px',
             }}
           >
-            Clue: tanggal & bulan ultah 💗
+            Clue: 1308 🤍
           </p>
         </div>
 
