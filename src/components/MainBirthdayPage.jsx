@@ -563,8 +563,8 @@ export default function MainBirthdayPage() {
     },
     { 
       id: 2, 
-      title: 'Moje Kochanie 💕', 
-      date: 'Miles Apart, Hearts Close 💕', 
+      title: 'Forever in my heart 🌍', 
+      date: 'Miles Apart, But Our Hearts Close 💕', 
       location: '',
       img: '/lucyna 2.jpeg',
       rotation: '2.5deg'
