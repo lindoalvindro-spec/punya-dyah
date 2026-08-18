@@ -17,15 +17,15 @@ function LetterTypewriter() {
   const [displayedLines, setDisplayedLines] = useState([]);
 
   const letterLines = [
-    { text: "Happy Birthday, Lucyna 🤍", style: "greeting" },
+    { text: "Happy Birthday, Lucyna ❤️", style: "greeting" },
     { text: "", style: "spacer" },
-    { text: "On this special day, I want to wish you radiant health, genuine happiness, peace of mind, and the fulfillment of every ambition you pursue.", style: "body" },
+    { text: "On this special day, I want to wish you good health, genuine happiness, peace of mind, and the fulfilment of every dream and ambition you pursue.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Thank you for being such a wonderful and meaningful presence in my life. Your kindness, your laughter, and the genuine moments we share mean more to me than words can ever truly express. I may not be able to offer the world right now, but I hope this heartfelt message brings a gentle smile to your face today. 🤍", style: "body" },
+    { text: "Thank you for being such a wonderful and meaningful part of my life. Your kindness, your laughter, and all the little moments we share mean more to me than I could ever put into words. I may not be able to give you the world right now, but I hope these heartfelt words bring a little smile to your face today.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "May our journey continue to grow with warmth, mutual care, and inspiration, supporting each other to thrive every single day.", style: "body" },
+    { text: "May our journey continue to grow with warmth, care, and inspiration, always encouraging and supporting each other to become the best versions of ourselves.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Happy birthday, my dearest. Wishing you the most beautiful year ahead. 🤍", style: "ps" },
+    { text: "Happy birthday, my dearest. I hope the year ahead brings you everything beautiful that you deserve.", style: "ps" },
   ];
 
   // Trigger typewriter when scrolled into view
@@ -186,7 +186,7 @@ function LetterTypewriter() {
             }}
           >
             <span style={{ color: '#60a5fa', fontSize: '0.85rem' }}>With all my love,</span><br />
-            <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', color: '#38bdf8', textShadow: '0 0 10px rgba(56,189,248,0.5)' }}>Haikal 🤍</span>
+            <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', color: '#38bdf8', textShadow: '0 0 10px rgba(56,189,248,0.5)' }}>Haikal</span>
           </div>
         )}
       </div>
@@ -313,7 +313,8 @@ function FarewellSection({ onOpenCake }) {
           fontWeight: '400',
         }}
       >
-        Happy Birthday, Lucyna Majewska 🤍. May your year ahead be blessed with radiant happiness, good health, and success in everything you do. I am truly grateful to celebrate you today 💗
+        Happy Birthday, Lucyna Majewska ❤️<br /><br />
+        May your year ahead be filled with genuine happiness, good health, and success in everything you do. I’m truly grateful to be able to celebrate you today, even though we’re miles apart. Distance may keep us from celebrating side by side, but it could never make this day feel any less special to me
       </p>
 
       {/* Center Flower Bucket PNG Ornament */}
@@ -448,7 +449,7 @@ function PersonalMessageCard() {
             fontFamily: 'var(--font-body)',
           }}
         >
-          "I truly cherish your presence and all the thoughtful warmth you bring into my world. Your kindness, intelligence, and grace have a wonderful way of inspiring me every day. I hope my presence brings as much comfort and happiness to your life as yours brings to mine. 🤍"
+          "I truly cherish your presence and all the thoughtful warmth you bring into my world. Your kindness, intelligence, grace, and courage have such a wonderful way of inspiring me every day. I hope my presence brings as much comfort, happiness, and warmth to your life as yours brings to mine"
         </p>
       </div>
     </div>
@@ -943,7 +944,7 @@ export default function MainBirthdayPage() {
               letterSpacing: '0.5px',
             }}
           >
-            My Dearest 🤍
+            Moje Kochanie ❤️
           </div>
           <div
             ref={agaaRef}

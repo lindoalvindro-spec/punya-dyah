@@ -229,7 +229,7 @@ export default function GinghamBirthdayCard() {
               </div>
 
               <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#73000b', marginBottom: '8px' }}>
-                Happy Birthday, My Dearest Lucyna! 🎂✨
+                Happy Birthday, Moje Kochanie! 🎂✨
               </h4>
 
               <p style={{ fontSize: '0.85rem', lineHeight: '1.55', color: '#590008', fontWeight: '500' }}>

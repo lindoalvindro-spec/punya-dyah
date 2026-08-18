@@ -16,7 +16,8 @@ export default function PasscodeScreen({ onUnlock }) {
   const [errorMsg, setErrorMsg] = useState('');
   const [sparks, setSparks] = useState([]);
   
-  const CORRECT_PIN = '1308';
+  const CORRECT_PIN = '190826';
+  const PIN_LENGTH = 6;
 
   const bgParticles = Array.from({ length: 14 }).map((_, i) => ({
     id: i,
@@ -74,7 +75,7 @@ export default function PasscodeScreen({ onUnlock }) {
   const handleKeyPress = (e, num) => {
     spawnSparkleEffect(e);
 
-    if (pin.length < 4) {
+    if (pin.length < PIN_LENGTH) {
       const newPin = pin + num;
       setPin(newPin);
       setErrorMsg('');
@@ -92,7 +93,7 @@ export default function PasscodeScreen({ onUnlock }) {
         );
       }
 
-      if (newPin.length === 4) {
+      if (newPin.length === PIN_LENGTH) {
         verifyPin(newPin);
       }
     }
@@ -113,7 +114,7 @@ export default function PasscodeScreen({ onUnlock }) {
   };
 
   const verifyPin = (enteredPin) => {
-    if (enteredPin === CORRECT_PIN || enteredPin === '1308' || enteredPin === '130826' || enteredPin === '1234') {
+    if (enteredPin === CORRECT_PIN || enteredPin === '190826' || enteredPin === '1908' || enteredPin === '1308' || enteredPin === '1234') {
       const tl = gsap.timeline();
       
       tl.to(dotsRef.current, {
@@ -305,16 +306,16 @@ export default function PasscodeScreen({ onUnlock }) {
             style={{
               fontSize: '0.72rem',
               color: '#38bdf8',
-              opacity: 0.8,
+              opacity: 0.85,
               fontStyle: 'italic',
               marginTop: '4px',
             }}
           >
-            Clue: 1308 🤍
+            Clue: 190826 ❤️
           </p>
         </div>
 
-        {/* Upgraded 4-PIN Dots Container */}
+        {/* Upgraded 6-PIN Dots Container */}
         <div
           ref={dotsRef}
           style={{
@@ -328,7 +329,7 @@ export default function PasscodeScreen({ onUnlock }) {
             boxShadow: 'inset 0 0 8px rgba(0,0,0,0.5), 0 0 12px rgba(0,210,255,0.15)',
           }}
         >
-          {Array.from({ length: 4 }).map((_, idx) => {
+          {Array.from({ length: 6 }).map((_, idx) => {
             const isFilled = idx < pin.length;
             return (
               <div
