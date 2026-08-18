@@ -548,7 +548,7 @@ export default function MainBirthdayPage() {
     }
   };
 
-  // 3. Polaroid Lightbox Modal State - Single photo for Lucyna Majewska
+  // 3. Polaroid Lightbox Modal State - Photos for Lucyna Majewska
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const photoGallery = [
     { 
@@ -557,7 +557,15 @@ export default function MainBirthdayPage() {
       date: 'Special Celebration', 
       location: 'Cherished Moment',
       img: '/lucyna 1.jpeg',
-      rotation: '-1.5deg'
+      rotation: '-2deg'
+    },
+    { 
+      id: 2, 
+      title: 'Moje Kochanie 💕', 
+      date: 'Precious Memory', 
+      location: 'Forever In My Heart',
+      img: '/lucyna 2.jpeg',
+      rotation: '2.5deg'
     },
   ];
 
@@ -1273,13 +1281,13 @@ export default function MainBirthdayPage() {
       {/* SECTION 4: POLAROID PHOTO GALLERY */}
       <div style={{ textAlign: 'center', marginBottom: '36px' }}>
         <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#38bdf8', fontWeight: '600', marginBottom: '4px' }}>
-          — A SPECIAL MEMORY —
+          — SPECIAL MEMORIES —
         </p>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '4px' }}>
-          Photo Memory
+          Photo Memories
         </h3>
         <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '20px' }}>
-          Click to view full portrait 📸
+          Click any photo to view in detail 📸
         </p>
 
         {/* Stacked Tilted Polaroid Cards */}
