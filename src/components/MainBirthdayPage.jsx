@@ -510,7 +510,9 @@ export default function MainBirthdayPage() {
   const vinylRef = useRef(null);
 
   const playlist = [
-    { id: 1, title: 'Give Me Your Forever', artist: 'Zack Tabudlo', duration: '4:04', src: '/Give Me Your Forever_spotdown.org.mp3' },
+    { id: 1, title: 'Me Gustas Tu', artist: 'Manu Chao', duration: '3:58', src: '/Me Gustas Tu_spotdown.org.mp3' },
+    { id: 2, title: 'On Melancholy Hill', artist: 'Gorillaz', duration: '4:21', src: '/Gorillaz - On Melancholy Hill (Official Video).mp3' },
+    { id: 3, title: 'May This Be Love', artist: 'Jimi Hendrix', duration: '3:10', src: '/May This Be Love_spotdown.org.mp3' },
   ];
 
   // 2. Bouquet Flowers Compliment Messages State
