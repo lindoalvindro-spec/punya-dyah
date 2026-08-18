@@ -564,8 +564,8 @@ export default function MainBirthdayPage() {
     { 
       id: 2, 
       title: 'Moje Kochanie 💕', 
-      date: 'Precious Memory', 
-      location: 'Forever In My Heart',
+      date: 'Miles Apart, Hearts Close 💕', 
+      location: '',
       img: '/lucyna 2.jpeg',
       rotation: '2.5deg'
     },
@@ -1705,7 +1705,7 @@ export default function MainBirthdayPage() {
                 marginBottom: '8px',
               }}
             >
-              <Calendar size={12} /> {selectedPhoto.date} · {selectedPhoto.location}
+              <Calendar size={12} /> {selectedPhoto.location ? `${selectedPhoto.date} · ${selectedPhoto.location}` : selectedPhoto.date}
             </div>
 
             <h4 style={{ color: '#111111', fontSize: '1rem', fontFamily: 'var(--font-display)', lineHeight: '1.3' }}>
