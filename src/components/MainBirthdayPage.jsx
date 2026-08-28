@@ -17,15 +17,15 @@ function LetterTypewriter() {
   const [displayedLines, setDisplayedLines] = useState([]);
 
   const letterLines = [
-    { text: "Happy Birthday, Lucyna ❤️", style: "greeting" },
+    { text: "Hai Dyah 🤍", style: "greeting" },
     { text: "", style: "spacer" },
-    { text: "On this special day, I want to wish you good health, genuine happiness, peace of mind, and the fulfilment of every dream and ambition you pursue.", style: "body" },
+    { text: "Aku mau minta maaf yang sebesar-besarnya dari lubuk hatiku yang paling tulus.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Thank you for being such a wonderful and meaningful part of my life. Your kindness, your laughter, and all the little moments we share mean more to me than I could ever put into words. I may not be able to give you the world right now, but I hope these heartfelt words bring a little smile to your face today.", style: "body" },
+    { text: "Akhir-akhir ini aku sadar, aku sering banget keasyikan main, lupa waktu, dan tanpa sengaja bikin kamu merasa ditinggal atau nungguin kabar tanpa kepastian. Aku tahu rasanya dinomorsekiankan itu sama sekali nggak menyenangkan, dan aku minta maaf karena sempat kurang peka sama perasaanmu.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "May our journey continue to grow with warmth, care, and inspiration, always encouraging and supporting each other to become the best versions of ourselves.", style: "body" },
+    { text: "Kamu adalah orang yang sangat berharga dan berarti buat aku. Waktu bersamamu itu nggak tergantikan oleh kesibukan atau game apa pun. Ke depannya, aku janji bakal belajar lebih bijak membagi waktu, memprioritaskan komunikasi kita, dan nggak bikin kamu nunggu lama lagi.", style: "body" },
     { text: "", style: "spacer" },
-    { text: "Happy birthday, my dearest. I hope the year ahead brings you everything beautiful that you deserve.", style: "ps" },
+    { text: "Terima kasih banyak ya sudah selalu sabar dan mengerti aku. Semoga kamu berkenan memaafkan aku ya, Dyah... 🌸", style: "ps" },
   ];
 
   // Trigger typewriter when scrolled into view
@@ -93,9 +93,9 @@ function LetterTypewriter() {
   const getLineStyle = (style) => {
     switch (style) {
       case 'greeting':
-        return { fontWeight: '600', marginBottom: '4px', fontSize: '1.08rem', color: '#38bdf8', fontFamily: 'var(--font-display)' };
+        return { fontWeight: '600', marginBottom: '4px', fontSize: '1.08rem', color: '#f472b6', fontFamily: 'var(--font-display)' };
       case 'ps':
-        return { marginBottom: '0', fontStyle: 'italic', color: '#38bdf8', fontWeight: '500' };
+        return { marginBottom: '0', fontStyle: 'italic', color: '#ff77bc', fontWeight: '500' };
       case 'spacer':
         return { height: '10px' };
       default:
@@ -107,27 +107,27 @@ function LetterTypewriter() {
     <div
       ref={letterRef}
       style={{
-        background: 'linear-gradient(165deg, rgba(10, 30, 63, 0.85) 0%, rgba(4, 16, 38, 0.92) 100%)',
+        background: 'linear-gradient(165deg, rgba(46, 8, 33, 0.88) 0%, rgba(28, 5, 21, 0.94) 100%)',
         borderRadius: '28px',
-        border: '1.5px solid rgba(96, 165, 250, 0.35)',
+        border: '1.5px solid rgba(244, 114, 182, 0.35)',
         padding: '28px 20px 24px',
         position: 'relative',
-        boxShadow: '0 18px 40px rgba(0,0,0,0.7), inset 0 0 20px rgba(0, 210, 255, 0.1)',
+        boxShadow: '0 18px 40px rgba(0,0,0,0.7), inset 0 0 20px rgba(255, 42, 141, 0.1)',
         marginBottom: '36px',
       }}
     >
       {/* Floating Decorative Flowers */}
-      <div style={{ position: 'absolute', top: '12px', left: '16px', fontSize: '1.4rem', filter: 'drop-shadow(0 0 6px #00d2ff)' }}>💙</div>
-      <div style={{ position: 'absolute', top: '12px', right: '16px', fontSize: '1.4rem', filter: 'drop-shadow(0 0 6px #38bdf8)' }}>✨</div>
-      <div style={{ position: 'absolute', bottom: '16px', left: '16px', fontSize: '1.3rem', filter: 'drop-shadow(0 0 6px #60a5fa)' }}>🔹</div>
+      <div style={{ position: 'absolute', top: '12px', left: '16px', fontSize: '1.4rem', filter: 'drop-shadow(0 0 6px #ff2a8d)' }}>🌸</div>
+      <div style={{ position: 'absolute', top: '12px', right: '16px', fontSize: '1.4rem', filter: 'drop-shadow(0 0 6px #f472b6)' }}>✨</div>
+      <div style={{ position: 'absolute', bottom: '16px', left: '16px', fontSize: '1.3rem', filter: 'drop-shadow(0 0 6px #db2777)' }}>💕</div>
 
       {/* Section Header */}
       <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#38bdf8', fontWeight: '600', marginBottom: '4px' }}>
-          — FROM MY HEART —
+        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#f472b6', fontWeight: '600', marginBottom: '4px' }}>
+          — DARI HATI YANG TERDALAM —
         </p>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.55rem', marginBottom: '4px' }}>
-          A Letter For You
+          Surat Untuk Dyah
         </h3>
         <div
           style={{
@@ -135,22 +135,22 @@ function LetterTypewriter() {
             alignItems: 'center',
             gap: '6px',
             padding: '4px 14px',
-            background: 'rgba(0, 210, 255, 0.15)',
-            border: '1px solid rgba(96, 165, 250, 0.3)',
+            background: 'rgba(255, 42, 141, 0.15)',
+            border: '1px solid rgba(244, 114, 182, 0.3)',
             borderRadius: '16px',
             fontSize: '0.78rem',
-            color: '#e0f2fe',
+            color: '#ffe4e6',
             marginTop: '4px',
           }}
         >
-          <span>💙</span>
-          <span>A Special Note</span>
-          <span>💙</span>
+          <span>🌸</span>
+          <span>A Sincere Apology</span>
+          <span>🌸</span>
         </div>
       </div>
 
       {/* Typewriter Letter Content */}
-      <div style={{ fontSize: '0.92rem', lineHeight: '1.65', color: '#e0f2fe', position: 'relative', zIndex: 2, minHeight: '200px' }}>
+      <div style={{ fontSize: '0.92rem', lineHeight: '1.65', color: '#ffe4e6', position: 'relative', zIndex: 2, minHeight: '200px' }}>
         {displayedLines.map((line, i) => (
           <div key={i} style={getLineStyle(line.style)}>
             {line.text}
@@ -161,10 +161,10 @@ function LetterTypewriter() {
                   display: 'inline-block',
                   width: '2px',
                   height: '14px',
-                  backgroundColor: '#00d2ff',
+                  backgroundColor: '#ff2a8d',
                   marginLeft: '3px',
                   verticalAlign: 'middle',
-                  boxShadow: '0 0 8px #00d2ff',
+                  boxShadow: '0 0 8px #ff2a8d',
                   animation: 'pulseGlow 0.6s infinite alternate',
                 }}
               />
@@ -179,14 +179,14 @@ function LetterTypewriter() {
               marginTop: '20px',
               textAlign: 'right',
               fontWeight: '600',
-              color: '#38bdf8',
+              color: '#f472b6',
               fontSize: '0.95rem',
               opacity: 0,
               animation: 'fadeInUp 0.8s forwards 0.3s',
             }}
           >
-            <span style={{ color: '#60a5fa', fontSize: '0.85rem' }}>With all my love,</span><br />
-            <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', color: '#38bdf8', textShadow: '0 0 10px rgba(56,189,248,0.5)' }}>Haikal</span>
+            <span style={{ color: '#f9a8d4', fontSize: '0.85rem' }}>Dari lubuk hatiku yang terdalam,</span><br />
+            <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', color: '#ff77bc', textShadow: '0 0 10px rgba(255,119,188,0.5)' }}>Untukmu Selalu 🤍</span>
           </div>
         )}
       </div>
@@ -256,22 +256,22 @@ function FarewellSection({ onOpenCake }) {
       }}
     >
       {/* Ambient floating petals */}
-      <div style={{ position: 'absolute', top: '8%', left: '10%', fontSize: '1rem', opacity: 0.5, filter: 'drop-shadow(0 0 6px #00d2ff)' }}>💙</div>
-      <div style={{ position: 'absolute', top: '5%', right: '12%', fontSize: '0.9rem', opacity: 0.4, filter: 'drop-shadow(0 0 6px #38bdf8)' }}>✨</div>
-      <div style={{ position: 'absolute', bottom: '20%', left: '6%', fontSize: '0.8rem', opacity: 0.35, filter: 'drop-shadow(0 0 6px #00d2ff)' }}>🔹</div>
-      <div style={{ position: 'absolute', bottom: '15%', right: '8%', fontSize: '0.85rem', opacity: 0.4, filter: 'drop-shadow(0 0 6px #38bdf8)' }}>💙</div>
+      <div style={{ position: 'absolute', top: '8%', left: '10%', fontSize: '1rem', opacity: 0.5, filter: 'drop-shadow(0 0 6px #ff2a8d)' }}>🌸</div>
+      <div style={{ position: 'absolute', top: '5%', right: '12%', fontSize: '0.9rem', opacity: 0.4, filter: 'drop-shadow(0 0 6px #f472b6)' }}>✨</div>
+      <div style={{ position: 'absolute', bottom: '20%', left: '6%', fontSize: '0.8rem', opacity: 0.35, filter: 'drop-shadow(0 0 6px #ff2a8d)' }}>💕</div>
+      <div style={{ position: 'absolute', bottom: '15%', right: '8%', fontSize: '0.85rem', opacity: 0.4, filter: 'drop-shadow(0 0 6px #f472b6)' }}>🌸</div>
 
       {/* Eyebrow */}
       <p
         className="farewell-eyebrow"
         style={{
           fontSize: '0.85rem',
-          color: '#38bdf8',
+          color: '#f472b6',
           marginBottom: '18px',
           letterSpacing: '0.5px',
         }}
       >
-        💙 With all my heart 💙
+        🌸 Tulus Dari Hatiku 🌸
       </p>
 
       {/* Main Title — elegant serif with italic accent */}
@@ -279,42 +279,41 @@ function FarewellSection({ onOpenCake }) {
         className="farewell-title"
         style={{
           fontFamily: "'Playfair Display', 'Cinzel', serif",
-          fontSize: '2rem',
-          lineHeight: '1.25',
+          fontSize: '1.9rem',
+          lineHeight: '1.3',
           color: '#fff',
-          textShadow: '0 0 15px rgba(0, 210, 255, 0.5), 0 0 30px rgba(0, 210, 255, 0.3)',
+          textShadow: '0 0 15px rgba(255, 42, 141, 0.5), 0 0 30px rgba(255, 42, 141, 0.3)',
           marginBottom: '24px',
           fontWeight: '600',
         }}
       >
-        May your life<br />
+        Maafkan aku ya,<br />
         <span
           style={{
             fontStyle: 'italic',
-            color: '#38bdf8',
-            textShadow: '0 0 20px rgba(56, 189, 248, 0.6), 0 0 40px rgba(0, 210, 255, 0.4)',
+            color: '#f472b6',
+            textShadow: '0 0 20px rgba(244, 114, 182, 0.6), 0 0 40px rgba(255, 42, 141, 0.4)',
           }}
         >
-          always be filled
+          Dyah Sayang 🌸
         </span>
         <br />
-        with flowers
+        Let me make it up to you
       </h2>
 
-      {/* Birthday Message Paragraph */}
+      {/* Message Paragraph */}
       <p
         className="farewell-message"
         style={{
           fontSize: '0.88rem',
           lineHeight: '1.7',
-          color: 'rgba(224, 242, 254, 0.85)',
+          color: 'rgba(255, 241, 242, 0.9)',
           maxWidth: '320px',
           margin: '0 auto 24px',
           fontWeight: '400',
         }}
       >
-        Happy Birthday, Lucyna Majewska ❤️<br /><br />
-        May your year ahead be filled with genuine happiness, good health, and success in everything you do. I’m truly grateful to be able to celebrate you today, even though we’re miles apart. Distance may keep us from celebrating side by side, but it could never make this day feel any less special to me
+        Terima kasih banyak ya sudah membaca pesan ini sampai akhir. Aku benar-benar berharap kamu bisa memaafkan aku dan kita bisa kembali tersenyum bareng lagi seperti biasanya. Aku berjanji untuk lebih perhatian dan selalu memprioritaskanmu 🤍
       </p>
 
       {/* Center Flower Bucket PNG Ornament */}
@@ -332,7 +331,7 @@ function FarewellSection({ onOpenCake }) {
           style={{
             width: '85px',
             height: 'auto',
-            filter: 'drop-shadow(0 0 16px #00d2ff) drop-shadow(0 0 30px #38bdf8)',
+            filter: 'drop-shadow(0 0 16px #ff2a8d) drop-shadow(0 0 30px #f472b6)',
           }}
         />
       </div>
@@ -344,20 +343,20 @@ function FarewellSection({ onOpenCake }) {
           fontFamily: "'Playfair Display', 'Cinzel', serif",
           fontStyle: 'italic',
           fontSize: '0.92rem',
-          color: 'rgba(224, 242, 254, 0.7)',
+          color: 'rgba(255, 241, 242, 0.75)',
           letterSpacing: '0.3px',
           marginBottom: '28px',
         }}
       >
-        — With endless love & affection 💙 —
+        — With endless care & affection 💕 —
       </p>
 
-      {/* Happy Birthday Wish Button */}
+      {/* Sincere Apology Toast Button */}
       <button
         className="farewell-btn"
         onClick={onOpenCake}
         style={{
-          background: 'linear-gradient(135deg, #00d2ff 0%, #38bdf8 100%)',
+          background: 'linear-gradient(135deg, #ff2a8d 0%, #f472b6 100%)',
           color: '#fff',
           border: 'none',
           padding: '13px 30px',
@@ -365,7 +364,7 @@ function FarewellSection({ onOpenCake }) {
           fontSize: '0.95rem',
           fontWeight: '700',
           cursor: 'pointer',
-          boxShadow: '0 0 25px var(--neon-pink), 0 0 50px rgba(0, 210, 255, 0.3)',
+          boxShadow: '0 0 25px var(--neon-pink), 0 0 50px rgba(255, 42, 141, 0.3)',
           display: 'inline-flex',
           alignItems: 'center',
           gap: '8px',
@@ -377,10 +376,10 @@ function FarewellSection({ onOpenCake }) {
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.transform = 'scale(1)';
-          e.currentTarget.style.boxShadow = '0 0 25px var(--neon-pink), 0 0 50px rgba(0, 210, 255, 0.3)';
+          e.currentTarget.style.boxShadow = '0 0 25px var(--neon-pink), 0 0 50px rgba(255, 42, 141, 0.3)';
         }}
       >
-        <Sparkles size={18} /> Birthday Wishes & Toast 💕
+        <Sparkles size={18} /> Peluk & Maaf Tulus 💕
       </button>
     </div>
   );
@@ -394,13 +393,13 @@ function PersonalMessageCard() {
     <div
       ref={cardRef}
       style={{
-        background: 'linear-gradient(165deg, rgba(10, 30, 63, 0.85) 0%, rgba(4, 16, 38, 0.92) 100%)',
+        background: 'linear-gradient(165deg, rgba(46, 8, 33, 0.88) 0%, rgba(28, 5, 21, 0.94) 100%)',
         borderRadius: '28px',
-        border: '1.5px solid rgba(96, 165, 250, 0.4)',
+        border: '1.5px solid rgba(244, 114, 182, 0.4)',
         padding: '26px 20px',
         textAlign: 'center',
         position: 'relative',
-        boxShadow: '0 18px 40px rgba(0,0,0,0.7), inset 0 0 20px rgba(0, 210, 255, 0.1)',
+        boxShadow: '0 18px 40px rgba(0,0,0,0.7), inset 0 0 20px rgba(255, 42, 141, 0.1)',
         marginBottom: '36px',
         overflow: 'hidden',
       }}
@@ -415,18 +414,18 @@ function PersonalMessageCard() {
           width: '180px',
           height: '180px',
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(0, 210, 255, 0.2) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(255, 42, 141, 0.2) 0%, transparent 70%)',
           filter: 'blur(20px)',
           pointerEvents: 'none',
         }}
       />
 
-      <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#38bdf8', fontWeight: '600', marginBottom: '6px' }}>
+      <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#f472b6', fontWeight: '600', marginBottom: '6px' }}>
         — A PERSONAL NOTE —
       </p>
       
       <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.45rem', color: '#ffffff', marginBottom: '16px' }}>
-        A Heartfelt Note For You 🤍
+        Catatan Dari Lubuk Hatiku 🤍
       </h3>
 
       <div
@@ -434,22 +433,22 @@ function PersonalMessageCard() {
           padding: '20px 18px',
           background: 'rgba(255, 255, 255, 0.05)',
           borderRadius: '20px',
-          border: '1px solid rgba(96, 165, 250, 0.25)',
-          boxShadow: 'inset 0 0 15px rgba(0, 210, 255, 0.08)',
+          border: '1px solid rgba(244, 114, 182, 0.25)',
+          boxShadow: 'inset 0 0 15px rgba(255, 42, 141, 0.08)',
         }}
       >
         <p
           style={{
             fontSize: '0.94rem',
             lineHeight: '1.75',
-            color: '#e0f2fe',
+            color: '#ffe4e6',
             fontStyle: 'italic',
             fontWeight: '400',
             margin: 0,
             fontFamily: 'var(--font-body)',
           }}
         >
-          "I truly cherish your presence and all the thoughtful warmth you bring into my world. Your kindness, intelligence, grace, and courage have such a wonderful way of inspiring me every day. I hope my presence brings as much comfort, happiness, and warmth to your life as yours brings to mine"
+          "Kehadiran dan perhatianmu selalu jadi hal yang paling menenangkan dalam hariku. Maaf kalau aku sempat lalai dan membuatmu merasa diabaikan. Senyum dan kebahagiaanmu terlalu berharga untuk hilang cuma karena kebiasaan burukku. I truly value you more than words can say."
         </p>
       </div>
     </div>
@@ -466,7 +465,7 @@ export default function MainBirthdayPage() {
   const dateRef = useRef(null);
   
   // Typewriter effect state
-  const fullRomanticText = "Take your time and scroll down gently, I've prepared a little something special for you 🤍";
+  const fullRomanticText = "Buka pelan-pelan ya, ada surat dan perasaan jujur yang ingin aku sampaikan padamu 🤍";
   const [typedText, setTypedText] = useState('');
   const [isTypingDone, setIsTypingDone] = useState(false);
 
@@ -510,9 +509,10 @@ export default function MainBirthdayPage() {
   const vinylRef = useRef(null);
 
   const playlist = [
-    { id: 1, title: 'Me Gustas Tu', artist: 'Manu Chao', duration: '3:58', src: '/Me Gustas Tu_spotdown.org.mp3' },
-    { id: 2, title: 'On Melancholy Hill', artist: 'Gorillaz', duration: '4:21', src: '/Gorillaz - On Melancholy Hill (Official Video).mp3' },
-    { id: 3, title: 'May This Be Love', artist: 'Jimi Hendrix', duration: '3:10', src: '/May This Be Love_spotdown.org.mp3' },
+    { id: 1, title: 'Untukku', artist: 'Chrisye', duration: '4:20', src: '/Untukku_spotdown.org.mp3' },
+    { id: 2, title: 'Give Me Your Forever', artist: 'Zack Tabudlo', duration: '4:05', src: '/Give Me Your Forever_spotdown.org.mp3' },
+    { id: 3, title: 'Shape of My Heart', artist: 'Backstreet Boys', duration: '3:50', src: '/Shape of My Heart_spotdown.org.mp3' },
+    { id: 4, title: 'Suara Hati Seorang Kekasih', artist: 'Special Song', duration: '3:45', src: '/Suara Hati Seorang Kekasih_spotdown.org.mp3' },
   ];
 
   // 2. Bouquet Flowers Compliment Messages State
@@ -521,53 +521,85 @@ export default function MainBirthdayPage() {
     rose: {
       name: "Rose",
       icon: "🌹",
-      color: "#ff69b4",
-      text: "Rose — Elegant, timeless, and unforgettable. You hold an exceptionally special place in my heart."
+      color: "#ff2a8d",
+      text: "Mawar — Melambangkan ketulusan. Aku minta maaf dari lubuk hati terdalam kalau sikapku kemarin sempat bikin kamu kesal atau sedih."
     },
     tulip: {
       name: "Tulip",
       icon: "🌷",
-      color: "#ff85c8",
-      text: "Tulip — Pure and graceful. I appreciate your sincerity and all the quiet, wonderful ways you bring joy to those around you."
+      color: "#ff77bc",
+      text: "Tulip — Janji untuk lebih menghargai. Aku ingin belajar lebih peka dan membagi waktu dengan lebih baik lagi untukmu."
     },
     sakura: {
       name: "Cherry Blossom",
       icon: "🌸",
-      color: "#ff9ed8",
-      text: "Cherry Blossom — Gentle and radiant. May each step of your journey bring you boundless peace, joy, and wondrous moments."
+      color: "#f472b6",
+      text: "Cherry Blossom — Kehangatanmu. Senyum dan sapaan darimu selalu jadi hal yang paling menenangkan dalam hariku."
     },
     sunflower: {
       name: "Sunflower",
       icon: "🌻",
-      color: "#ffb3e0",
-      text: "Sunflower — Bright and uplifting. Thank you for always being a beacon of warmth, positivity, and comfort."
+      color: "#f9a8d4",
+      text: "Bunga Matahari — Harapanku. Semoga kita selalu bisa saling mengerti, dan kamu nggak pernah merasa sendirian lagi."
     },
     daisy: {
       name: "Daisy",
       icon: "🌼",
-      color: "#ffc0eb",
-      text: "Daisy — Fresh, genuine, and delightful. May life always bless you with endless reasons to smile, even on the quietest days."
+      color: "#fbcfe8",
+      text: "Daisy — Rasa terima kasih. Terima kasih sudah mau mendengarkan dan tetap membuka hati untukku."
     }
   };
 
-  // 3. Polaroid Lightbox Modal State - Photos for Lucyna Majewska
+  // 3. Polaroid Lightbox Modal State - Photos 1 to 6 for Dyah
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const photoGallery = [
     { 
       id: 1, 
-      title: 'Lucyna Majewska ✨', 
-      date: 'Special Celebration', 
-      location: 'Cherished Moment',
-      img: '/lucyna 1.jpeg',
+      title: 'Senyum Manismu ✨', 
+      date: 'Momen Spesial', 
+      location: 'Di Hatiku Selalu',
+      img: '/dyah 1.jpeg',
       rotation: '-2deg'
     },
     { 
       id: 2, 
-      title: 'Forever in my heart 🌍', 
-      date: 'Miles Apart, But Our Hearts Close 💕', 
-      location: '',
-      img: '/lucyna 2.jpeg',
+      title: 'Momen Berharga Bersamamu 🤍', 
+      date: 'Kenangan Indah', 
+      location: 'Senang Bersamamu',
+      img: '/dyah 2.jpeg',
       rotation: '2.5deg'
+    },
+    { 
+      id: 3, 
+      title: 'Selalu Cantik di Mataku 🌸', 
+      date: 'Hari yang Manis', 
+      location: 'Tersenyum Bersama',
+      img: '/dyah 3.jpeg',
+      rotation: '-1.8deg'
+    },
+    { 
+      id: 4, 
+      title: 'Kenangan Manis Kita 💕', 
+      date: 'Waktu yang Berarti', 
+      location: 'Hati Ini Untukmu',
+      img: '/dyah 4.jpeg',
+      rotation: '2deg'
+    },
+    { 
+      id: 5, 
+      title: 'Alasan Aku Ingin Lebih Baik 🌷', 
+      date: 'Untuk Dyah', 
+      location: 'Setiap Saat',
+      img: '/dyah 5.jpeg',
+      rotation: '-2.2deg'
+    },
+    { 
+      id: 6, 
+      title: 'Untuk Dyah, Sekarang & Seterusnya 💖', 
+      date: 'Selalu Berharga', 
+      location: 'Terima Kasih 🤍',
+      img: '/dyah 6.jpeg',
+      rotation: '1.5deg'
     },
   ];
 
@@ -575,13 +607,14 @@ export default function MainBirthdayPage() {
   const jarRef = useRef(null);
   const [selectedNote, setSelectedNote] = useState(null);
   const jarNotes = [
-    "Every conversation with you leaves a lasting warmth that brightens my entire day. Thank you for being such an amazing person. 💙",
-    "I admire your intelligence, your gentle strength, and the grace with which you carry yourself. 🤍",
-    "You make the world feel softer, kinder, and so much more beautiful just by being in it. ✨",
-    "Thank you for being someone truly unforgettable. Wishing you all the love and happiness in the world. 🌸"
+    "Aku janji bakal lebih ingat waktu dan nggak bakal bikin kamu ngerasa dianggurin lagi saat lagi main. 🌸",
+    "Kabar dari kamu dan waktu ngobrol sama kamu selalu jauh lebih berharga dari game apa pun. 🤍",
+    "Terima kasih sudah selalu sabar sama kekuranganku, kamu orang paling berharga buat aku. 💕",
+    "Maafkan aku ya Dyah, senyummu terlalu berharga untuk hilang cuma karena kecerobohanku. 🌷",
+    "Aku mau terus belajar jadi seseorang yang selalu ada dan bisa bikin kamu merasa disayangi setiap hari. ✨"
   ];
 
-  // 5. Final Birthday Cake Modal State
+  // 5. Final Apology Modal State
   const [showCakeModal, setShowCakeModal] = useState(false);
 
   // GSAP Animations
@@ -628,7 +661,7 @@ export default function MainBirthdayPage() {
     });
 
     gsap.to(birthdayRef.current, {
-      filter: 'drop-shadow(0 0 25px #00d2ff) drop-shadow(0 0 45px #38bdf8)',
+      filter: 'drop-shadow(0 0 25px #ff2a8d) drop-shadow(0 0 45px #f472b6)',
       duration: 2,
       repeat: -1,
       yoyo: true,
@@ -781,7 +814,7 @@ export default function MainBirthdayPage() {
       particleCount: 100,
       spread: 80,
       origin: { y: 0.5 },
-      colors: ['#ff2a8d', '#ffd700', '#ff77bc', '#ffffff', '#e0115f'],
+      colors: ['#ff2a8d', '#f472b6', '#ff77bc', '#ffffff', '#db2777'],
     });
   };
 
@@ -820,13 +853,13 @@ export default function MainBirthdayPage() {
           width: '46px',
           height: '46px',
           borderRadius: '50%',
-          background: 'linear-gradient(135deg, #00d2ff 0%, #0066ff 100%)',
+          background: 'linear-gradient(135deg, #ff2a8d 0%, #db2777 100%)',
           border: '1.5px solid rgba(255,255,255,0.7)',
           color: '#fff',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          boxShadow: '0 0 20px #00d2ff, 0 4px 12px rgba(0,0,0,0.4)',
+          boxShadow: '0 0 20px #ff2a8d, 0 4px 12px rgba(0,0,0,0.4)',
           cursor: 'pointer',
         }}
       >
@@ -858,7 +891,7 @@ export default function MainBirthdayPage() {
             right: '4%',
             width: '65px',
             height: 'auto',
-            filter: 'drop-shadow(0 0 12px #38bdf8)',
+            filter: 'drop-shadow(0 0 12px #ff2a8d)',
             animation: 'pulseGlow 2.5s infinite ease-in-out',
             pointerEvents: 'none',
           }}
@@ -874,16 +907,16 @@ export default function MainBirthdayPage() {
             left: '2%',
             width: '45px',
             height: 'auto',
-            filter: 'drop-shadow(0 0 10px #00d2ff)',
+            filter: 'drop-shadow(0 0 10px #ff2a8d)',
             opacity: 0.85,
             pointerEvents: 'none',
           }}
         />
         {/* Animated Floating Flowers around Hero */}
-        <div className="floating-hero-flower" style={{ position: 'absolute', top: '4%', left: '8%', fontSize: '1.6rem', filter: 'drop-shadow(0 0 8px #00d2ff)' }}>💙</div>
-        <div className="floating-hero-flower" style={{ position: 'absolute', top: '12%', right: '8%', fontSize: '1.8rem', filter: 'drop-shadow(0 0 8px #38bdf8)' }}>✨</div>
-        <div className="floating-hero-flower" style={{ position: 'absolute', top: '45%', left: '4%', fontSize: '1.5rem', filter: 'drop-shadow(0 0 8px #00d2ff)' }}>🔹</div>
-        <div className="floating-hero-flower" style={{ position: 'absolute', top: '48%', right: '6%', fontSize: '1.7rem', filter: 'drop-shadow(0 0 8px #38bdf8)' }}>💙</div>
+        <div className="floating-hero-flower" style={{ position: 'absolute', top: '4%', left: '8%', fontSize: '1.6rem', filter: 'drop-shadow(0 0 8px #ff2a8d)' }}>🌸</div>
+        <div className="floating-hero-flower" style={{ position: 'absolute', top: '12%', right: '8%', fontSize: '1.8rem', filter: 'drop-shadow(0 0 8px #f472b6)' }}>✨</div>
+        <div className="floating-hero-flower" style={{ position: 'absolute', top: '45%', left: '4%', fontSize: '1.5rem', filter: 'drop-shadow(0 0 8px #ff2a8d)' }}>💕</div>
+        <div className="floating-hero-flower" style={{ position: 'absolute', top: '48%', right: '6%', fontSize: '1.7rem', filter: 'drop-shadow(0 0 8px #f472b6)' }}>🌸</div>
 
         {/* Ambient Glowing Aura */}
         <div
@@ -892,7 +925,7 @@ export default function MainBirthdayPage() {
             width: '260px',
             height: '260px',
             borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(0, 210, 255, 0.4) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(255, 42, 141, 0.35) 0%, transparent 70%)',
             filter: 'blur(35px)',
             pointerEvents: 'none',
           }}
@@ -906,23 +939,23 @@ export default function MainBirthdayPage() {
             alignItems: 'center',
             gap: '8px',
             fontSize: '0.82rem',
-            color: '#7dd3fc',
+            color: '#f472b6',
             marginBottom: '20px',
             letterSpacing: '0.5px',
-            textShadow: '0 0 8px rgba(0, 210, 255, 0.6)',
+            textShadow: '0 0 8px rgba(255, 42, 141, 0.6)',
             padding: '0 8px',
           }}
         >
           <span>🤍</span>
-          <span style={{ fontFamily: 'var(--font-body)', fontWeight: '500' }}>To someone truly exceptional who holds a special place in my heart.</span>
+          <span style={{ fontFamily: 'var(--font-body)', fontWeight: '500' }}>Dari lubuk hati yang paling tulus, untuk Dyah.</span>
           <span>🤍</span>
         </div>
 
-        {/* Title: Happy Birthday, My Dearest 🤍 Lucyna Majewska */}
+        {/* Title: I'm Truly Sorry, Dyah Sayang */}
         <div
           style={{
             fontFamily: 'var(--font-display)',
-            lineHeight: '1.15',
+            lineHeight: '1.18',
             marginBottom: '16px',
             position: 'relative',
             zIndex: 2,
@@ -931,14 +964,14 @@ export default function MainBirthdayPage() {
           <div
             ref={happyRef}
             style={{
-              fontSize: '2.8rem',
+              fontSize: '2.5rem',
               fontWeight: '600',
               color: '#ffffff',
               letterSpacing: '0.5px',
               textShadow: '0 0 20px rgba(255, 255, 255, 0.6)',
             }}
           >
-            Happy Birthday,
+            I'm Truly Sorry,
           </div>
           <div
             ref={birthdayRef}
@@ -946,27 +979,15 @@ export default function MainBirthdayPage() {
               fontSize: '3.1rem',
               fontStyle: 'italic',
               fontWeight: '600',
-              background: 'linear-gradient(135deg, #ff9ed8 0%, #ff69b4 50%, #cc1a6e 100%)',
+              background: 'linear-gradient(135deg, #ff9ed8 0%, #ff2a8d 50%, #db2777 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-              filter: 'drop-shadow(0 0 15px rgba(255, 105, 180, 0.8))',
+              filter: 'drop-shadow(0 0 15px rgba(255, 42, 141, 0.8))',
               margin: '6px 0',
               letterSpacing: '0.5px',
             }}
           >
-            Moje Kochanie ❤️
-          </div>
-          <div
-            ref={agaaRef}
-            style={{
-              fontSize: '2.8rem',
-              fontWeight: '600',
-              color: '#ffffff',
-              letterSpacing: '1px',
-              textShadow: '0 0 20px rgba(255, 255, 255, 0.6)',
-            }}
-          >
-            Lucyna Majewska
+            Dyah Sayang 🌸
           </div>
         </div>
 
@@ -982,10 +1003,10 @@ export default function MainBirthdayPage() {
             style={{
               fontSize: '0.92rem',
               fontStyle: 'italic',
-              color: '#e0f2fe',
+              color: '#ffe4e6',
               fontFamily: 'var(--font-display)',
               letterSpacing: '0.5px',
-              textShadow: '0 0 10px rgba(0, 210, 255, 0.8)',
+              textShadow: '0 0 10px rgba(255, 42, 141, 0.8)',
             }}
           >
             {typedText}
@@ -994,10 +1015,10 @@ export default function MainBirthdayPage() {
                 display: 'inline-block',
                 width: '2px',
                 height: '14px',
-                backgroundColor: '#00d2ff',
+                backgroundColor: '#ff2a8d',
                 marginLeft: '3px',
                 verticalAlign: 'middle',
-                boxShadow: '0 0 8px #00d2ff',
+                boxShadow: '0 0 8px #ff2a8d',
                 opacity: isTypingDone ? 0.3 : 1,
                 animation: 'pulseGlow 0.8s infinite alternate',
               }}
@@ -1010,31 +1031,31 @@ export default function MainBirthdayPage() {
           style={{
             width: '140px',
             height: '1.5px',
-            background: 'linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.8), transparent)',
+            background: 'linear-gradient(90deg, transparent, rgba(244, 114, 182, 0.8), transparent)',
             marginBottom: '22px',
-            boxShadow: '0 0 10px rgba(0, 210, 255, 0.5)',
+            boxShadow: '0 0 10px rgba(255, 42, 141, 0.5)',
           }}
         />
 
-        {/* Subtitle Date */}
+        {/* Subtitle Tag */}
         <div
           ref={dateRef}
           style={{
             fontSize: '0.78rem',
             letterSpacing: '3.5px',
-            color: 'rgba(224, 242, 254, 0.85)',
+            color: 'rgba(255, 241, 242, 0.85)',
             fontWeight: '600',
             textTransform: 'uppercase',
-            textShadow: '0 0 8px rgba(0, 210, 255, 0.4)',
+            textShadow: '0 0 8px rgba(255, 42, 141, 0.4)',
             marginBottom: '28px',
           }}
         >
-          WISHING YOU THE HAPPIEST BIRTHDAY 🤍
+          A SINCERE APOLOGY & LOVE NOTE FOR YOU 🤍
         </div>
 
         {/* Scroll Down Bounce Arrow */}
         <div className="hero-scroll-indicator" style={{ opacity: 0.8 }}>
-          <ChevronDown size={22} color="#38bdf8" style={{ filter: 'drop-shadow(0 0 8px #00d2ff)' }} />
+          <ChevronDown size={22} color="#f472b6" style={{ filter: 'drop-shadow(0 0 8px #ff2a8d)' }} />
         </div>
       </div>
 
@@ -1282,14 +1303,14 @@ export default function MainBirthdayPage() {
 
       {/* SECTION 4: POLAROID PHOTO GALLERY */}
       <div style={{ textAlign: 'center', marginBottom: '36px' }}>
-        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#38bdf8', fontWeight: '600', marginBottom: '4px' }}>
+        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#f472b6', fontWeight: '600', marginBottom: '4px' }}>
           — SPECIAL MEMORIES —
         </p>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '4px' }}>
           Photo Memories
         </h3>
         <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '20px' }}>
-          Click any photo to view in detail 📸
+          Sentuh foto untuk melihat lebih jelas 📸
         </p>
 
         {/* Stacked Tilted Polaroid Cards */}
@@ -1311,7 +1332,7 @@ export default function MainBirthdayPage() {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'scale(1.04) rotate(0deg)';
-                e.currentTarget.style.boxShadow = '0 15px 35px rgba(0, 210, 255, 0.4)';
+                e.currentTarget.style.boxShadow = '0 15px 35px rgba(255, 42, 141, 0.45)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = `rotate(${item.rotation})`;
@@ -1323,7 +1344,7 @@ export default function MainBirthdayPage() {
                 alt={item.title}
                 style={{
                   width: '100%',
-                  height: '210px',
+                  height: '220px',
                   objectFit: 'cover',
                   borderRadius: '4px',
                   marginBottom: '10px',
@@ -1337,20 +1358,20 @@ export default function MainBirthdayPage() {
         </div>
       </div>
 
-      {/* SECTION 5: SPECIAL PLAYLIST (3 TRACKS SELECTOR) */}
+      {/* SECTION 5: SPECIAL PLAYLIST (4 TRACKS SELECTOR) */}
       <div
         style={{
-          background: 'rgba(10, 30, 63, 0.75)',
+          background: 'rgba(46, 8, 33, 0.85)',
           backdropFilter: 'blur(16px)',
           borderRadius: '24px',
-          border: '1.5px solid rgba(96, 165, 250, 0.35)',
+          border: '1.5px solid rgba(244, 114, 182, 0.35)',
           padding: '22px 16px',
           textAlign: 'center',
           boxShadow: '0 12px 35px rgba(0,0,0,0.6)',
           marginBottom: '36px',
         }}
       >
-        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#38bdf8', fontWeight: '600', marginBottom: '4px' }}>
+        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#f472b6', fontWeight: '600', marginBottom: '4px' }}>
           — SPECIAL SOUNDTRACK —
         </p>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.45rem', marginBottom: '16px' }}>
@@ -1373,11 +1394,11 @@ export default function MainBirthdayPage() {
               height: '100%',
               borderRadius: '50%',
               background: 'radial-gradient(circle, #333 15%, #111 20%, #222 35%, #050505 60%)',
-              border: '3px solid rgba(0, 210, 255, 0.5)',
+              border: '3px solid rgba(255, 42, 141, 0.5)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 0 25px rgba(0,210,255,0.4)',
+              boxShadow: '0 0 25px rgba(255, 42, 141, 0.4)',
             }}
           >
             <div
@@ -1385,7 +1406,7 @@ export default function MainBirthdayPage() {
                 width: '44px',
                 height: '44px',
                 borderRadius: '50%',
-                background: 'linear-gradient(135deg, #00d2ff 0%, #38bdf8 100%)',
+                background: 'linear-gradient(135deg, #ff2a8d 0%, #db2777 100%)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -1419,7 +1440,7 @@ export default function MainBirthdayPage() {
             style={{
               width: `${audioProgress}%`,
               height: '100%',
-              background: 'linear-gradient(90deg, #00d2ff, #38bdf8)',
+              background: 'linear-gradient(90deg, #ff2a8d, #f472b6)',
               transition: 'width 0.2s linear',
             }}
           />
@@ -1437,13 +1458,13 @@ export default function MainBirthdayPage() {
               width: '52px',
               height: '52px',
               borderRadius: '50%',
-              background: 'linear-gradient(135deg, #00d2ff 0%, #0066ff 100%)',
+              background: 'linear-gradient(135deg, #ff2a8d 0%, #db2777 100%)',
               border: 'none',
               color: '#fff',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 0 20px #00d2ff',
+              boxShadow: '0 0 20px #ff2a8d',
               cursor: 'pointer',
             }}
           >
@@ -1455,10 +1476,10 @@ export default function MainBirthdayPage() {
           </button>
         </div>
 
-        {/* 3 Interactive Playlist Song List Cards */}
+        {/* Interactive Playlist Song List Cards */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', textAlign: 'left' }}>
-          <p style={{ fontSize: '0.78rem', color: '#38bdf8', fontWeight: '600', marginBottom: '2px', textAlign: 'center' }}>
-            📜 Soundtrack Selection:
+          <p style={{ fontSize: '0.78rem', color: '#f472b6', fontWeight: '600', marginBottom: '2px', textAlign: 'center' }}>
+            📜 Soundtrack Pilihan:
           </p>
           {playlist.map((song, index) => {
             const isSelected = index === currentTrack;
@@ -1473,14 +1494,14 @@ export default function MainBirthdayPage() {
                   padding: '12px 14px',
                   borderRadius: '16px',
                   background: isSelected
-                    ? 'linear-gradient(135deg, rgba(0,210,255,0.3) 0%, rgba(0,102,255,0.15) 100%)'
+                    ? 'linear-gradient(135deg, rgba(255,42,141,0.3) 0%, rgba(219,39,119,0.18) 100%)'
                     : 'rgba(255, 255, 255, 0.04)',
                   border: isSelected
                     ? '1.5px solid var(--neon-pink)'
-                    : '1px solid rgba(96, 165, 250, 0.15)',
+                    : '1px solid rgba(244, 114, 182, 0.18)',
                   cursor: 'pointer',
                   transition: 'all 0.2s ease',
-                  boxShadow: isSelected ? '0 0 15px rgba(0,210,255,0.25)' : 'none',
+                  boxShadow: isSelected ? '0 0 15px rgba(255,42,141,0.25)' : 'none',
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -1489,7 +1510,7 @@ export default function MainBirthdayPage() {
                       width: '32px',
                       height: '32px',
                       borderRadius: '50%',
-                      background: isSelected ? '#00d2ff' : 'rgba(255,255,255,0.1)',
+                      background: isSelected ? '#ff2a8d' : 'rgba(255,255,255,0.1)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -1501,7 +1522,7 @@ export default function MainBirthdayPage() {
                     {isSelected && isPlaying ? <Music size={14} className="animate-spin" /> : index + 1}
                   </div>
                   <div>
-                    <p style={{ fontSize: '0.9rem', fontWeight: '600', color: isSelected ? '#ffffff' : '#e0f2fe' }}>
+                    <p style={{ fontSize: '0.9rem', fontWeight: '600', color: isSelected ? '#ffffff' : '#ffe4e6' }}>
                       {song.title}
                     </p>
                     <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
@@ -1521,10 +1542,10 @@ export default function MainBirthdayPage() {
       {/* SECTION 6: JAR OF NOTES */}
       <div
         style={{
-          background: 'rgba(10, 30, 63, 0.65)',
+          background: 'rgba(46, 8, 33, 0.75)',
           backdropFilter: 'blur(16px)',
           borderRadius: '24px',
-          border: '1px solid rgba(96, 165, 250, 0.3)',
+          border: '1px solid rgba(244, 114, 182, 0.3)',
           padding: '20px 16px',
           textAlign: 'center',
           boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
@@ -1542,18 +1563,18 @@ export default function MainBirthdayPage() {
             right: '12px',
             width: '58px',
             height: 'auto',
-            filter: 'drop-shadow(0 0 10px #00d2ff)',
+            filter: 'drop-shadow(0 0 10px #ff2a8d)',
             pointerEvents: 'none',
           }}
         />
-        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#38bdf8', fontWeight: '600', marginBottom: '4px' }}>
-          — FROM MY HEART TO YOURS —
+        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#f472b6', fontWeight: '600', marginBottom: '4px' }}>
+          — DARI HATI UNTUK DYAH —
         </p>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.35rem', marginBottom: '4px' }}>
-          Reasons Why You Are Special
+          Toples Janji & Ungkapan
         </h3>
         <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '16px' }}>
-          Shake the jar to pick a note 📜
+          Goyangkan toples untuk mengambil pesan 📜
         </p>
 
         <div ref={jarRef} style={{ fontSize: '3.5rem', marginBottom: '12px', cursor: 'pointer' }} onClick={handleShakeJar}>
@@ -1563,7 +1584,7 @@ export default function MainBirthdayPage() {
         <button
           onClick={handleShakeJar}
           style={{
-            background: 'linear-gradient(135deg, #00d2ff 0%, #0066ff 100%)',
+            background: 'linear-gradient(135deg, #ff2a8d 0%, #db2777 100%)',
             color: '#fff',
             border: 'none',
             padding: '10px 22px',
@@ -1571,10 +1592,10 @@ export default function MainBirthdayPage() {
             fontSize: '0.88rem',
             fontWeight: '600',
             cursor: 'pointer',
-            boxShadow: '0 0 15px rgba(0,210,255,0.4)',
+            boxShadow: '0 0 15px rgba(255,42,141,0.4)',
           }}
         >
-          Shake the Jar ✨
+          Goyang Toples ✨
         </button>
 
         {selectedNote && (
@@ -1583,13 +1604,13 @@ export default function MainBirthdayPage() {
             style={{
               marginTop: '26px',
               padding: '26px 16px 18px',
-              background: 'linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%)',
-              color: '#0f172a',
+              background: 'linear-gradient(145deg, #fff0f5 0%, #ffe4ec 100%)',
+              color: '#831843',
               borderRadius: '20px',
-              border: '2.5px solid #38bdf8',
+              border: '2.5px solid #f472b6',
               fontSize: '0.92rem',
               fontWeight: '600',
-              boxShadow: '0 12px 30px rgba(0,0,0,0.6), 0 0 25px rgba(0, 210, 255, 0.35)',
+              boxShadow: '0 12px 30px rgba(0,0,0,0.6), 0 0 25px rgba(255, 42, 141, 0.35)',
               lineHeight: '1.55',
               position: 'relative',
               textAlign: 'center',
@@ -1602,7 +1623,7 @@ export default function MainBirthdayPage() {
                 top: '-14px',
                 left: '50%',
                 transform: 'translateX(-50%)',
-                background: 'linear-gradient(135deg, #00d2ff 0%, #0066ff 100%)',
+                background: 'linear-gradient(135deg, #ff2a8d 0%, #db2777 100%)',
                 color: '#ffffff',
                 padding: '4px 14px',
                 borderRadius: '12px',
@@ -1614,10 +1635,10 @@ export default function MainBirthdayPage() {
                 zIndex: 5,
               }}
             >
-              📜 A SPECIAL NOTE FOR LUCYNA MAJEWSKA 💙
+              📜 PESAN DARI HATI UNTUK DYAH 🌸
             </div>
 
-            <p style={{ marginTop: '4px', fontFamily: 'var(--font-body)' }}>
+            <p style={{ marginTop: '4px', fontFamily: 'var(--font-body)', color: '#701a75' }}>
               "{selectedNote}"
             </p>
           </div>
@@ -1635,7 +1656,7 @@ export default function MainBirthdayPage() {
             position: 'fixed',
             inset: 0,
             zIndex: 999,
-            background: 'rgba(3, 12, 27, 0.9)',
+            background: 'rgba(13, 1, 10, 0.92)',
             backdropFilter: 'blur(12px)',
             display: 'flex',
             alignItems: 'center',
@@ -1652,7 +1673,7 @@ export default function MainBirthdayPage() {
               maxWidth: '340px',
               width: '100%',
               textAlign: 'center',
-              boxShadow: '0 25px 60px rgba(0,0,0,0.9), 0 0 30px rgba(0, 210, 255, 0.4)',
+              boxShadow: '0 25px 60px rgba(0,0,0,0.9), 0 0 30px rgba(255, 42, 141, 0.4)',
               position: 'relative',
               animation: 'pulseGlow 3s infinite ease-in-out',
             }}
@@ -1666,14 +1687,14 @@ export default function MainBirthdayPage() {
                 width: '32px',
                 height: '32px',
                 borderRadius: '50%',
-                background: '#00d2ff',
+                background: '#ff2a8d',
                 color: '#fff',
                 border: '2px solid #fff',
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 0 10px #00d2ff',
+                boxShadow: '0 0 10px #ff2a8d',
               }}
             >
               <X size={18} />
@@ -1697,10 +1718,10 @@ export default function MainBirthdayPage() {
                 alignItems: 'center',
                 gap: '4px',
                 padding: '4px 12px',
-                background: 'rgba(0, 210, 255, 0.12)',
+                background: 'rgba(255, 42, 141, 0.12)',
                 borderRadius: '12px',
                 fontSize: '0.78rem',
-                color: '#00d2ff',
+                color: '#db2777',
                 fontWeight: '600',
                 marginBottom: '8px',
               }}
@@ -1715,7 +1736,7 @@ export default function MainBirthdayPage() {
         </div>
       )}
 
-      {/* BIRTHDAY CAKE MODAL */}
+      {/* APOLOGY TOAST MODAL */}
       {showCakeModal && (
         <div
           onClick={() => setShowCakeModal(false)}
@@ -1734,7 +1755,7 @@ export default function MainBirthdayPage() {
           <div
             onClick={(e) => e.stopPropagation()}
             style={{
-              background: 'linear-gradient(145deg, #0a1e3f 0%, #041026 100%)',
+              background: 'linear-gradient(145deg, #2e0821 0%, #1a0314 100%)',
               border: '1.5px solid var(--neon-pink)',
               padding: '24px',
               borderRadius: '24px',
@@ -1746,24 +1767,25 @@ export default function MainBirthdayPage() {
           >
             <div style={{ fontSize: '3rem', marginBottom: '10px' }}>💖</div>
             <h3 className="neon-text" style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '8px' }}>
-              Happy Birthday, Lucyna!
+              Maafkan Aku Ya, Dyah 🤍
             </h3>
-            <p style={{ fontSize: '0.9rem', color: '#e0f2fe', marginBottom: '20px' }}>
-              Wishing the wonderful Lucyna Majewska a magical year ahead 💗
+            <p style={{ fontSize: '0.9rem', color: '#ffe4e6', marginBottom: '20px', lineHeight: '1.5' }}>
+              Janji bakal lebih peka, lebih menghargai waktu kita, dan nggak bikin kamu nunggu lama lagi. Terima kasih sudah selalu ada 🌸
             </p>
 
             <button
               onClick={() => setShowCakeModal(false)}
               style={{
                 padding: '8px 24px',
-                background: 'rgba(0,210,255,0.2)',
+                background: 'rgba(255,42,141,0.25)',
                 border: '1px solid var(--neon-pink)',
                 color: '#fff',
                 borderRadius: '20px',
                 cursor: 'pointer',
+                fontWeight: '600',
               }}
             >
-              Close ×
+              Tutup 🤍
             </button>
           </div>
         </div>

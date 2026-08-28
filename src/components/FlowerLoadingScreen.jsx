@@ -119,7 +119,7 @@ export default function FlowerLoadingScreen({ onComplete }) {
         inset: 0,
         zIndex: 9999,
         overflow: 'hidden',
-        background: 'radial-gradient(ellipse at center, #0a1e3f 0%, #030c1b 100%)',
+        background: 'radial-gradient(ellipse at center, #2e0821 0%, #12030d 100%)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -132,7 +132,7 @@ export default function FlowerLoadingScreen({ onComplete }) {
           width: '60vw',
           height: '60vw',
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(0,210,255,0.12) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(255,42,141,0.18) 0%, transparent 70%)',
           top: '10%',
           left: '-10%',
           filter: 'blur(40px)',
@@ -145,7 +145,7 @@ export default function FlowerLoadingScreen({ onComplete }) {
           width: '50vw',
           height: '50vw',
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(0,102,255,0.10) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(219,39,119,0.15) 0%, transparent 70%)',
           bottom: '5%',
           right: '-5%',
           filter: 'blur(50px)',
@@ -170,7 +170,7 @@ export default function FlowerLoadingScreen({ onComplete }) {
             objectFit: 'contain',
             transform: `rotate(${f.rotation}deg) scale(0)`,
             opacity: 0,
-            filter: 'drop-shadow(0 0 12px rgba(0,210,255,0.35))',
+            filter: 'drop-shadow(0 0 12px rgba(255,42,141,0.35))',
             pointerEvents: 'none',
             willChange: 'transform, opacity',
           }}
@@ -186,7 +186,7 @@ export default function FlowerLoadingScreen({ onComplete }) {
             width: 4 + Math.random() * 6,
             height: 4 + Math.random() * 6,
             borderRadius: '50%',
-            background: `rgba(${56 + Math.random() * 100}, ${189 + Math.random() * 60}, 248, ${0.3 + Math.random() * 0.4})`,
+            background: `rgba(${255}, ${105 + Math.random() * 80}, ${180 + Math.random() * 50}, ${0.35 + Math.random() * 0.4})`,
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
             animation: `floatParticle ${3 + Math.random() * 3}s ease-in-out infinite alternate`,
@@ -202,21 +202,21 @@ export default function FlowerLoadingScreen({ onComplete }) {
         style={{
           position: 'relative',
           zIndex: 10,
-          background: 'rgba(10, 30, 63, 0.75)',
+          background: 'rgba(46, 8, 33, 0.85)',
           backdropFilter: 'blur(20px)',
           WebkitBackdropFilter: 'blur(20px)',
-          border: '1px solid rgba(0,210,255,0.3)',
+          border: '1.5px solid rgba(244, 114, 182, 0.4)',
           borderRadius: '24px',
           padding: '28px 36px',
           textAlign: 'center',
-          boxShadow: '0 0 40px rgba(0,210,255,0.15), inset 0 0 30px rgba(0,210,255,0.05)',
+          boxShadow: '0 0 40px rgba(255,42,141,0.2), inset 0 0 30px rgba(255,42,141,0.08)',
           minWidth: '260px',
           maxWidth: '320px',
         }}
       >
         {/* Emoji line */}
         <div style={{ fontSize: '28px', marginBottom: '10px', letterSpacing: '4px' }}>
-          🌸✨💙✨🌸
+          🌸✨💕✨🌸
         </div>
 
         {/* Title text */}
@@ -225,23 +225,23 @@ export default function FlowerLoadingScreen({ onComplete }) {
             fontFamily: "'Playfair Display', serif",
             fontSize: '15px',
             fontWeight: 600,
-            color: '#c8e6ff',
+            color: '#ffe4e6',
             margin: '0 0 4px 0',
             letterSpacing: '0.5px',
           }}
         >
-          Just a moment...
+          Sebentar ya...
         </p>
         <p
           style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '12px',
-            color: 'rgba(125,211,252,0.7)',
+            color: '#f9a8d4',
             margin: '0 0 18px 0',
             fontStyle: 'italic',
           }}
         >
-          The flowers are blooming for you 🌷
+          Bunga-bunga bermekaran untuk Dyah 🌷
         </p>
 
         {/* Progress bar container */}
@@ -250,7 +250,7 @@ export default function FlowerLoadingScreen({ onComplete }) {
             width: '100%',
             height: '6px',
             borderRadius: '3px',
-            background: 'rgba(0,210,255,0.12)',
+            background: 'rgba(255,42,141,0.15)',
             overflow: 'hidden',
             marginBottom: '10px',
           }}
@@ -261,8 +261,8 @@ export default function FlowerLoadingScreen({ onComplete }) {
               width: '0%',
               height: '100%',
               borderRadius: '3px',
-              background: 'linear-gradient(90deg, #38bdf8, #00d2ff, #0066ff)',
-              boxShadow: '0 0 12px rgba(0,210,255,0.5)',
+              background: 'linear-gradient(90deg, #f472b6, #ff2a8d, #db2777)',
+              boxShadow: '0 0 12px rgba(255,42,141,0.5)',
               transition: 'width 0.05s linear',
             }}
           />
@@ -274,7 +274,7 @@ export default function FlowerLoadingScreen({ onComplete }) {
             fontFamily: "'Inter', sans-serif",
             fontSize: '13px',
             fontWeight: 700,
-            background: 'linear-gradient(135deg, #7dd3fc, #00d2ff)',
+            background: 'linear-gradient(135deg, #fbcfe8, #ff2a8d)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             letterSpacing: '1px',

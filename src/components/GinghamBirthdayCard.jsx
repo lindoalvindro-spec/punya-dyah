@@ -157,14 +157,14 @@ export default function GinghamBirthdayCard() {
     >
       {/* Section Header */}
       <div style={{ textAlign: 'center', marginBottom: '18px' }}>
-        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#ff4d6d', fontWeight: '600', marginBottom: '4px' }}>
-          — SPECIAL BIRTHDAY CARD —
+        <p style={{ fontSize: '0.75rem', letterSpacing: '1.5px', color: '#ff2a8d', fontWeight: '600', marginBottom: '4px' }}>
+          — A SPECIAL MESSAGE —
         </p>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '4px' }}>
-          Interactive Gift Card 🎁
+          Interactive Love Card 💌
         </h3>
         <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-          Tap the card to open Lucyna's birthday surprise ✨
+          Sentuh kartu untuk membuka surat Dyah ✨
         </p>
       </div>
 
@@ -192,7 +192,7 @@ export default function GinghamBirthdayCard() {
             transformStyle: 'preserve-3d',
             borderRadius: '16px',
             boxShadow: isOpen
-              ? '0 20px 40px rgba(0,0,0,0.8), 0 0 30px rgba(180, 0, 30, 0.4)'
+              ? '0 20px 40px rgba(0,0,0,0.8), 0 0 30px rgba(255, 42, 141, 0.4)'
               : '0 14px 30px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4)',
             transition: 'box-shadow 0.4s ease',
           }}
@@ -203,14 +203,14 @@ export default function GinghamBirthdayCard() {
               position: 'absolute',
               inset: 0,
               borderRadius: '16px',
-              background: 'linear-gradient(135deg, #fff0f3 0%, #fff 50%, #ffe6ea 100%)',
-              color: '#800016',
+              background: 'linear-gradient(135deg, #fff0f5 0%, #fff 50%, #ffe4ec 100%)',
+              color: '#831843',
               padding: '20px 18px',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-between',
-              boxShadow: 'inset 0 0 15px rgba(180, 0, 30, 0.1)',
-              border: '2px solid #ffccd5',
+              boxShadow: 'inset 0 0 15px rgba(219, 39, 119, 0.12)',
+              border: '2px solid #fbcfe8',
               overflow: 'hidden',
             }}
           >
@@ -222,28 +222,28 @@ export default function GinghamBirthdayCard() {
             {/* Inner Content */}
             <div ref={innerContentRef} style={{ opacity: 0, position: 'relative', zIndex: 2 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
-                <Sparkles size={18} color="#b4001e" />
-                <span style={{ fontSize: '0.82rem', fontWeight: '700', letterSpacing: '1px', color: '#b4001e' }}>
-                  A SPECIAL MESSAGE FOR LUCYNA MAJEWSKA
+                <Sparkles size={18} color="#db2777" />
+                <span style={{ fontSize: '0.82rem', fontWeight: '700', letterSpacing: '1px', color: '#db2777' }}>
+                  SURAT DARI HATI UNTUK DYAH
                 </span>
               </div>
 
-              <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#73000b', marginBottom: '8px' }}>
-                Happy Birthday, Moje Kochanie! 🎂✨
+              <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', color: '#9d174d', marginBottom: '8px' }}>
+                Untuk Dyah yang Paling Berharga 🤍
               </h4>
 
-              <p style={{ fontSize: '0.85rem', lineHeight: '1.55', color: '#590008', fontWeight: '500' }}>
-                You bring so much light, elegance, and warmth into my world. Wishing you a year filled with boundless happiness, radiant health, and the fulfillment of your greatest dreams! 💕
+              <p style={{ fontSize: '0.84rem', lineHeight: '1.55', color: '#701a75', fontWeight: '500' }}>
+                Aku minta maaf ya kalau belakangan ini aku sering keasyikan main dan bikin kamu merasa dinomorsekiankan atau nungguin kabar. Aku sadar waktu dan perhatian kamu itu sangat berharga, dan aku nggak mau bikin kamu sedih lagi. Terima kasih sudah selalu sabar sama aku. I really cherish you 💕
               </p>
             </div>
 
             {/* Inner Footer */}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'relative', zIndex: 2 }}>
-              <span style={{ fontSize: '0.78rem', fontStyle: 'italic', color: '#b4001e', fontWeight: '600' }}>
-                With all my love 🤍
+              <span style={{ fontSize: '0.78rem', fontStyle: 'italic', color: '#db2777', fontWeight: '600' }}>
+                With all my sincerity 🤍
               </span>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.75rem', color: '#73000b', fontWeight: '700' }}>
-                <span>Tap to close</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.75rem', color: '#831843', fontWeight: '700' }}>
+                <span>Sentuh untuk menutup</span>
                 <ChevronRight size={14} />
               </div>
             </div>
@@ -263,7 +263,7 @@ export default function GinghamBirthdayCard() {
                   zIndex: 3,
                 }}
               >
-                ❤️
+                💕
               </div>
             ))}
           </div>
@@ -284,12 +284,12 @@ export default function GinghamBirthdayCard() {
               zIndex: 10,
             }}
           >
-            {/* LEFT PANEL: Deep Crimson Red */}
+            {/* LEFT PANEL: Deep Romantic Rose Pink */}
             <div
               style={{
                 width: '50%',
                 height: '100%',
-                background: 'linear-gradient(150deg, #b4001e 0%, #8b0014 60%, #60000d 100%)',
+                background: 'linear-gradient(150deg, #db2777 0%, #be185d 60%, #831843 100%)',
                 padding: '16px 10px 14px',
                 display: 'flex',
                 flexDirection: 'column',
@@ -313,7 +313,7 @@ export default function GinghamBirthdayCard() {
                   padding: '0 4px',
                 }}
               >
-                This special gift belongs to you!
+                A special note for you!
               </p>
 
               {/* Center Circular Photo Cutout with Glow Frame */}
@@ -325,14 +325,14 @@ export default function GinghamBirthdayCard() {
                   height: '95px',
                   borderRadius: '50%',
                   padding: '3px',
-                  background: 'linear-gradient(135deg, #ffffff 0%, #ffccd5 100%)',
-                  boxShadow: '0 8px 20px rgba(0,0,0,0.5), 0 0 15px rgba(255, 255, 255, 0.5)',
+                  background: 'linear-gradient(135deg, #ffffff 0%, #fbcfe8 100%)',
+                  boxShadow: '0 8px 20px rgba(0,0,0,0.5), 0 0 15px rgba(244, 114, 182, 0.6)',
                   transformStyle: 'preserve-3d',
                 }}
               >
                 <img
-                  src="/lucyna 1.jpeg"
-                  alt="Lucyna Majewska"
+                  src="/dyah 1.jpeg"
+                  alt="Dyah"
                   style={{
                     width: '100%',
                     height: '100%',
@@ -358,7 +358,7 @@ export default function GinghamBirthdayCard() {
                     boxShadow: '0 3px 6px rgba(0,0,0,0.3)',
                   }}
                 >
-                  <Heart size={13} fill="#b4001e" color="#b4001e" />
+                  <Heart size={13} fill="#db2777" color="#db2777" />
                 </div>
               </div>
 
@@ -366,24 +366,24 @@ export default function GinghamBirthdayCard() {
               <div
                 style={{
                   fontSize: '0.65rem',
-                  color: 'rgba(255, 255, 255, 0.85)',
+                  color: 'rgba(255, 255, 255, 0.9)',
                   fontStyle: 'italic',
                   letterSpacing: '0.5px',
                 }}
               >
-                Tap to open 💌
+                Sentuh untuk membuka 💌
               </div>
             </div>
 
-            {/* RIGHT PANEL: Authentic Red & White Gingham Plaid Pattern */}
+            {/* RIGHT PANEL: Authentic Pink & White Gingham Plaid Pattern */}
             <div
               style={{
                 width: '50%',
                 height: '100%',
                 backgroundColor: '#ffffff',
                 backgroundImage: `
-                  linear-gradient(90deg, rgba(180, 0, 30, 0.42) 50%, transparent 50%),
-                  linear-gradient(rgba(180, 0, 30, 0.42) 50%, transparent 50%)
+                  linear-gradient(90deg, rgba(219, 39, 119, 0.38) 50%, transparent 50%),
+                  linear-gradient(rgba(219, 39, 119, 0.38) 50%, transparent 50%)
                 `,
                 backgroundSize: '22px 22px',
                 display: 'flex',
@@ -417,7 +417,7 @@ export default function GinghamBirthdayCard() {
                   <path
                     d={generateStarburstPath()}
                     fill="#ffffff"
-                    stroke="#ffe6ea"
+                    stroke="#fce7f3"
                     strokeWidth="2"
                   />
                 </svg>
@@ -429,7 +429,7 @@ export default function GinghamBirthdayCard() {
                     zIndex: 2,
                     textAlign: 'center',
                     padding: '12px 10px',
-                    color: '#a80517',
+                    color: '#9d174d',
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
@@ -443,15 +443,15 @@ export default function GinghamBirthdayCard() {
                       fontWeight: '800',
                       lineHeight: '1.25',
                       letterSpacing: '0.2px',
-                      color: '#900014',
+                      color: '#831843',
                     }}
                   >
-                    Happy Birthday<br />
-                    My Favorite<br />
-                    Person
+                    Special Message<br />
+                    For My Favorite<br />
+                    Dyah 🌸
                   </p>
                   <div style={{ marginTop: '3px' }}>
-                    <Heart size={14} fill="#a80517" color="#a80517" style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.2))' }} />
+                    <Heart size={14} fill="#db2777" color="#db2777" style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.2))' }} />
                   </div>
                 </div>
               </div>

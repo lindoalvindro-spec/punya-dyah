@@ -75,13 +75,13 @@ export default function GiftUnboxing({ onOpen }) {
     });
     setBurstFlowers(flowers);
 
-    // Launch Confetti Burst
-    confetti({
-      particleCount: 80,
-      spread: 70,
-      origin: { y: 0.55 },
-      colors: ['#00d2ff', '#38bdf8', '#0066ff', '#ffffff', '#60a5fa', '#ff69b4'],
-    });
+      {/* Launch Confetti Burst */}
+      confetti({
+        particleCount: 80,
+        spread: 70,
+        origin: { y: 0.55 },
+        colors: ['#ff2a8d', '#f472b6', '#db2777', '#ffffff', '#ff77bc', '#ffe4e6'],
+      });
 
     // Wait one frame for React to render the burst flower elements
     requestAnimationFrame(() => {
@@ -158,7 +158,7 @@ export default function GiftUnboxing({ onOpen }) {
         position: 'absolute',
         inset: 0,
         zIndex: 100,
-        background: 'radial-gradient(circle at 50% 45%, #0a1e3f 0%, #041026 60%, #010610 100%)',
+        background: 'radial-gradient(circle at 50% 45%, #2e0821 0%, #1c0515 60%, #0d010a 100%)',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -180,12 +180,12 @@ export default function GiftUnboxing({ onOpen }) {
               bottom: '-20px',
               fontSize: `${p.size}px`,
               opacity: 0.5,
-              filter: 'drop-shadow(0 0 6px #00d2ff)',
+              filter: 'drop-shadow(0 0 6px #ff2a8d)',
               animation: `floatUp ${p.duration}s linear infinite`,
               animationDelay: `${p.delay}s`,
             }}
           >
-            {p.id % 2 === 0 ? '✨' : '🔹'}
+            {p.id % 2 === 0 ? '✨' : '🌸'}
           </div>
         ))}
       </div>
@@ -198,7 +198,7 @@ export default function GiftUnboxing({ onOpen }) {
           width: '100px',
           height: '100px',
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(56, 189, 248, 0.9) 0%, rgba(0, 210, 255, 0.8) 40%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(244, 114, 182, 0.9) 0%, rgba(255, 42, 141, 0.8) 40%, transparent 70%)',
           filter: 'blur(15px)',
           opacity: 0,
           scale: 0.5,
@@ -221,16 +221,16 @@ export default function GiftUnboxing({ onOpen }) {
             alignItems: 'center',
             gap: '6px',
             padding: '6px 16px',
-            background: 'rgba(0, 210, 255, 0.15)',
-            border: '1px solid rgba(96, 165, 250, 0.4)',
+            background: 'rgba(255, 42, 141, 0.15)',
+            border: '1px solid rgba(244, 114, 182, 0.4)',
             borderRadius: '20px',
             marginBottom: '14px',
-            boxShadow: '0 0 15px rgba(0, 210, 255, 0.3)',
+            boxShadow: '0 0 15px rgba(255, 42, 141, 0.3)',
           }}
         >
-          <Sparkles size={14} color="#38bdf8" />
-          <span style={{ fontSize: '0.85rem', color: '#e0f2fe', fontWeight: '500' }}>Surprise Unboxing</span>
-          <Sparkles size={14} color="#38bdf8" />
+          <Sparkles size={14} color="#f472b6" />
+          <span style={{ fontSize: '0.85rem', color: '#ffe4e6', fontWeight: '500' }}>Surprise Message</span>
+          <Sparkles size={14} color="#f472b6" />
         </div>
 
         <h2
@@ -243,7 +243,7 @@ export default function GiftUnboxing({ onOpen }) {
             lineHeight: '1.3',
           }}
         >
-          {isOpening ? '✨ Opening your gift... ✨' : 'Tap the gift box to open it 🎁'}
+          {isOpening ? '✨ Membuka pesan untukmu... ✨' : 'Sentuh kado untuk membuka 🎁'}
         </h2>
       </div>
 
@@ -269,7 +269,7 @@ export default function GiftUnboxing({ onOpen }) {
             position: 'absolute',
             inset: '-20px',
             borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(0,210,255,0.5) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(255,42,141,0.5) 0%, transparent 70%)',
             filter: 'blur(20px)',
             animation: 'pulseGlow 2.2s infinite ease-in-out',
           }}
@@ -296,7 +296,7 @@ export default function GiftUnboxing({ onOpen }) {
               zIndex: 15,
               opacity: 0,
               transform: 'scale(0)',
-              filter: 'drop-shadow(0 0 12px rgba(0,210,255,0.6)) drop-shadow(0 0 20px rgba(255,105,180,0.4))',
+              filter: 'drop-shadow(0 0 12px rgba(255,42,141,0.6)) drop-shadow(0 0 20px rgba(244,114,182,0.4))',
             }}
           />
         ))}
@@ -311,7 +311,7 @@ export default function GiftUnboxing({ onOpen }) {
             right: '-30px',
             width: '60px',
             height: 'auto',
-            filter: 'drop-shadow(0 0 10px #00d2ff)',
+            filter: 'drop-shadow(0 0 10px #ff2a8d)',
             pointerEvents: 'none',
             zIndex: 10,
           }}
@@ -319,25 +319,25 @@ export default function GiftUnboxing({ onOpen }) {
 
         {/* Floating Mini Stars around Gift Box */}
         <div style={{ position: 'absolute', top: '-15px', right: '-10px', pointerEvents: 'none' }}>
-          <Star size={18} color="#38bdf8" fill="#38bdf8" style={{ filter: 'drop-shadow(0 0 8px #38bdf8)' }} />
+          <Star size={18} color="#f472b6" fill="#f472b6" style={{ filter: 'drop-shadow(0 0 8px #f472b6)' }} />
         </div>
         <div style={{ position: 'absolute', bottom: '-10px', left: '-15px', pointerEvents: 'none' }}>
-          <Sparkles size={20} color="#60a5fa" style={{ filter: 'drop-shadow(0 0 8px #00d2ff)' }} />
+          <Sparkles size={20} color="#ff77bc" style={{ filter: 'drop-shadow(0 0 8px #ff2a8d)' }} />
         </div>
 
         {/* 3D-styled SVG Gift Box */}
         <svg viewBox="0 0 200 200" width="100%" height="100%" style={{ filter: 'drop-shadow(0 15px 25px rgba(0,0,0,0.6))' }}>
           <defs>
             <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#38bdf8" />
-              <stop offset="50%" stopColor="#00d2ff" />
-              <stop offset="100%" stopColor="#0044b3" />
+              <stop offset="0%" stopColor="#f472b6" />
+              <stop offset="50%" stopColor="#ff2a8d" />
+              <stop offset="100%" stopColor="#be185d" />
             </linearGradient>
 
             <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#e0f2fe" />
-              <stop offset="50%" stopColor="#7dd3fc" />
-              <stop offset="100%" stopColor="#0284c7" />
+              <stop offset="0%" stopColor="#fff1f2" />
+              <stop offset="50%" stopColor="#fbcfe8" />
+              <stop offset="100%" stopColor="#f472b6" />
             </linearGradient>
 
             <filter id="giftGlow">
@@ -360,8 +360,8 @@ export default function GiftUnboxing({ onOpen }) {
             {/* Glowing Golden Bow Ribbon Loops */}
             <path d="M 100 55 C 75 25, 50 35, 88 55 Z" fill="url(#ribbonGrad)" stroke="#ffffff" strokeWidth="1" />
             <path d="M 100 55 C 125 25, 150 35, 112 55 Z" fill="url(#ribbonGrad)" stroke="#ffffff" strokeWidth="1" />
-            <circle cx="100" cy="55" r="8" fill="#ffffff" filter="drop-shadow(0 0 6px #38bdf8)" />
-            <circle cx="100" cy="55" r="5" fill="#38bdf8" />
+            <circle cx="100" cy="55" r="8" fill="#ffffff" filter="drop-shadow(0 0 6px #f472b6)" />
+            <circle cx="100" cy="55" r="5" fill="#f472b6" />
           </g>
         </svg>
       </div>
@@ -374,13 +374,13 @@ export default function GiftUnboxing({ onOpen }) {
           alignItems: 'center',
           gap: '8px',
           fontSize: '0.85rem',
-          color: '#e0f2fe',
+          color: '#ffe4e6',
           opacity: 0.9,
           zIndex: 2,
         }}
       >
         <Heart size={14} fill="var(--neon-pink)" color="var(--neon-pink)" />
-        <span>Sent with love for Lucyna Majewska 🤍</span>
+        <span>Sent with love for Dyah 🤍</span>
         <Heart size={14} fill="var(--neon-pink)" color="var(--neon-pink)" />
       </div>
     </div>

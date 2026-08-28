@@ -16,8 +16,8 @@ export default function PasscodeScreen({ onUnlock }) {
   const [errorMsg, setErrorMsg] = useState('');
   const [sparks, setSparks] = useState([]);
   
-  const CORRECT_PIN = '190826';
-  const PIN_LENGTH = 6;
+  const CORRECT_PIN = '1222';
+  const PIN_LENGTH = 4;
 
   const bgParticles = Array.from({ length: 14 }).map((_, i) => ({
     id: i,
@@ -82,8 +82,8 @@ export default function PasscodeScreen({ onUnlock }) {
 
       const btn = e.currentTarget;
       gsap.timeline()
-        .to(btn, { scale: 0.88, boxShadow: '0 0 25px #00d2ff, inset 0 0 15px #ffffff', duration: 0.1 })
-        .to(btn, { scale: 1, boxShadow: '0 0 15px rgba(0, 210, 255, 0.35)', duration: 0.25, ease: 'back.out(2)' });
+        .to(btn, { scale: 0.88, boxShadow: '0 0 25px #ff2a8d, inset 0 0 15px #ffffff', duration: 0.1 })
+        .to(btn, { scale: 1, boxShadow: '0 0 15px rgba(255, 42, 141, 0.35)', duration: 0.25, ease: 'back.out(2)' });
 
       const targetDot = dotsRef.current?.children[pin.length];
       if (targetDot) {
@@ -114,17 +114,17 @@ export default function PasscodeScreen({ onUnlock }) {
   };
 
   const verifyPin = (enteredPin) => {
-    if (enteredPin === CORRECT_PIN || enteredPin === '190826' || enteredPin === '1908' || enteredPin === '1308' || enteredPin === '1234') {
+    if (enteredPin === CORRECT_PIN || enteredPin === '1222' || enteredPin === '1234') {
       const tl = gsap.timeline();
       
       tl.to(dotsRef.current, {
         scale: 1.2,
-        filter: 'drop-shadow(0 0 25px #38bdf8) drop-shadow(0 0 35px #00d2ff)',
+        filter: 'drop-shadow(0 0 25px #ff77bc) drop-shadow(0 0 35px #ff2a8d)',
         duration: 0.3,
       })
       .to(cardRef.current, {
         scale: 1.04,
-        boxShadow: '0 0 50px #00d2ff, 0 0 80px #38bdf8',
+        boxShadow: '0 0 50px #ff2a8d, 0 0 80px #f472b6',
         duration: 0.3,
       })
       .to(containerRef.current, {
@@ -137,7 +137,7 @@ export default function PasscodeScreen({ onUnlock }) {
         }
       });
     } else {
-      setErrorMsg('Incorrect passcode. Please try again 🤍');
+      setErrorMsg('PIN kurang tepat, coba lagi ya Dyah 🤍');
       
       gsap.to(dotsRef.current, {
         x: [-12, 12, -8, 8, -4, 4, 0],
@@ -147,7 +147,7 @@ export default function PasscodeScreen({ onUnlock }) {
       
       gsap.fromTo(cardRef.current,
         { border: '1px solid #ff2a2a', boxShadow: '0 0 30px rgba(255, 42, 42, 0.6)' },
-        { border: '1.5px solid rgba(96, 165, 250, 0.45)', boxShadow: '0 20px 40px rgba(0, 0, 0, 0.8)', duration: 0.8 }
+        { border: '1.5px solid rgba(244, 114, 182, 0.45)', boxShadow: '0 20px 40px rgba(0, 0, 0, 0.8)', duration: 0.8 }
       );
       
       setTimeout(() => {
@@ -163,7 +163,7 @@ export default function PasscodeScreen({ onUnlock }) {
         position: 'absolute',
         inset: 0,
         zIndex: 100,
-        background: 'radial-gradient(circle at 50% 40%, #0a1e3f 0%, #041026 65%, #010610 100%)',
+        background: 'radial-gradient(circle at 50% 40%, #2e0821 0%, #1c0515 65%, #0d010a 100%)',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -185,13 +185,13 @@ export default function PasscodeScreen({ onUnlock }) {
               left: p.left,
               bottom: '-20px',
               fontSize: `${p.size}px`,
-              opacity: 0.4,
-              filter: 'drop-shadow(0 0 6px #00d2ff)',
+              opacity: 0.45,
+              filter: 'drop-shadow(0 0 6px #ff2a8d)',
               animation: `floatUp ${p.duration}s linear infinite`,
               animationDelay: `${p.delay}s`,
             }}
           >
-            {p.id % 2 === 0 ? '💙' : '✨'}
+            {p.id % 2 === 0 ? '🌸' : '💕'}
           </div>
         ))}
       </div>
@@ -203,7 +203,7 @@ export default function PasscodeScreen({ onUnlock }) {
           width: '260px',
           height: '260px',
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(0, 210, 255, 0.35) 0%, rgba(0, 102, 255, 0) 70%)',
+          background: 'radial-gradient(circle, rgba(255, 42, 141, 0.35) 0%, rgba(224, 17, 95, 0) 70%)',
           filter: 'blur(30px)',
           pointerEvents: 'none',
         }}
@@ -215,12 +215,12 @@ export default function PasscodeScreen({ onUnlock }) {
         style={{
           width: '100%',
           maxWidth: '320px',
-          background: 'linear-gradient(165deg, rgba(10, 30, 63, 0.85) 0%, rgba(4, 16, 38, 0.9) 100%)',
+          background: 'linear-gradient(165deg, rgba(46, 8, 33, 0.88) 0%, rgba(28, 5, 21, 0.92) 100%)',
           backdropFilter: 'blur(20px)',
           WebkitBackdropFilter: 'blur(20px)',
           borderRadius: '28px',
-          border: '1.5px solid rgba(96, 165, 250, 0.45)',
-          boxShadow: '0 16px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(0, 210, 255, 0.25), inset 0 0 15px rgba(96, 165, 250, 0.15)',
+          border: '1.5px solid rgba(244, 114, 182, 0.45)',
+          boxShadow: '0 16px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 42, 141, 0.25), inset 0 0 15px rgba(244, 114, 182, 0.15)',
           padding: '20px 16px 16px',
           display: 'flex',
           flexDirection: 'column',
@@ -231,10 +231,10 @@ export default function PasscodeScreen({ onUnlock }) {
       >
         {/* Decorative Corner Glowing Sparkles */}
         <div style={{ position: 'absolute', top: '12px', left: '14px', opacity: 0.8 }}>
-          <Sparkles size={14} color="#38bdf8" style={{ filter: 'drop-shadow(0 0 6px #38bdf8)' }} />
+          <Sparkles size={14} color="#f472b6" style={{ filter: 'drop-shadow(0 0 6px #f472b6)' }} />
         </div>
         <div style={{ position: 'absolute', top: '12px', right: '14px', opacity: 0.8 }}>
-          <Sparkles size={14} color="#60a5fa" style={{ filter: 'drop-shadow(0 0 6px #00d2ff)' }} />
+          <Sparkles size={14} color="#ff77bc" style={{ filter: 'drop-shadow(0 0 6px #ff2a8d)' }} />
         </div>
 
         {/* Top Animated Icon Container with Rotating Orbit Ring */}
@@ -256,8 +256,8 @@ export default function PasscodeScreen({ onUnlock }) {
               position: 'absolute',
               inset: 0,
               borderRadius: '50%',
-              border: '1.5px dashed rgba(56, 189, 248, 0.65)',
-              boxShadow: '0 0 10px rgba(0, 210, 255, 0.4)',
+              border: '1.5px dashed rgba(244, 114, 182, 0.65)',
+              boxShadow: '0 0 10px rgba(255, 42, 141, 0.4)',
             }}
           />
 
@@ -267,11 +267,11 @@ export default function PasscodeScreen({ onUnlock }) {
               width: '44px',
               height: '44px',
               borderRadius: '50%',
-              background: 'linear-gradient(135deg, #00d2ff 0%, #0066ff 100%)',
+              background: 'linear-gradient(135deg, #ff2a8d 0%, #db2777 100%)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 0 16px #00d2ff, inset 0 0 8px rgba(255,255,255,0.5)',
+              boxShadow: '0 0 16px #ff2a8d, inset 0 0 8px rgba(255,255,255,0.5)',
             }}
           >
             <KeyRound size={20} color="#ffffff" style={{ filter: 'drop-shadow(0 0 6px #ffffff)' }} />
@@ -290,46 +290,46 @@ export default function PasscodeScreen({ onUnlock }) {
               letterSpacing: '0.5px',
             }}
           >
-            For You, Lucyna
+            Untuk Dyah 🌸
           </h2>
           <p
             className="neon-text-subtle"
             style={{
               fontSize: '0.8rem',
-              color: '#e0f2fe',
+              color: '#fdf2f8',
               opacity: 0.9,
             }}
           >
-            Enter our secret passcode
+            Masukkan PIN rahasia kita
           </p>
           <p
             style={{
-              fontSize: '0.72rem',
-              color: '#38bdf8',
-              opacity: 0.85,
+              fontSize: '0.75rem',
+              color: '#f472b6',
+              opacity: 0.9,
               fontStyle: 'italic',
               marginTop: '4px',
             }}
           >
-            Clue: 190826 ❤️
+            Clue: 1222 🌸
           </p>
         </div>
 
-        {/* Upgraded 6-PIN Dots Container */}
+        {/* Upgraded 4-PIN Dots Container */}
         <div
           ref={dotsRef}
           style={{
             display: 'flex',
-            gap: '10px',
+            gap: '12px',
             marginBottom: '18px',
-            padding: '8px 16px',
-            background: 'rgba(2, 8, 20, 0.65)',
+            padding: '8px 18px',
+            background: 'rgba(20, 3, 14, 0.65)',
             borderRadius: '20px',
-            border: '1px solid rgba(96, 165, 250, 0.3)',
-            boxShadow: 'inset 0 0 8px rgba(0,0,0,0.5), 0 0 12px rgba(0,210,255,0.15)',
+            border: '1px solid rgba(244, 114, 182, 0.3)',
+            boxShadow: 'inset 0 0 8px rgba(0,0,0,0.5), 0 0 12px rgba(255,42,141,0.15)',
           }}
         >
-          {Array.from({ length: 6 }).map((_, idx) => {
+          {Array.from({ length: 4 }).map((_, idx) => {
             const isFilled = idx < pin.length;
             return (
               <div
@@ -339,12 +339,12 @@ export default function PasscodeScreen({ onUnlock }) {
                   width: '14px',
                   height: '14px',
                   borderRadius: '50%',
-                  border: isFilled ? '1.5px solid #ffffff' : '1.5px solid rgba(96, 165, 250, 0.5)',
+                  border: isFilled ? '1.5px solid #ffffff' : '1.5px solid rgba(244, 114, 182, 0.5)',
                   background: isFilled
-                    ? 'radial-gradient(circle at 35% 35%, #38bdf8 0%, #00d2ff 60%, #0052cc 100%)'
+                    ? 'radial-gradient(circle at 35% 35%, #f472b6 0%, #ff2a8d 60%, #be185d 100%)'
                     : 'transparent',
                   boxShadow: isFilled
-                    ? '0 0 10px #00d2ff, 0 0 16px #38bdf8, inset 0 0 5px #ffffff'
+                    ? '0 0 10px #ff2a8d, 0 0 16px #f472b6, inset 0 0 5px #ffffff'
                     : 'none',
                   transition: 'all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
                 }}
@@ -358,9 +358,9 @@ export default function PasscodeScreen({ onUnlock }) {
           <p
             style={{
               fontSize: '0.78rem',
-              color: '#38bdf8',
+              color: '#ff77bc',
               marginBottom: '10px',
-              textShadow: '0 0 8px rgba(0, 210, 255, 0.8)',
+              textShadow: '0 0 8px rgba(255, 42, 141, 0.8)',
               textAlign: 'center',
               fontWeight: '500',
             }}
@@ -392,8 +392,8 @@ export default function PasscodeScreen({ onUnlock }) {
                 width: '56px',
                 height: '56px',
                 borderRadius: '50%',
-                background: 'linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 210, 255, 0.05) 100%)',
-                border: '1px solid rgba(96, 165, 250, 0.35)',
+                background: 'linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 42, 141, 0.08) 100%)',
+                border: '1px solid rgba(244, 114, 182, 0.35)',
                 color: '#ffffff',
                 fontSize: '1.35rem',
                 fontWeight: '600',
@@ -422,7 +422,7 @@ export default function PasscodeScreen({ onUnlock }) {
               height: '56px',
               borderRadius: '50%',
               background: 'rgba(255, 255, 255, 0.04)',
-              border: '1px solid rgba(96, 165, 250, 0.2)',
+              border: '1px solid rgba(244, 114, 182, 0.25)',
               color: 'var(--text-muted)',
               fontSize: '1rem',
               cursor: 'pointer',
@@ -446,8 +446,8 @@ export default function PasscodeScreen({ onUnlock }) {
               width: '56px',
               height: '56px',
               borderRadius: '50%',
-              background: 'linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 210, 255, 0.05) 100%)',
-              border: '1px solid rgba(96, 165, 250, 0.35)',
+              background: 'linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 42, 141, 0.08) 100%)',
+              border: '1px solid rgba(244, 114, 182, 0.35)',
               color: '#ffffff',
               fontSize: '1.35rem',
               fontWeight: '600',
@@ -473,8 +473,8 @@ export default function PasscodeScreen({ onUnlock }) {
               width: '56px',
               height: '56px',
               borderRadius: '50%',
-              background: 'linear-gradient(135deg, rgba(0, 210, 255, 0.2) 0%, rgba(0, 102, 255, 0.1) 100%)',
-              border: '1px solid rgba(0, 210, 255, 0.4)',
+              background: 'linear-gradient(135deg, rgba(255, 42, 141, 0.25) 0%, rgba(219, 39, 119, 0.15) 100%)',
+              border: '1px solid rgba(255, 42, 141, 0.45)',
               color: 'var(--neon-pink-light)',
               fontSize: '1rem',
               cursor: 'pointer',
@@ -482,7 +482,7 @@ export default function PasscodeScreen({ onUnlock }) {
               alignItems: 'center',
               justifyContent: 'center',
               margin: '0 auto',
-              boxShadow: '0 0 12px rgba(0, 210, 255, 0.2)',
+              boxShadow: '0 0 12px rgba(255, 42, 141, 0.25)',
               backdropFilter: 'blur(8px)',
             }}
           >
