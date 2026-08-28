@@ -509,10 +509,7 @@ export default function MainBirthdayPage() {
   const vinylRef = useRef(null);
 
   const playlist = [
-    { id: 1, title: 'Untukku', artist: 'Chrisye', duration: '4:20', src: '/Untukku_spotdown.org.mp3' },
-    { id: 2, title: 'Give Me Your Forever', artist: 'Zack Tabudlo', duration: '4:05', src: '/Give Me Your Forever_spotdown.org.mp3' },
-    { id: 3, title: 'Shape of My Heart', artist: 'Backstreet Boys', duration: '3:50', src: '/Shape of My Heart_spotdown.org.mp3' },
-    { id: 4, title: 'Suara Hati Seorang Kekasih', artist: 'Special Song', duration: '3:45', src: '/Suara Hati Seorang Kekasih_spotdown.org.mp3' },
+    { id: 1, title: 'Bila Kau Tak Disampingku', artist: 'Sheila On 7', duration: '4:22', src: '/Bila Kau Tak Disampingku.mp3' },
   ];
 
   // 2. Bouquet Flowers Compliment Messages State
@@ -1358,7 +1355,7 @@ export default function MainBirthdayPage() {
         </div>
       </div>
 
-      {/* SECTION 5: SPECIAL PLAYLIST (4 TRACKS SELECTOR) */}
+      {/* SECTION 5: SPECIAL SOUNDTRACK */}
       <div
         style={{
           background: 'rgba(46, 8, 33, 0.85)',
@@ -1375,7 +1372,7 @@ export default function MainBirthdayPage() {
           — SPECIAL SOUNDTRACK —
         </p>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.45rem', marginBottom: '16px' }}>
-          Our Playlist
+          Lagu Untuk Dyah 🎵
         </h3>
 
         {/* Spinning Vinyl Disc */}
